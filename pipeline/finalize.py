@@ -5,7 +5,27 @@ Best take = lowest word error rate, then pace closest to the line median. Overri
 "pick": {"s03": "s03_t2"} in script.json. Run in the align env.
 Usage: finalize.py <project>"""
 import json, os, re, sys
+import subprocess, tempfile
 import numpy as np, soundfile as sf, pyloudnorm as pyln
+
+# Broadcast-style voice polish (off with "polish": false in script.json): cut rumble below 70 Hz, ease
+# boxiness at 250 Hz, a little presence at 3.5 kHz, de-ess, gentle 2.2:1 compression, then a ceiling.
+POLISH = ("highpass=f=70,equalizer=f=250:t=q:w=1.2:g=-1.5,equalizer=f=3000:t=q:w=1.4:g=1.0,"
+          "deesser=i=0.5:m=0.5:f=0.5,acompressor=threshold=-21dB:ratio=2.2:attack=8:release=140:makeup=1.4,"
+          "alimiter=limit=0.89:level=false")
+def polish(seg, sr):
+    # bring the line to a working level first so the compressor engages the same way on every line
+    m = pyln.Meter(sr)
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        seg = pyln.normalize.loudness(seg, m.integrated_loudness(seg), -18.0)
+    with tempfile.TemporaryDirectory() as d:
+        a, b = os.path.join(d, "in.wav"), os.path.join(d, "out.wav")
+        sf.write(a, seg.astype(np.float32), sr, subtype="FLOAT")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", a, "-af", POLISH, "-c:a", "pcm_f32le", b], check=True)
+        y, _ = sf.read(b)
+    return y[: len(seg)] if len(y) >= len(seg) else np.pad(y, (0, len(seg) - len(y)))
 
 def speech_bounds(y, sr, first_start, last_start, last_end):
     """Where speech really starts and stops. Forced alignment often ends the last word early,
@@ -66,7 +86,12 @@ if os.path.exists(ref_path):
     for k, v in scores.items():
         if "audition_" in k and os.path.getsize(os.path.join(proj, k)) == os.path.getsize(ref_path):
             ref_f0 = v["f0_med"]
-if not ref_f0 or ref_f0 != ref_f0:
+line_f0 = [v["f0_med"] for k, v in scores.items() if "audition_" not in k and v["f0_med"] == v["f0_med"]]
+if S.get("pitch_target") == "audition" and ref_f0 and ref_f0 == ref_f0:
+    pass
+elif line_f0:
+    ref_f0 = float(np.median(line_f0))   # the voice's typical pitch across every take: the steadiest target
+elif not ref_f0 or ref_f0 != ref_f0:
     ref_f0 = float(np.nanmedian([v["f0_med"] for v in scores.values()]))
 res = {}
 for ln in S["lines"]:
@@ -87,6 +112,8 @@ for ln in S["lines"]:
     f = int(0.01 * sr)
     seg[:f] *= np.linspace(0, 1, f)
     seg[-f:] *= np.linspace(1, 0, f)
+    if S.get("polish", True):
+        seg = polish(seg, sr)
     meter = pyln.Meter(sr)
     import warnings
     with warnings.catch_warnings():

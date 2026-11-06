@@ -17,21 +17,21 @@
 </style>
 <div id="root" data-composition-id="voice" data-width="1920" data-height="1080">
 <div id="voice-cam"><div class="win"><div class="bar" data-layout-ignore><span class="dots"><i></i><i></i><i></i></span>repotage · review</div>
-<div class="screen"><video id="voice-v0" class="clip" src="assets/footage/report.mp4" data-start="0" data-duration="7.15" data-media-start="5.932" data-playback-rate="1.634" data-track-index="1" muted playsinline></video><div class="hl" id="vc-hl" style="left:159.375px;top:312.15px;width:1173px;height:72.75px"></div><div class="cursor" id="voice-cursor"><svg class="arrow" viewBox="0 0 28 40" width="31" height="44" aria-hidden="true"><path d="M2 2 L2 31 L9.2 24.6 L14 36.4 L19.4 34.1 L14.7 22.6 L24.4 22.6 Z" fill="#fff" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg><div class="cursor-extra" id="voice-cursor-extra"></div></div></div></div></div>
+<div class="screen"><video id="voice-v0" class="clip" src="assets/footage/report.mp4" data-start="0" data-duration="6.88" data-media-start="5.89" data-playback-rate="1.715" data-track-index="1" muted playsinline></video><div class="hl" id="vc-hl" style="left:159.375px;top:312.15px;width:1173px;height:106.5px"></div><div class="cursor" id="voice-cursor"><svg class="arrow" viewBox="0 0 28 40" width="31" height="44" aria-hidden="true"><path d="M2 2 L2 31 L9.2 24.6 L14 36.4 L19.4 34.1 L14.7 22.6 L24.4 22.6 Z" fill="#fff" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg><div class="cursor-extra" id="voice-cursor-extra"></div></div></div></div></div>
 </div>
 <script>
 (function(){
 const tl = gsap.timeline({ paused: true });
 tl.set("#voice-cam",{transformOrigin:"0 0",x:-420.014,y:-103.501,scale:1.438},0);
-tl.to("#voice-cam",{x:-420.014,y:-103.501,scale:1.438,duration:0.55,ease:"power2.inOut"},1.215);
-tl.to("#voice-cam",{x:-647.098,y:-305.438,scale:2.1,duration:0.55,ease:"power2.inOut"},4.979);
+tl.to("#voice-cam",{x:-420.014,y:-103.501,scale:1.438,duration:0.55,ease:"power2.inOut"},1.174);
+tl.to("#voice-cam",{x:-647.098,y:-305.438,scale:2.1,duration:0.55,ease:"power2.inOut"},4.733);
 tl.set("#voice-cursor",{x:753.75,y:354.753,opacity:1},0);
-tl.set("#voice-cursor",{x:753.75,y:354.753},0.934);
-tl.to("#voice-cursor",{x:1307.25,y:204.565,duration:0.486,ease:"power2.inOut"},0.934);
-tl.to("#voice-cursor .arrow",{scale:0.82,duration:0.07,ease:"power2.in"},1.555);tl.to("#voice-cursor .arrow",{scale:1,duration:0.16,ease:"power2.out"},1.625);
-tl.set("#voice-cursor",{x:1307.25,y:204.565},5.848);
-tl.to("#voice-cursor",{x:719.205,y:365.44,duration:0.445,ease:"power2.inOut"},5.848);
-tl.fromTo("#vc-hl",{opacity:0,clipPath:"inset(0 100% 0 0 round 8px)"},{opacity:1,clipPath:"inset(0 0% 0 0 round 8px)",duration:0.38,ease:"expo.out"},3.952);tl.to("#vc-hl",{opacity:0,duration:0.2},4.929);
+tl.set("#voice-cursor",{x:753.75,y:354.753},0.885);
+tl.to("#voice-cursor",{x:1307.25,y:204.565,duration:0.496,ease:"power2.inOut"},0.885);
+tl.to("#voice-cursor .arrow",{scale:0.82,duration:0.07,ease:"power2.in"},1.511);tl.to("#voice-cursor .arrow",{scale:1,duration:0.16,ease:"power2.out"},1.581);
+tl.set("#voice-cursor",{x:1307.25,y:204.565},5.616);
+tl.to("#voice-cursor",{x:362.571,y:399.19,duration:0.447,ease:"power2.inOut"},5.616);
+tl.fromTo("#vc-hl",{opacity:0,clipPath:"inset(0 100% 0 0 round 8px)"},{opacity:1,clipPath:"inset(0 0% 0 0 round 8px)",duration:0.38,ease:"expo.out"},3.626);tl.to("#vc-hl",{opacity:0,duration:0.2},4.683);
 window.__timelines["voice"] = tl;
 })();
 </script>

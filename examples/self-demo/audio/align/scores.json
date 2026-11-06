@@ -4333,5 +4333,2643 @@
   ],
   "prosody_pen": 0.762,
   "mtime": 1793998950.031205
+ },
+ "audio/vo/s01_t2.wav": {
+  "text": "This voice was designed from one sentence of text. The music, the captions, and every cut came out of one repo.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 169.7056274847714,
+  "f0_iqr": 53.60473769809539,
+  "dur": 8.16,
+  "wps": 2.57,
+  "lufs": -28.3,
+  "tail_db": -104.1,
+  "lead": 0.41,
+  "tail": 0.22,
+  "words": [
+   {
+    "word": "This",
+    "start": 0.412,
+    "end": 0.613,
+    "score": 0.779
+   },
+   {
+    "word": "voice",
+    "start": 0.694,
+    "end": 0.995,
+    "score": 0.864
+   },
+   {
+    "word": "was",
+    "start": 1.055,
+    "end": 1.195,
+    "score": 0.705
+   },
+   {
+    "word": "designed",
+    "start": 1.256,
+    "end": 1.717,
+    "score": 0.879
+   },
+   {
+    "word": "from",
+    "start": 1.798,
+    "end": 1.958,
+    "score": 0.81
+   },
+   {
+    "word": "one",
+    "start": 2.139,
+    "end": 2.28,
+    "score": 0.846
+   },
+   {
+    "word": "sentence",
+    "start": 2.36,
+    "end": 2.781,
+    "score": 0.932
+   },
+   {
+    "word": "of",
+    "start": 2.822,
+    "end": 2.882,
+    "score": 0.75
+   },
+   {
+    "word": "text.",
+    "start": 2.942,
+    "end": 3.344,
+    "score": 0.91
+   },
+   {
+    "word": "The",
+    "start": 3.886,
+    "end": 3.986,
+    "score": 0.78
+   },
+   {
+    "word": "music,",
+    "start": 4.026,
+    "end": 4.468,
+    "score": 0.944
+   },
+   {
+    "word": "the",
+    "start": 4.889,
+    "end": 4.99,
+    "score": 0.838
+   },
+   {
+    "word": "captions,",
+    "start": 5.03,
+    "end": 5.612,
+    "score": 0.924
+   },
+   {
+    "word": "and",
+    "start": 5.773,
+    "end": 5.853,
+    "score": 0.961
+   },
+   {
+    "word": "every",
+    "start": 6.014,
+    "end": 6.215,
+    "score": 0.901
+   },
+   {
+    "word": "cut",
+    "start": 6.275,
+    "end": 6.496,
+    "score": 0.92
+   },
+   {
+    "word": "came",
+    "start": 6.576,
+    "end": 6.777,
+    "score": 0.938
+   },
+   {
+    "word": "out",
+    "start": 6.897,
+    "end": 7.018,
+    "score": 0.938
+   },
+   {
+    "word": "of",
+    "start": 7.118,
+    "end": 7.198,
+    "score": 0.669
+   },
+   {
+    "word": "one",
+    "start": 7.399,
+    "end": 7.519,
+    "score": 0.818
+   },
+   {
+    "word": "repo.",
+    "start": 7.58,
+    "end": 7.941,
+    "score": 0.858
+   }
+  ],
+  "end_rise_st": 0.25,
+  "pitch_sd_st": 4.32,
+  "jumps_per_s": 0.37,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794000767.6311321
+ },
+ "audio/vo/s01_t3.wav": {
+  "text": "This voice was designed from one sentence of text. The music, the captions, and every cut came out of one repo.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 165.82954559613313,
+  "f0_iqr": 54.773903002203355,
+  "dur": 8.48,
+  "wps": 2.48,
+  "lufs": -28.2,
+  "tail_db": -54.2,
+  "lead": 0.13,
+  "tail": 0.19,
+  "words": [
+   {
+    "word": "This",
+    "start": 0.131,
+    "end": 0.332,
+    "score": 0.865
+   },
+   {
+    "word": "voice",
+    "start": 0.412,
+    "end": 0.732,
+    "score": 0.806
+   },
+   {
+    "word": "was",
+    "start": 0.813,
+    "end": 0.953,
+    "score": 0.696
+   },
+   {
+    "word": "designed",
+    "start": 1.013,
+    "end": 1.494,
+    "score": 0.931
+   },
+   {
+    "word": "from",
+    "start": 1.554,
+    "end": 1.714,
+    "score": 0.788
+   },
+   {
+    "word": "one",
+    "start": 1.915,
+    "end": 2.055,
+    "score": 0.673
+   },
+   {
+    "word": "sentence",
+    "start": 2.135,
+    "end": 2.596,
+    "score": 0.894
+   },
+   {
+    "word": "of",
+    "start": 2.716,
+    "end": 2.777,
+    "score": 0.75
+   },
+   {
+    "word": "text.",
+    "start": 2.877,
+    "end": 3.318,
+    "score": 0.94
+   },
+   {
+    "word": "The",
+    "start": 3.779,
+    "end": 3.899,
+    "score": 0.668
+   },
+   {
+    "word": "music,",
+    "start": 3.939,
+    "end": 4.38,
+    "score": 0.944
+   },
+   {
+    "word": "the",
+    "start": 4.7,
+    "end": 4.801,
+    "score": 0.83
+   },
+   {
+    "word": "captions,",
+    "start": 4.841,
+    "end": 5.442,
+    "score": 0.911
+   },
+   {
+    "word": "and",
+    "start": 5.783,
+    "end": 5.883,
+    "score": 0.921
+   },
+   {
+    "word": "every",
+    "start": 6.103,
+    "end": 6.324,
+    "score": 0.782
+   },
+   {
+    "word": "cut",
+    "start": 6.404,
+    "end": 6.684,
+    "score": 0.832
+   },
+   {
+    "word": "came",
+    "start": 6.785,
+    "end": 7.005,
+    "score": 0.898
+   },
+   {
+    "word": "out",
+    "start": 7.185,
+    "end": 7.346,
+    "score": 0.916
+   },
+   {
+    "word": "of",
+    "start": 7.446,
+    "end": 7.526,
+    "score": 0.826
+   },
+   {
+    "word": "one",
+    "start": 7.727,
+    "end": 7.847,
+    "score": 0.602
+   },
+   {
+    "word": "repo.",
+    "start": 7.907,
+    "end": 8.288,
+    "score": 0.882
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 5.59,
+  "jumps_per_s": 0.83,
+  "max_pause_s": 0.22,
+  "prosody_flags": [
+   "erratic"
+  ],
+  "prosody_pen": 0.741,
+  "mtime": 1794000797.0393736
+ },
+ "audio/vo/s01_t4.wav": {
+  "text": "This voice was designed from one sentence of text. The music, the captions, and every cut came out of one repo.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 160.18078250040412,
+  "f0_iqr": 44.58362660283825,
+  "dur": 8.48,
+  "wps": 2.48,
+  "lufs": -29.1,
+  "tail_db": -49.0,
+  "lead": 0.25,
+  "tail": 0.17,
+  "words": [
+   {
+    "word": "This",
+    "start": 0.251,
+    "end": 0.452,
+    "score": 0.804
+   },
+   {
+    "word": "voice",
+    "start": 0.532,
+    "end": 0.833,
+    "score": 0.794
+   },
+   {
+    "word": "was",
+    "start": 0.913,
+    "end": 1.033,
+    "score": 0.952
+   },
+   {
+    "word": "designed",
+    "start": 1.093,
+    "end": 1.534,
+    "score": 0.826
+   },
+   {
+    "word": "from",
+    "start": 1.614,
+    "end": 1.795,
+    "score": 0.819
+   },
+   {
+    "word": "one",
+    "start": 2.055,
+    "end": 2.235,
+    "score": 0.469
+   },
+   {
+    "word": "sentence",
+    "start": 2.336,
+    "end": 2.817,
+    "score": 0.844
+   },
+   {
+    "word": "of",
+    "start": 2.857,
+    "end": 2.917,
+    "score": 0.75
+   },
+   {
+    "word": "text.",
+    "start": 2.977,
+    "end": 3.358,
+    "score": 0.949
+   },
+   {
+    "word": "The",
+    "start": 3.879,
+    "end": 3.979,
+    "score": 0.871
+   },
+   {
+    "word": "music,",
+    "start": 4.039,
+    "end": 4.46,
+    "score": 0.893
+   },
+   {
+    "word": "the",
+    "start": 4.7,
+    "end": 4.801,
+    "score": 0.818
+   },
+   {
+    "word": "captions,",
+    "start": 4.861,
+    "end": 5.442,
+    "score": 0.88
+   },
+   {
+    "word": "and",
+    "start": 5.602,
+    "end": 5.702,
+    "score": 0.821
+   },
+   {
+    "word": "every",
+    "start": 5.923,
+    "end": 6.163,
+    "score": 0.753
+   },
+   {
+    "word": "cut",
+    "start": 6.223,
+    "end": 6.484,
+    "score": 0.992
+   },
+   {
+    "word": "came",
+    "start": 6.825,
+    "end": 7.045,
+    "score": 0.898
+   },
+   {
+    "word": "out",
+    "start": 7.205,
+    "end": 7.346,
+    "score": 0.902
+   },
+   {
+    "word": "of",
+    "start": 7.386,
+    "end": 7.466,
+    "score": 0.666
+   },
+   {
+    "word": "one",
+    "start": 7.686,
+    "end": 7.827,
+    "score": 0.855
+   },
+   {
+    "word": "repo.",
+    "start": 7.907,
+    "end": 8.308,
+    "score": 0.913
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.76,
+  "jumps_per_s": 0.47,
+  "max_pause_s": 0.34,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794000825.3104143
+ },
+ "audio/vo/s02_t3.wav": {
+  "text": "It's called Repotage, point it at a project and it makes the demo.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 172.1747707467647,
+  "f0_iqr": 43.62485643953056,
+  "dur": 4.48,
+  "wps": 2.9,
+  "lufs": -28.2,
+  "tail_db": -57.4,
+  "lead": 0.14,
+  "tail": 0.21,
+  "words": [
+   {
+    "word": "It's",
+    "start": 0.138,
+    "end": 0.259,
+    "score": 0.762
+   },
+   {
+    "word": "called",
+    "start": 0.299,
+    "end": 0.56,
+    "score": 0.754
+   },
+   {
+    "word": "Repotage,",
+    "start": 0.64,
+    "end": 1.503,
+    "score": 0.904
+   },
+   {
+    "word": "point",
+    "start": 1.644,
+    "end": 1.905,
+    "score": 0.974
+   },
+   {
+    "word": "it",
+    "start": 1.965,
+    "end": 2.065,
+    "score": 0.639
+   },
+   {
+    "word": "at",
+    "start": 2.246,
+    "end": 2.326,
+    "score": 0.83
+   },
+   {
+    "word": "a",
+    "start": 2.367,
+    "end": 2.407,
+    "score": 0.498
+   },
+   {
+    "word": "project",
+    "start": 2.447,
+    "end": 2.929,
+    "score": 0.865
+   },
+   {
+    "word": "and",
+    "start": 3.29,
+    "end": 3.37,
+    "score": 0.954
+   },
+   {
+    "word": "it",
+    "start": 3.411,
+    "end": 3.471,
+    "score": 0.84
+   },
+   {
+    "word": "makes",
+    "start": 3.551,
+    "end": 3.772,
+    "score": 0.924
+   },
+   {
+    "word": "the",
+    "start": 3.832,
+    "end": 3.912,
+    "score": 0.998
+   },
+   {
+    "word": "demo.",
+    "start": 3.953,
+    "end": 4.274,
+    "score": 0.958
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.33,
+  "jumps_per_s": 0.67,
+  "max_pause_s": 0.36,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.135,
+  "mtime": 1794000846.0718362
+ },
+ "audio/vo/s02_t4.wav": {
+  "text": "It's called reportage, pointed at a project, and it makes the demo.",
+  "wer": 0.231,
+  "cer": 0.059,
+  "f0_med": 155.62074655812117,
+  "f0_iqr": 47.633034490822666,
+  "dur": 4.48,
+  "wps": 2.9,
+  "lufs": -28.2,
+  "tail_db": -52.2,
+  "lead": 0.37,
+  "tail": 0.19,
+  "words": [
+   {
+    "word": "It's",
+    "start": 0.372,
+    "end": 0.493,
+    "score": 0.768
+   },
+   {
+    "word": "called",
+    "start": 0.553,
+    "end": 0.794,
+    "score": 0.953
+   },
+   {
+    "word": "reportage,",
+    "start": 0.855,
+    "end": 1.619,
+    "score": 0.899
+   },
+   {
+    "word": "pointed",
+    "start": 1.82,
+    "end": 2.202,
+    "score": 0.829
+   },
+   {
+    "word": "at",
+    "start": 2.242,
+    "end": 2.323,
+    "score": 0.828
+   },
+   {
+    "word": "a",
+    "start": 2.363,
+    "end": 2.403,
+    "score": 0.499
+   },
+   {
+    "word": "project,",
+    "start": 2.444,
+    "end": 2.926,
+    "score": 0.868
+   },
+   {
+    "word": "and",
+    "start": 3.288,
+    "end": 3.369,
+    "score": 0.978
+   },
+   {
+    "word": "it",
+    "start": 3.409,
+    "end": 3.469,
+    "score": 0.752
+   },
+   {
+    "word": "makes",
+    "start": 3.55,
+    "end": 3.771,
+    "score": 0.87
+   },
+   {
+    "word": "the",
+    "start": 3.831,
+    "end": 3.932,
+    "score": 0.974
+   },
+   {
+    "word": "demo.",
+    "start": 3.972,
+    "end": 4.294,
+    "score": 0.948
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.22,
+  "jumps_per_s": 0.45,
+  "max_pause_s": 0.08,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794000865.430659
+ },
+ "audio/vo/s02_t5.wav": {
+  "text": "It's called reportage, point it at a project, and it makes the demo.",
+  "wer": 0.077,
+  "cer": 0.02,
+  "f0_med": 169.7056274847714,
+  "f0_iqr": 80.92448545988594,
+  "dur": 5.44,
+  "wps": 2.39,
+  "lufs": -26.8,
+  "tail_db": -31.1,
+  "lead": 0.46,
+  "tail": -0.02,
+  "words": [
+   {
+    "word": "It's",
+    "start": 0.459,
+    "end": 0.58,
+    "score": 0.808
+   },
+   {
+    "word": "called",
+    "start": 0.641,
+    "end": 0.984,
+    "score": 0.899
+   },
+   {
+    "word": "reportage,",
+    "start": 1.226,
+    "end": 2.135,
+    "score": 0.915
+   },
+   {
+    "word": "point",
+    "start": 2.639,
+    "end": 2.942,
+    "score": 0.799
+   },
+   {
+    "word": "it",
+    "start": 2.982,
+    "end": 3.063,
+    "score": 0.971
+   },
+   {
+    "word": "at",
+    "start": 3.204,
+    "end": 3.285,
+    "score": 0.83
+   },
+   {
+    "word": "a",
+    "start": 3.305,
+    "end": 3.346,
+    "score": 0.498
+   },
+   {
+    "word": "project,",
+    "start": 3.406,
+    "end": 3.971,
+    "score": 0.898
+   },
+   {
+    "word": "and",
+    "start": 4.375,
+    "end": 4.456,
+    "score": 0.989
+   },
+   {
+    "word": "it",
+    "start": 4.516,
+    "end": 4.577,
+    "score": 0.751
+   },
+   {
+    "word": "makes",
+    "start": 4.637,
+    "end": 4.9,
+    "score": 0.888
+   },
+   {
+    "word": "the",
+    "start": 4.96,
+    "end": 5.041,
+    "score": 0.998
+   },
+   {
+    "word": "demo.",
+    "start": 5.102,
+    "end": 5.465,
+    "score": 0.99
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 4.2,
+  "jumps_per_s": 0.74,
+  "max_pause_s": 0.24,
+  "prosody_flags": [],
+  "prosody_pen": 0.141,
+  "mtime": 1794000884.068057
+ },
+ "audio/vo/s03_t2.wav": {
+  "text": "Claude reads the code, picks one story worth telling, and writes the script.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 160.1834547071299,
+  "f0_iqr": 51.28847376377777,
+  "dur": 5.12,
+  "wps": 2.54,
+  "lufs": -28.3,
+  "tail_db": -121.8,
+  "lead": 0.39,
+  "tail": 0.42,
+  "words": [
+   {
+    "word": "Claude",
+    "start": 0.392,
+    "end": 0.733,
+    "score": 0.708
+   },
+   {
+    "word": "reads",
+    "start": 0.793,
+    "end": 1.034,
+    "score": 0.876
+   },
+   {
+    "word": "the",
+    "start": 1.094,
+    "end": 1.174,
+    "score": 0.956
+   },
+   {
+    "word": "code,",
+    "start": 1.215,
+    "end": 1.536,
+    "score": 0.828
+   },
+   {
+    "word": "picks",
+    "start": 1.756,
+    "end": 2.037,
+    "score": 0.849
+   },
+   {
+    "word": "one",
+    "start": 2.238,
+    "end": 2.378,
+    "score": 0.575
+   },
+   {
+    "word": "story",
+    "start": 2.458,
+    "end": 2.779,
+    "score": 0.891
+   },
+   {
+    "word": "worth",
+    "start": 2.819,
+    "end": 3.06,
+    "score": 0.792
+   },
+   {
+    "word": "telling,",
+    "start": 3.1,
+    "end": 3.461,
+    "score": 0.839
+   },
+   {
+    "word": "and",
+    "start": 3.742,
+    "end": 3.842,
+    "score": 0.803
+   },
+   {
+    "word": "writes",
+    "start": 3.903,
+    "end": 4.183,
+    "score": 0.84
+   },
+   {
+    "word": "the",
+    "start": 4.264,
+    "end": 4.344,
+    "score": 0.982
+   },
+   {
+    "word": "script.",
+    "start": 4.384,
+    "end": 4.705,
+    "score": 0.953
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.3,
+  "jumps_per_s": 0.2,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794000904.2743127
+ },
+ "audio/vo/s03_t3.wav": {
+  "text": "Claude reads the code, picks one story worth telling, and writes the script.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 156.5222483718677,
+  "f0_iqr": 70.48841790020043,
+  "dur": 5.28,
+  "wps": 2.46,
+  "lufs": -28.2,
+  "tail_db": -54.7,
+  "lead": 0.41,
+  "tail": 0.15,
+  "words": [
+   {
+    "word": "Claude",
+    "start": 0.413,
+    "end": 0.795,
+    "score": 0.824
+   },
+   {
+    "word": "reads",
+    "start": 0.895,
+    "end": 1.136,
+    "score": 0.88
+   },
+   {
+    "word": "the",
+    "start": 1.197,
+    "end": 1.297,
+    "score": 0.764
+   },
+   {
+    "word": "code,",
+    "start": 1.337,
+    "end": 1.679,
+    "score": 0.889
+   },
+   {
+    "word": "picks",
+    "start": 2.101,
+    "end": 2.362,
+    "score": 0.868
+   },
+   {
+    "word": "one",
+    "start": 2.563,
+    "end": 2.724,
+    "score": 0.61
+   },
+   {
+    "word": "story",
+    "start": 2.804,
+    "end": 3.146,
+    "score": 0.861
+   },
+   {
+    "word": "worth",
+    "start": 3.206,
+    "end": 3.467,
+    "score": 0.828
+   },
+   {
+    "word": "telling,",
+    "start": 3.508,
+    "end": 3.849,
+    "score": 0.791
+   },
+   {
+    "word": "and",
+    "start": 4.191,
+    "end": 4.271,
+    "score": 0.837
+   },
+   {
+    "word": "writes",
+    "start": 4.352,
+    "end": 4.633,
+    "score": 0.757
+   },
+   {
+    "word": "the",
+    "start": 4.693,
+    "end": 4.794,
+    "score": 0.727
+   },
+   {
+    "word": "script.",
+    "start": 4.834,
+    "end": 5.135,
+    "score": 0.941
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 5.52,
+  "jumps_per_s": 0.57,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.552,
+  "mtime": 1794000925.863931
+ },
+ "audio/vo/s03_t4.wav": {
+  "text": "Claude reads the code, picks one story worth telling, and writes the script.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 154.7244370127495,
+  "f0_iqr": 49.977473857118184,
+  "dur": 5.44,
+  "wps": 2.39,
+  "lufs": -28.3,
+  "tail_db": -121.8,
+  "lead": 0.27,
+  "tail": 0.26,
+  "words": [
+   {
+    "word": "Claude",
+    "start": 0.273,
+    "end": 0.635,
+    "score": 0.822
+   },
+   {
+    "word": "reads",
+    "start": 0.695,
+    "end": 0.957,
+    "score": 0.742
+   },
+   {
+    "word": "the",
+    "start": 1.017,
+    "end": 1.118,
+    "score": 0.844
+   },
+   {
+    "word": "code,",
+    "start": 1.158,
+    "end": 1.5,
+    "score": 0.818
+   },
+   {
+    "word": "picks",
+    "start": 1.883,
+    "end": 2.144,
+    "score": 0.927
+   },
+   {
+    "word": "one",
+    "start": 2.345,
+    "end": 2.506,
+    "score": 0.709
+   },
+   {
+    "word": "story",
+    "start": 2.567,
+    "end": 2.929,
+    "score": 0.834
+   },
+   {
+    "word": "worth",
+    "start": 2.99,
+    "end": 3.251,
+    "score": 0.802
+   },
+   {
+    "word": "telling,",
+    "start": 3.312,
+    "end": 3.694,
+    "score": 0.819
+   },
+   {
+    "word": "and",
+    "start": 4.117,
+    "end": 4.217,
+    "score": 0.858
+   },
+   {
+    "word": "writes",
+    "start": 4.298,
+    "end": 4.6,
+    "score": 0.811
+   },
+   {
+    "word": "the",
+    "start": 4.68,
+    "end": 4.781,
+    "score": 0.834
+   },
+   {
+    "word": "script.",
+    "start": 4.821,
+    "end": 5.183,
+    "score": 0.962
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 4.71,
+  "jumps_per_s": 0.37,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.103,
+  "mtime": 1794000945.9149132
+ },
+ "audio/vo/s04_t4.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 174.6783819410625,
+  "f0_iqr": 26.023515025263407,
+  "dur": 5.76,
+  "wps": 2.26,
+  "lufs": -25.5,
+  "tail_db": -117.7,
+  "lead": 0.38,
+  "tail": 0.22,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.385,
+    "end": 0.906,
+    "score": 0.784
+   },
+   {
+    "word": "films",
+    "start": 0.966,
+    "end": 1.287,
+    "score": 0.915
+   },
+   {
+    "word": "the",
+    "start": 1.347,
+    "end": 1.468,
+    "score": 0.696
+   },
+   {
+    "word": "real",
+    "start": 1.528,
+    "end": 1.748,
+    "score": 0.818
+   },
+   {
+    "word": "product",
+    "start": 1.829,
+    "end": 2.27,
+    "score": 0.8
+   },
+   {
+    "word": "at",
+    "start": 2.39,
+    "end": 2.45,
+    "score": 0.998
+   },
+   {
+    "word": "twice",
+    "start": 2.55,
+    "end": 2.911,
+    "score": 0.81
+   },
+   {
+    "word": "the",
+    "start": 2.951,
+    "end": 3.031,
+    "score": 0.992
+   },
+   {
+    "word": "resolution",
+    "start": 3.072,
+    "end": 3.713,
+    "score": 0.797
+   },
+   {
+    "word": "and",
+    "start": 4.214,
+    "end": 4.335,
+    "score": 0.796
+   },
+   {
+    "word": "logs",
+    "start": 4.415,
+    "end": 4.796,
+    "score": 0.829
+   },
+   {
+    "word": "every",
+    "start": 4.956,
+    "end": 5.177,
+    "score": 0.86
+   },
+   {
+    "word": "click.",
+    "start": 5.237,
+    "end": 5.538,
+    "score": 0.944
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.22,
+  "jumps_per_s": 0.0,
+  "max_pause_s": 0.5,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.453,
+  "mtime": 1794000969.1368294
+ },
+ "audio/vo/s04_t5.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 170.68872218367378,
+  "f0_iqr": 54.46598114419177,
+  "dur": 5.44,
+  "wps": 2.39,
+  "lufs": -25.5,
+  "tail_db": -121.8,
+  "lead": 0.25,
+  "tail": 0.32,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.252,
+    "end": 0.735,
+    "score": 0.848
+   },
+   {
+    "word": "films",
+    "start": 0.796,
+    "end": 1.118,
+    "score": 0.777
+   },
+   {
+    "word": "the",
+    "start": 1.158,
+    "end": 1.259,
+    "score": 0.838
+   },
+   {
+    "word": "real",
+    "start": 1.299,
+    "end": 1.52,
+    "score": 0.875
+   },
+   {
+    "word": "product",
+    "start": 1.581,
+    "end": 2.003,
+    "score": 0.855
+   },
+   {
+    "word": "at",
+    "start": 2.124,
+    "end": 2.205,
+    "score": 0.693
+   },
+   {
+    "word": "twice",
+    "start": 2.285,
+    "end": 2.607,
+    "score": 0.899
+   },
+   {
+    "word": "the",
+    "start": 2.647,
+    "end": 2.728,
+    "score": 0.982
+   },
+   {
+    "word": "resolution",
+    "start": 2.768,
+    "end": 3.392,
+    "score": 0.785
+   },
+   {
+    "word": "and",
+    "start": 3.815,
+    "end": 3.915,
+    "score": 0.814
+   },
+   {
+    "word": "logs",
+    "start": 3.996,
+    "end": 4.358,
+    "score": 0.836
+   },
+   {
+    "word": "every",
+    "start": 4.579,
+    "end": 4.781,
+    "score": 0.918
+   },
+   {
+    "word": "click.",
+    "start": 4.841,
+    "end": 5.123,
+    "score": 0.927
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.29,
+  "jumps_per_s": 0.0,
+  "max_pause_s": 0.42,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.219,
+  "mtime": 1794000994.0513246
+ },
+ "audio/vo/s04_t6.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 167.27328924128142,
+  "f0_iqr": 36.48385127939696,
+  "dur": 5.76,
+  "wps": 2.26,
+  "lufs": -25.9,
+  "tail_db": -121.8,
+  "lead": 0.27,
+  "tail": 0.24,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.272,
+    "end": 0.775,
+    "score": 0.738
+   },
+   {
+    "word": "films",
+    "start": 0.816,
+    "end": 1.158,
+    "score": 0.822
+   },
+   {
+    "word": "the",
+    "start": 1.198,
+    "end": 1.298,
+    "score": 0.916
+   },
+   {
+    "word": "real",
+    "start": 1.359,
+    "end": 1.6,
+    "score": 0.866
+   },
+   {
+    "word": "product",
+    "start": 1.661,
+    "end": 2.123,
+    "score": 0.834
+   },
+   {
+    "word": "at",
+    "start": 2.264,
+    "end": 2.345,
+    "score": 0.698
+   },
+   {
+    "word": "twice",
+    "start": 2.425,
+    "end": 2.747,
+    "score": 0.811
+   },
+   {
+    "word": "the",
+    "start": 2.787,
+    "end": 2.888,
+    "score": 0.667
+   },
+   {
+    "word": "resolution",
+    "start": 2.928,
+    "end": 3.532,
+    "score": 0.858
+   },
+   {
+    "word": "and",
+    "start": 4.035,
+    "end": 4.135,
+    "score": 0.671
+   },
+   {
+    "word": "logs",
+    "start": 4.196,
+    "end": 4.558,
+    "score": 0.843
+   },
+   {
+    "word": "every",
+    "start": 4.819,
+    "end": 5.121,
+    "score": 0.811
+   },
+   {
+    "word": "click.",
+    "start": 5.222,
+    "end": 5.523,
+    "score": 0.902
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.32,
+  "jumps_per_s": 0.17,
+  "max_pause_s": 0.5,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.459,
+  "mtime": 1794001018.0723267
+ },
+ "audio/vo/s05_t4.wav": {
+  "text": "VoxCPM designs the narrator. WhisperX checks each take and times every word.",
+  "wer": 0.267,
+  "cer": 0.0,
+  "f0_med": 176.19916524276906,
+  "f0_iqr": 74.04161869904226,
+  "dur": 5.92,
+  "wps": 2.53,
+  "lufs": -27.5,
+  "tail_db": -112.4,
+  "lead": 0.29,
+  "tail": 0.26,
+  "words": [
+   {
+    "word": "VoxCPM",
+    "start": 0.292,
+    "end": 1.076,
+    "score": 0.811
+   },
+   {
+    "word": "designs",
+    "start": 1.136,
+    "end": 1.578,
+    "score": 0.863
+   },
+   {
+    "word": "the",
+    "start": 1.618,
+    "end": 1.718,
+    "score": 0.84
+   },
+   {
+    "word": "narrator.",
+    "start": 1.759,
+    "end": 2.221,
+    "score": 0.911
+   },
+   {
+    "word": "WhisperX",
+    "start": 2.642,
+    "end": 3.205,
+    "score": 0.809
+   },
+   {
+    "word": "checks",
+    "start": 3.326,
+    "end": 3.607,
+    "score": 0.782
+   },
+   {
+    "word": "each",
+    "start": 3.788,
+    "end": 3.948,
+    "score": 0.869
+   },
+   {
+    "word": "take",
+    "start": 4.029,
+    "end": 4.31,
+    "score": 0.848
+   },
+   {
+    "word": "and",
+    "start": 4.43,
+    "end": 4.531,
+    "score": 0.783
+   },
+   {
+    "word": "times",
+    "start": 4.611,
+    "end": 4.993,
+    "score": 0.897
+   },
+   {
+    "word": "every",
+    "start": 5.174,
+    "end": 5.395,
+    "score": 0.782
+   },
+   {
+    "word": "word.",
+    "start": 5.435,
+    "end": 5.656,
+    "score": 0.898
+   }
+  ],
+  "end_rise_st": 0.9,
+  "pitch_sd_st": 4.1,
+  "jumps_per_s": 0.34,
+  "max_pause_s": 0.18,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001041.3257577
+ },
+ "audio/vo/s05_t5.wav": {
+  "text": "Vox CPM designs the narrator. WhisperX checks each take and times every word.",
+  "wer": 0.2,
+  "cer": 0.0,
+  "f0_med": 159.25820908062818,
+  "f0_iqr": 48.51305777788744,
+  "dur": 6.24,
+  "wps": 2.4,
+  "lufs": -28.6,
+  "tail_db": -60.8,
+  "lead": 0.35,
+  "tail": 0.2,
+  "words": [
+   {
+    "word": "Vox",
+    "start": 0.352,
+    "end": 0.654,
+    "score": 0.778
+   },
+   {
+    "word": "CPM",
+    "start": 0.674,
+    "end": 1.236,
+    "score": 0.765
+   },
+   {
+    "word": "designs",
+    "start": 1.296,
+    "end": 1.758,
+    "score": 0.805
+   },
+   {
+    "word": "the",
+    "start": 1.819,
+    "end": 1.899,
+    "score": 0.972
+   },
+   {
+    "word": "narrator.",
+    "start": 1.939,
+    "end": 2.401,
+    "score": 0.805
+   },
+   {
+    "word": "WhisperX",
+    "start": 2.863,
+    "end": 3.486,
+    "score": 0.877
+   },
+   {
+    "word": "checks",
+    "start": 3.586,
+    "end": 3.848,
+    "score": 0.828
+   },
+   {
+    "word": "each",
+    "start": 3.988,
+    "end": 4.129,
+    "score": 0.858
+   },
+   {
+    "word": "take",
+    "start": 4.209,
+    "end": 4.49,
+    "score": 0.876
+   },
+   {
+    "word": "and",
+    "start": 4.812,
+    "end": 4.912,
+    "score": 0.99
+   },
+   {
+    "word": "times",
+    "start": 4.993,
+    "end": 5.354,
+    "score": 0.853
+   },
+   {
+    "word": "every",
+    "start": 5.495,
+    "end": 5.736,
+    "score": 0.811
+   },
+   {
+    "word": "word.",
+    "start": 5.776,
+    "end": 6.037,
+    "score": 0.93
+   }
+  ],
+  "end_rise_st": 1.2,
+  "pitch_sd_st": 4.12,
+  "jumps_per_s": 0.32,
+  "max_pause_s": 0.32,
+  "prosody_flags": [],
+  "prosody_pen": 0.16,
+  "mtime": 1794001062.6895714
+ },
+ "audio/vo/s05_t6.wav": {
+  "text": "Vox CPM designs the narrator. WhisperX checks each take and times every word.",
+  "wer": 0.2,
+  "cer": 0.0,
+  "f0_med": 164.8744376949707,
+  "f0_iqr": 69.4829574467212,
+  "dur": 6.08,
+  "wps": 2.47,
+  "lufs": -27.6,
+  "tail_db": -49.9,
+  "lead": 0.51,
+  "tail": 0.12,
+  "words": [
+   {
+    "word": "Vox",
+    "start": 0.514,
+    "end": 0.836,
+    "score": 0.762
+   },
+   {
+    "word": "CPM",
+    "start": 0.876,
+    "end": 1.399,
+    "score": 0.788
+   },
+   {
+    "word": "designs",
+    "start": 1.439,
+    "end": 1.862,
+    "score": 0.827
+   },
+   {
+    "word": "the",
+    "start": 1.902,
+    "end": 2.002,
+    "score": 0.836
+   },
+   {
+    "word": "narrator.",
+    "start": 2.043,
+    "end": 2.505,
+    "score": 0.898
+   },
+   {
+    "word": "WhisperX",
+    "start": 2.928,
+    "end": 3.571,
+    "score": 0.904
+   },
+   {
+    "word": "checks",
+    "start": 3.672,
+    "end": 3.954,
+    "score": 0.875
+   },
+   {
+    "word": "each",
+    "start": 4.115,
+    "end": 4.275,
+    "score": 0.845
+   },
+   {
+    "word": "take",
+    "start": 4.356,
+    "end": 4.638,
+    "score": 0.978
+   },
+   {
+    "word": "and",
+    "start": 4.758,
+    "end": 4.859,
+    "score": 0.72
+   },
+   {
+    "word": "times",
+    "start": 4.919,
+    "end": 5.281,
+    "score": 0.765
+   },
+   {
+    "word": "every",
+    "start": 5.422,
+    "end": 5.643,
+    "score": 0.833
+   },
+   {
+    "word": "word.",
+    "start": 5.704,
+    "end": 5.965,
+    "score": 0.876
+   }
+  ],
+  "end_rise_st": 1.0,
+  "pitch_sd_st": 5.56,
+  "jumps_per_s": 0.33,
+  "max_pause_s": 0.16,
+  "prosody_flags": [],
+  "prosody_pen": 0.532,
+  "mtime": 1794001084.3264794
+ },
+ "audio/vo/s06_t6.wav": {
+  "text": "Ace Step writes the score and ducks it under the voice.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 133.5339968818841,
+  "f0_iqr": 28.81615702813866,
+  "dur": 4.16,
+  "wps": 2.64,
+  "lufs": -29.0,
+  "tail_db": -55.9,
+  "lead": 0.33,
+  "tail": 0.22,
+  "words": [
+   {
+    "word": "Ace",
+    "start": 0.333,
+    "end": 0.454,
+    "score": 0.495
+   },
+   {
+    "word": "Step",
+    "start": 0.535,
+    "end": 0.857,
+    "score": 0.876
+   },
+   {
+    "word": "writes",
+    "start": 1.059,
+    "end": 1.321,
+    "score": 0.782
+   },
+   {
+    "word": "the",
+    "start": 1.381,
+    "end": 1.482,
+    "score": 0.699
+   },
+   {
+    "word": "score",
+    "start": 1.522,
+    "end": 1.845,
+    "score": 0.859
+   },
+   {
+    "word": "and",
+    "start": 2.389,
+    "end": 2.489,
+    "score": 0.838
+   },
+   {
+    "word": "ducks",
+    "start": 2.59,
+    "end": 2.892,
+    "score": 0.807
+   },
+   {
+    "word": "it",
+    "start": 2.973,
+    "end": 3.054,
+    "score": 0.75
+   },
+   {
+    "word": "under",
+    "start": 3.275,
+    "end": 3.477,
+    "score": 0.831
+   },
+   {
+    "word": "the",
+    "start": 3.517,
+    "end": 3.598,
+    "score": 0.832
+   },
+   {
+    "word": "voice.",
+    "start": 3.618,
+    "end": 3.94,
+    "score": 0.97
+   }
+  ],
+  "end_rise_st": 0.25,
+  "pitch_sd_st": 4.14,
+  "jumps_per_s": 0.24,
+  "max_pause_s": 0.54,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.582,
+  "mtime": 1794001103.0691073
+ },
+ "audio/vo/s06_t7.wav": {
+  "text": "ASTEP writes the score and ducks it under the voice.",
+  "wer": 0.182,
+  "cer": 0.045,
+  "f0_med": 145.61985617339303,
+  "f0_iqr": 35.77819718135683,
+  "dur": 4.0,
+  "wps": 2.75,
+  "lufs": -27.8,
+  "tail_db": -59.2,
+  "lead": 0.37,
+  "tail": 0.28,
+  "words": [
+   {
+    "word": "ASTEP",
+    "start": 0.372,
+    "end": 0.852,
+    "score": 0.899
+   },
+   {
+    "word": "writes",
+    "start": 0.972,
+    "end": 1.253,
+    "score": 0.751
+   },
+   {
+    "word": "the",
+    "start": 1.333,
+    "end": 1.433,
+    "score": 0.815
+   },
+   {
+    "word": "score",
+    "start": 1.473,
+    "end": 1.814,
+    "score": 0.733
+   },
+   {
+    "word": "and",
+    "start": 2.294,
+    "end": 2.395,
+    "score": 0.775
+   },
+   {
+    "word": "ducks",
+    "start": 2.475,
+    "end": 2.775,
+    "score": 0.888
+   },
+   {
+    "word": "it",
+    "start": 2.855,
+    "end": 2.935,
+    "score": 0.675
+   },
+   {
+    "word": "under",
+    "start": 3.076,
+    "end": 3.256,
+    "score": 0.867
+   },
+   {
+    "word": "the",
+    "start": 3.296,
+    "end": 3.376,
+    "score": 0.833
+   },
+   {
+    "word": "voice.",
+    "start": 3.416,
+    "end": 3.717,
+    "score": 0.912
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 2.18,
+  "jumps_per_s": 0.0,
+  "max_pause_s": 0.48,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.39,
+  "mtime": 1794001119.3703663
+ },
+ "audio/vo/s06_t8.wav": {
+  "text": "ASTEP writes the score and ducks it under the voice.",
+  "wer": 0.182,
+  "cer": 0.045,
+  "f0_med": 149.45395468305875,
+  "f0_iqr": 35.68239296064081,
+  "dur": 3.84,
+  "wps": 2.86,
+  "lufs": -28.1,
+  "tail_db": -54.4,
+  "lead": 0.35,
+  "tail": 0.29,
+  "words": [
+   {
+    "word": "ASTEP",
+    "start": 0.353,
+    "end": 0.835,
+    "score": 0.954
+   },
+   {
+    "word": "writes",
+    "start": 0.916,
+    "end": 1.197,
+    "score": 0.643
+   },
+   {
+    "word": "the",
+    "start": 1.257,
+    "end": 1.358,
+    "score": 0.834
+   },
+   {
+    "word": "score",
+    "start": 1.398,
+    "end": 1.76,
+    "score": 0.769
+   },
+   {
+    "word": "and",
+    "start": 2.142,
+    "end": 2.242,
+    "score": 0.78
+   },
+   {
+    "word": "ducks",
+    "start": 2.323,
+    "end": 2.604,
+    "score": 0.807
+   },
+   {
+    "word": "it",
+    "start": 2.685,
+    "end": 2.765,
+    "score": 0.674
+   },
+   {
+    "word": "under",
+    "start": 2.926,
+    "end": 3.107,
+    "score": 0.887
+   },
+   {
+    "word": "the",
+    "start": 3.127,
+    "end": 3.207,
+    "score": 0.836
+   },
+   {
+    "word": "voice.",
+    "start": 3.248,
+    "end": 3.549,
+    "score": 0.936
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 4.67,
+  "jumps_per_s": 0.52,
+  "max_pause_s": 0.38,
+  "prosody_flags": [
+   "pause"
+  ],
+  "prosody_pen": 0.195,
+  "mtime": 1794001135.8064487
+ },
+ "audio/vo/s07_t5.wav": {
+  "text": "Hyperframes and GSAP cut it together in HTML, frame by frame.",
+  "wer": 0.167,
+  "cer": 0.039,
+  "f0_med": 162.98069325927855,
+  "f0_iqr": 57.42753076425922,
+  "dur": 5.12,
+  "wps": 2.34,
+  "lufs": -21.0,
+  "tail_db": -67.6,
+  "lead": 0.21,
+  "tail": 0.18,
+  "words": [
+   {
+    "word": "Hyperframes",
+    "start": 0.212,
+    "end": 0.997,
+    "score": 0.809
+   },
+   {
+    "word": "and",
+    "start": 1.138,
+    "end": 1.239,
+    "score": 0.833
+   },
+   {
+    "word": "GSAP",
+    "start": 1.319,
+    "end": 1.863,
+    "score": 0.958
+   },
+   {
+    "word": "cut",
+    "start": 2.044,
+    "end": 2.205,
+    "score": 0.992
+   },
+   {
+    "word": "it",
+    "start": 2.265,
+    "end": 2.326,
+    "score": 0.752
+   },
+   {
+    "word": "together",
+    "start": 2.366,
+    "end": 2.789,
+    "score": 0.916
+   },
+   {
+    "word": "in",
+    "start": 2.93,
+    "end": 3.01,
+    "score": 0.846
+   },
+   {
+    "word": "HTML,",
+    "start": 3.232,
+    "end": 3.836,
+    "score": 0.839
+   },
+   {
+    "word": "frame",
+    "start": 3.997,
+    "end": 4.339,
+    "score": 0.886
+   },
+   {
+    "word": "by",
+    "start": 4.379,
+    "end": 4.54,
+    "score": 0.809
+   },
+   {
+    "word": "frame.",
+    "start": 4.641,
+    "end": 4.943,
+    "score": 0.942
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.62,
+  "jumps_per_s": 0.2,
+  "max_pause_s": 0.22,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001155.5730238
+ },
+ "audio/vo/s07_t6.wav": {
+  "text": "HyperFrames and GSAP cut it together in HTML, frame by frame.",
+  "wer": 0.167,
+  "cer": 0.039,
+  "f0_med": 161.10870033363162,
+  "f0_iqr": 44.69657967853297,
+  "dur": 5.12,
+  "wps": 2.34,
+  "lufs": -21.0,
+  "tail_db": -52.9,
+  "lead": 0.25,
+  "tail": 0.14,
+  "words": [
+   {
+    "word": "HyperFrames",
+    "start": 0.252,
+    "end": 0.997,
+    "score": 0.752
+   },
+   {
+    "word": "and",
+    "start": 1.118,
+    "end": 1.219,
+    "score": 0.739
+   },
+   {
+    "word": "GSAP",
+    "start": 1.299,
+    "end": 1.843,
+    "score": 0.96
+   },
+   {
+    "word": "cut",
+    "start": 1.943,
+    "end": 2.125,
+    "score": 0.985
+   },
+   {
+    "word": "it",
+    "start": 2.165,
+    "end": 2.225,
+    "score": 0.756
+   },
+   {
+    "word": "together",
+    "start": 2.265,
+    "end": 2.668,
+    "score": 0.847
+   },
+   {
+    "word": "in",
+    "start": 2.769,
+    "end": 2.869,
+    "score": 0.871
+   },
+   {
+    "word": "HTML,",
+    "start": 3.071,
+    "end": 3.675,
+    "score": 0.806
+   },
+   {
+    "word": "frame",
+    "start": 4.017,
+    "end": 4.359,
+    "score": 0.856
+   },
+   {
+    "word": "by",
+    "start": 4.419,
+    "end": 4.58,
+    "score": 0.836
+   },
+   {
+    "word": "frame.",
+    "start": 4.661,
+    "end": 4.983,
+    "score": 0.849
+   }
+  ],
+  "end_rise_st": 1.5,
+  "pitch_sd_st": 3.8,
+  "jumps_per_s": 0.0,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.4,
+  "mtime": 1794001178.0708773
+ },
+ "audio/vo/s07_t7.wav": {
+  "text": "Hyperframes and GSAP cut it together in HTML frame by frame.",
+  "wer": 0.167,
+  "cer": 0.039,
+  "f0_med": 161.10870033363162,
+  "f0_iqr": 35.84957975603058,
+  "dur": 4.48,
+  "wps": 2.68,
+  "lufs": -21.6,
+  "tail_db": -117.9,
+  "lead": 0.41,
+  "tail": 0.26,
+  "words": [
+   {
+    "word": "Hyperframes",
+    "start": 0.414,
+    "end": 1.058,
+    "score": 0.771
+   },
+   {
+    "word": "and",
+    "start": 1.099,
+    "end": 1.179,
+    "score": 0.92
+   },
+   {
+    "word": "GSAP",
+    "start": 1.22,
+    "end": 1.703,
+    "score": 0.959
+   },
+   {
+    "word": "cut",
+    "start": 1.763,
+    "end": 1.904,
+    "score": 1.0
+   },
+   {
+    "word": "it",
+    "start": 1.945,
+    "end": 2.005,
+    "score": 0.75
+   },
+   {
+    "word": "together",
+    "start": 2.045,
+    "end": 2.408,
+    "score": 0.869
+   },
+   {
+    "word": "in",
+    "start": 2.509,
+    "end": 2.589,
+    "score": 0.853
+   },
+   {
+    "word": "HTML",
+    "start": 2.811,
+    "end": 3.335,
+    "score": 0.784
+   },
+   {
+    "word": "frame",
+    "start": 3.435,
+    "end": 3.717,
+    "score": 0.878
+   },
+   {
+    "word": "by",
+    "start": 3.758,
+    "end": 3.879,
+    "score": 0.834
+   },
+   {
+    "word": "frame.",
+    "start": 3.959,
+    "end": 4.221,
+    "score": 0.935
+   }
+  ],
+  "end_rise_st": 0.8,
+  "pitch_sd_st": 2.42,
+  "jumps_per_s": 0.22,
+  "max_pause_s": 0.22,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001198.7093346
+ },
+ "audio/vo/s08_t5.wav": {
+  "text": "It all renders on one Mac with open models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 146.04042164047092,
+  "f0_iqr": 36.34673633503235,
+  "dur": 3.2,
+  "wps": 2.81,
+  "lufs": -24.1,
+  "tail_db": -121.8,
+  "lead": 0.14,
+  "tail": 0.46,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.138,
+    "end": 0.198,
+    "score": 0.924
+   },
+   {
+    "word": "all",
+    "start": 0.338,
+    "end": 0.459,
+    "score": 0.997
+   },
+   {
+    "word": "renders",
+    "start": 0.539,
+    "end": 0.899,
+    "score": 0.851
+   },
+   {
+    "word": "on",
+    "start": 1.02,
+    "end": 1.1,
+    "score": 0.823
+   },
+   {
+    "word": "one",
+    "start": 1.24,
+    "end": 1.36,
+    "score": 0.659
+   },
+   {
+    "word": "Mac",
+    "start": 1.42,
+    "end": 1.681,
+    "score": 0.846
+   },
+   {
+    "word": "with",
+    "start": 1.861,
+    "end": 2.001,
+    "score": 0.858
+   },
+   {
+    "word": "open",
+    "start": 2.122,
+    "end": 2.342,
+    "score": 0.96
+   },
+   {
+    "word": "models.",
+    "start": 2.382,
+    "end": 2.743,
+    "score": 0.91
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.0,
+  "jumps_per_s": 0.0,
+  "max_pause_s": 0.18,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001214.767496
+ },
+ "audio/vo/s08_t6.wav": {
+  "text": "It all renders on one Mac with Open Models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 145.1992907063151,
+  "f0_iqr": 37.97658380417363,
+  "dur": 3.36,
+  "wps": 2.68,
+  "lufs": -23.7,
+  "tail_db": -121.8,
+  "lead": 0.11,
+  "tail": 0.38,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.108,
+    "end": 0.189,
+    "score": 0.832
+   },
+   {
+    "word": "all",
+    "start": 0.389,
+    "end": 0.51,
+    "score": 0.962
+   },
+   {
+    "word": "renders",
+    "start": 0.59,
+    "end": 0.991,
+    "score": 0.742
+   },
+   {
+    "word": "on",
+    "start": 1.132,
+    "end": 1.212,
+    "score": 0.834
+   },
+   {
+    "word": "one",
+    "start": 1.393,
+    "end": 1.513,
+    "score": 0.643
+   },
+   {
+    "word": "Mac",
+    "start": 1.573,
+    "end": 1.854,
+    "score": 0.699
+   },
+   {
+    "word": "with",
+    "start": 2.055,
+    "end": 2.196,
+    "score": 0.855
+   },
+   {
+    "word": "Open",
+    "start": 2.336,
+    "end": 2.557,
+    "score": 0.925
+   },
+   {
+    "word": "Models.",
+    "start": 2.597,
+    "end": 2.978,
+    "score": 0.926
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.5,
+  "jumps_per_s": 0.3,
+  "max_pause_s": 0.2,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001231.5188189
+ },
+ "audio/vo/s08_t7.wav": {
+  "text": "It all renders on one Mac with Open Models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 152.94982681246748,
+  "f0_iqr": 46.03554492314734,
+  "dur": 3.84,
+  "wps": 2.34,
+  "lufs": -24.6,
+  "tail_db": -121.8,
+  "lead": 0.53,
+  "tail": 0.38,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.53,
+    "end": 0.591,
+    "score": 0.86
+   },
+   {
+    "word": "all",
+    "start": 0.711,
+    "end": 0.852,
+    "score": 0.776
+   },
+   {
+    "word": "renders",
+    "start": 0.912,
+    "end": 1.294,
+    "score": 0.725
+   },
+   {
+    "word": "on",
+    "start": 1.455,
+    "end": 1.535,
+    "score": 0.833
+   },
+   {
+    "word": "one",
+    "start": 1.716,
+    "end": 1.836,
+    "score": 0.782
+   },
+   {
+    "word": "Mac",
+    "start": 1.897,
+    "end": 2.158,
+    "score": 0.831
+   },
+   {
+    "word": "with",
+    "start": 2.48,
+    "end": 2.64,
+    "score": 0.833
+   },
+   {
+    "word": "Open",
+    "start": 2.801,
+    "end": 3.042,
+    "score": 0.879
+   },
+   {
+    "word": "Models.",
+    "start": 3.082,
+    "end": 3.464,
+    "score": 0.91
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 3.43,
+  "jumps_per_s": 0.26,
+  "max_pause_s": 0.32,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001249.2690685
+ },
+ "audio/vo/s09_t3.wav": {
+  "text": "Repo Taz. Point it at a repo. Get a film.",
+  "wer": 0.222,
+  "cer": 0.067,
+  "f0_med": 158.3409492927473,
+  "f0_iqr": 70.69130972901459,
+  "dur": 4.8,
+  "wps": 1.87,
+  "lufs": -28.7,
+  "tail_db": -71.6,
+  "lead": 0.31,
+  "tail": 0.32,
+  "words": [
+   {
+    "word": "Repo",
+    "start": 0.313,
+    "end": 0.635,
+    "score": 0.936
+   },
+   {
+    "word": "Taz.",
+    "start": 0.695,
+    "end": 1.159,
+    "score": 0.837
+   },
+   {
+    "word": "Point",
+    "start": 1.904,
+    "end": 2.185,
+    "score": 0.867
+   },
+   {
+    "word": "it",
+    "start": 2.246,
+    "end": 2.346,
+    "score": 0.75
+   },
+   {
+    "word": "at",
+    "start": 2.487,
+    "end": 2.588,
+    "score": 0.84
+   },
+   {
+    "word": "a",
+    "start": 2.628,
+    "end": 2.648,
+    "score": 0.997
+   },
+   {
+    "word": "repo.",
+    "start": 2.709,
+    "end": 3.172,
+    "score": 0.9
+   },
+   {
+    "word": "Get",
+    "start": 3.816,
+    "end": 4.018,
+    "score": 0.993
+   },
+   {
+    "word": "a",
+    "start": 4.078,
+    "end": 4.118,
+    "score": 0.996
+   },
+   {
+    "word": "film.",
+    "start": 4.179,
+    "end": 4.481,
+    "score": 0.847
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 4.1,
+  "jumps_per_s": 0.42,
+  "max_pause_s": 0.14,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001269.2074127
+ },
+ "audio/vo/s09_t4.wav": {
+  "text": "Repo Taz. Point it at a repo. Get a film.",
+  "wer": 0.222,
+  "cer": 0.067,
+  "f0_med": 163.92756547712463,
+  "f0_iqr": 78.5132198907055,
+  "dur": 4.0,
+  "wps": 2.25,
+  "lufs": -28.4,
+  "tail_db": -61.1,
+  "lead": 0.39,
+  "tail": 0.26,
+  "words": [
+   {
+    "word": "Repo",
+    "start": 0.392,
+    "end": 0.752,
+    "score": 0.839
+   },
+   {
+    "word": "Taz.",
+    "start": 0.812,
+    "end": 1.313,
+    "score": 0.925
+   },
+   {
+    "word": "Point",
+    "start": 1.593,
+    "end": 1.874,
+    "score": 0.852
+   },
+   {
+    "word": "it",
+    "start": 1.954,
+    "end": 2.054,
+    "score": 0.696
+   },
+   {
+    "word": "at",
+    "start": 2.194,
+    "end": 2.274,
+    "score": 0.832
+   },
+   {
+    "word": "a",
+    "start": 2.314,
+    "end": 2.334,
+    "score": 0.995
+   },
+   {
+    "word": "repo.",
+    "start": 2.395,
+    "end": 2.835,
+    "score": 0.884
+   },
+   {
+    "word": "Get",
+    "start": 3.116,
+    "end": 3.296,
+    "score": 0.888
+   },
+   {
+    "word": "a",
+    "start": 3.336,
+    "end": 3.356,
+    "score": 0.997
+   },
+   {
+    "word": "film.",
+    "start": 3.416,
+    "end": 3.737,
+    "score": 0.92
+   }
+  ],
+  "end_rise_st": 0.0,
+  "pitch_sd_st": 4.44,
+  "jumps_per_s": 1.0,
+  "max_pause_s": 0.14,
+  "prosody_flags": [],
+  "prosody_pen": 0.3,
+  "mtime": 1794001284.1255958
+ },
+ "audio/vo/s09_t5.wav": {
+  "text": "Repo Taz. Point it at a repo. Get a film.",
+  "wer": 0.222,
+  "cer": 0.067,
+  "f0_med": 189.39415486570203,
+  "f0_iqr": 64.06792382619673,
+  "dur": 5.12,
+  "wps": 1.76,
+  "lufs": -28.1,
+  "tail_db": -55.4,
+  "lead": 0.39,
+  "tail": 0.23,
+  "words": [
+   {
+    "word": "Repo",
+    "start": 0.393,
+    "end": 0.915,
+    "score": 0.96
+   },
+   {
+    "word": "Taz.",
+    "start": 1.036,
+    "end": 1.538,
+    "score": 0.885
+   },
+   {
+    "word": "Point",
+    "start": 2.362,
+    "end": 2.664,
+    "score": 0.856
+   },
+   {
+    "word": "it",
+    "start": 2.744,
+    "end": 2.825,
+    "score": 0.728
+   },
+   {
+    "word": "at",
+    "start": 2.965,
+    "end": 3.066,
+    "score": 0.801
+   },
+   {
+    "word": "a",
+    "start": 3.106,
+    "end": 3.126,
+    "score": 0.997
+   },
+   {
+    "word": "repo.",
+    "start": 3.206,
+    "end": 3.709,
+    "score": 0.912
+   },
+   {
+    "word": "Get",
+    "start": 4.211,
+    "end": 4.412,
+    "score": 0.937
+   },
+   {
+    "word": "a",
+    "start": 4.473,
+    "end": 4.493,
+    "score": 0.999
+   },
+   {
+    "word": "film.",
+    "start": 4.573,
+    "end": 4.895,
+    "score": 0.963
+   }
+  ],
+  "end_rise_st": 0.9,
+  "pitch_sd_st": 4.36,
+  "jumps_per_s": 0.2,
+  "max_pause_s": 0.14,
+  "prosody_flags": [],
+  "prosody_pen": 0.0,
+  "mtime": 1794001301.859563
  }
 }

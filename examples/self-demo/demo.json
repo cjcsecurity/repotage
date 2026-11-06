@@ -16,10 +16,10 @@
     "takes": 2,
     "use": 1,
     "align": [
-      8.51,
+      9.27,
       11.2
     ],
-    "quiet_until": 8.36,
+    "quiet_until": 9.12,
     "gap_db": -9,
     "duck_db": 8,
     "quiet_db": -21
