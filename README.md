@@ -9,8 +9,6 @@ https://github.com/user-attachments/assets/37650284-b70b-41a4-8d04-e064e90d8326
 
 
 
-[![Repotage's own demo film: 13-second preview. Click for the full 57-second film with sound.](docs/preview.gif)](docs/repotage-demo.mp4)
-
 **▶ [Watch the full film with sound (57 s)](docs/repotage-demo.mp4).** It was made by Repotage, from this repo ([`examples/self-demo`](examples/self-demo)). Its voice, music, captions and cuts all came out of the pipeline below, and it shows its own artifacts: the voice prompt, the takes and their scores, the review page, the build and the check.
 
 To re-render the example yourself: `repotage sfx examples/self-demo && repotage build examples/self-demo && repotage render examples/self-demo`. The narration, music and footage are committed, so no models run.
