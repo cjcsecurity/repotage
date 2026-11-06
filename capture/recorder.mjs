@@ -1,8 +1,8 @@
-// demoforge capture library: record a real web app at native 2x (2560x1600 for a
+// repotage capture library: record a real web app at native 2x (2560x1600 for a
 // 1280x800 viewport, ~60 fps) with the CDP screencast, and log every cursor move,
 // click, drag and DOM box so the edit can draw the cursor and frame the camera.
 //
-//   import { open } from "demoforge/capture/recorder.mjs";
+//   import { open } from "repotage/capture/recorder.mjs";
 //   const s = await open({ base: "http://127.0.0.1:3000", out: "capture/clips" });
 //   await s.mock("**/api/expensive", { json: {...} }, 1200);  // stage slow or external calls
 //   await s.page.goto(s.base + "/");
@@ -12,7 +12,7 @@
 //   await clip.stop();
 //   await s.close();
 //
-// Then: demoforge capture encode capture/clips/flow  ->  capture/clips/flow.mp4 (30 fps CFR)
+// Then: repotage capture encode capture/clips/flow  ->  capture/clips/flow.mp4 (30 fps CFR)
 import { chromium } from "playwright";
 import fs from "node:fs";
 import path from "node:path";

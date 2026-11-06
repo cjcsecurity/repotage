@@ -33,4 +33,4 @@ if items:
     os.remove(tmp)
 json.dump(have, open(out, "w"), indent=1)
 for k, v in sorted(have.items()):
-    print(f"{k:28s} cer {v.get('cer', v['wer']):.3f}  pace {v['wps']:.2f} w/s  f0 {v['f0_med']:.0f} Hz  {v['dur']:.2f} s  | {v['text']}")
+    print(f"{k:28s} cer {v.get('cer', v['wer']):.3f}  tail {v.get('tail_db', 0):4.0f} dB  pace {v['wps']:.2f} w/s  f0 {v['f0_med']:.0f} Hz  {v['dur']:.2f} s  {','.join(v.get('prosody_flags', [])) or 'clean':14s} | {v['text']}")

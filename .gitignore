@@ -15,6 +15,6 @@ __pycache__/
 **/video/build/review/
 **/video/.hyperframes/
 **/video/node_modules/
-# sound effects come from the HyperFrames skill install (Pixabay licence), copied by `demoforge new`
+# sound effects come from the HyperFrames skill install (Pixabay licence), copied by `repotage new`
 **/video/assets/sfx/*.mp3
 **/video/assets/sfx/CREDITS.md

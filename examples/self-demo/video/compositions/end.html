@@ -9,17 +9,17 @@
 #en-url{position:absolute;left:0;right:0;top:790px;text-align:center;font:400 30px var(--mono);color:var(--muted)}
 </style>
 <div id="root" data-composition-id="end" data-width="1920" data-height="1080">
-<div class="dots-bg"></div><div id="en-wrap"><div id="en-wm" class="wm" style="font:900 200px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">demo<span style="color:var(--accent)">forge</span></div></div><div id="en-line"></div>
-<div id="en-cmd"><span class="p">$ </span>demoforge new ./your-repo</div><div id="en-url">github.com/cjcsecurity/demoforge</div>
+<div class="dots-bg"></div><div id="en-wrap"><div id="en-wm" class="wm" style="font:900 200px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">repo<span style="color:var(--accent)">tage</span></div></div><div id="en-line"></div>
+<div id="en-cmd"><span class="p">$ </span>repotage new ./your-repo</div><div id="en-url">github.com/cjcsecurity/repotage</div>
 </div>
 <script>
 (function(){
 const tl = gsap.timeline({ paused: true });
 
-tl.fromTo("#en-wm",{opacity:0,y:40,filter:"blur(10px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.55,ease:"expo.out"},0.281);
-tl.fromTo("#en-line",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},0.631);
-tl.fromTo("#en-cmd",{opacity:0,y:14},{opacity:1,y:0,duration:0.4,ease:"expo.out"},2.301);
-tl.fromTo("#en-url",{opacity:0},{opacity:1,duration:0.45},3.788);
+tl.fromTo("#en-wm",{opacity:0,y:40,filter:"blur(10px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.55,ease:"expo.out"},0.385);
+tl.fromTo("#en-line",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},0.735);
+tl.fromTo("#en-cmd",{opacity:0,y:14},{opacity:1,y:0,duration:0.4,ease:"expo.out"},2.405);
+tl.fromTo("#en-url",{opacity:0},{opacity:1,duration:0.45},3.79);
 
 window.__timelines["end"] = tl;
 })();

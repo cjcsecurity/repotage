@@ -1,4 +1,4 @@
-// demoforge report <project>: one HTML page to review a film's raw material before rendering.
+// repotage report <project>: one HTML page to review a film's raw material before rendering.
 // Narrator prompt and auditions, every line with every take and its WhisperX scores,
 // word-timed playback, music takes and the film's timeline. Writes <project>/report.html.
 import fs from "node:fs";
@@ -75,7 +75,7 @@ if (plan) {
 
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(D.name || path.basename(proj))} · demoforge report</title>
+<title>${esc(D.name || path.basename(proj))} · repotage report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -123,7 +123,7 @@ h2{font:600 13px "JetBrains Mono";text-transform:uppercase;letter-spacing:.08em;
 .lane i{position:absolute;top:5px;bottom:5px;border-radius:3px;background:var(--acc)}.lane u{position:absolute;top:6px;bottom:6px;width:2px;background:var(--muted)}
 .lane.mus>div{height:34px}.lane.mus .wv{inset:2px 0}
 </style></head><body>
-<header><span class="brand">demo<em>forge</em></span><span class="proj">${esc(path.relative(process.cwd(), proj) || ".")} · review</span>
+<header><span class="brand">repo<em>tage</em></span><span class="proj">${esc(path.relative(process.cwd(), proj) || ".")} · review</span>
 <div class="stats"><span><b>${S.lines.length}</b> lines</span><span><b>${totalVo.toFixed(1)} s</b> narration</span><span><b>${nTakes}</b> takes scored</span><span><b>${musicTakes.length}</b> music takes</span></div></header>
 <main>
 <h2>Narrator</h2>
@@ -132,7 +132,7 @@ h2{font:600 13px "JetBrains Mono";text-transform:uppercase;letter-spacing:.08em;
 <h2>Lines · WhisperX word timing</h2>
 ${lineRows}
 <h2>Music · ACE-Step</h2>
-<div class="mus">${musicTakes.map((f) => `<div class="mt"><div class="hd"><button class="play sm" data-src="audio/music/${f}" aria-label="Play ${f}"></button>${f.replace(".wav", "")}<span class="dim">asked ${esc(D.music?.bpm || "")} BPM · ${esc(D.music?.key || "")}</span></div><div class="wvb">${wave(peaks("audio/music/" + f, 260), 54, "wv acc")}</div></div>`).join("") || '<div class="card dim">No music yet: demoforge music gen</div>'}</div>
+<div class="mus">${musicTakes.map((f) => `<div class="mt"><div class="hd"><button class="play sm" data-src="audio/music/${f}" aria-label="Play ${f}"></button>${f.replace(".wav", "")}<span class="dim">asked ${esc(D.music?.bpm || "")} BPM · ${esc(D.music?.key || "")}</span></div><div class="wvb">${wave(peaks("audio/music/" + f, 260), 54, "wv acc")}</div></div>`).join("") || '<div class="card dim">No music yet: repotage music gen</div>'}</div>
 ${timeline ? `<h2>Film timeline · ${plan.TOTAL} s</h2>${timeline}` : ""}
 </main>
 <script>

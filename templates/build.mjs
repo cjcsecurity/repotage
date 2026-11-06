@@ -1,7 +1,7 @@
-// The film. Edit freely; re-run with: demoforge build <project>
+// The film. Edit freely; re-run with: repotage build <project>
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-const { kit, r2 } = await import(process.env.DEMOFORGE_HOME + "/compose/kit.mjs");
+const { kit, r2 } = await import(process.env.REPOTAGE_HOME + "/compose/kit.mjs");
 const PROJECT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const K = kit({ project: PROJECT, theme: { accent: "#f5a524" } });
 

@@ -1,6 +1,6 @@
-# demoforge self-demo: storylines
+# repotage self-demo: storylines
 
-The one thing: point demoforge at a repo and you get a real, narrated demo film, made locally.
+The one thing: point repotage at a repo and you get a real, narrated demo film, made locally.
 Spine: this film's own material. The voice you hear, its prompt, its takes and scores, the music bed and the timeline all appear on screen as themselves.
 
 ## A. The film explains itself (picked)

@@ -17,7 +17,7 @@ MUS = os.path.join(proj, "audio", "music")
 os.makedirs(MUS, exist_ok=True)
 
 if mode == "gen":
-    ace = os.environ.get("DEMOFORGE_ACESTEP") or os.path.join(os.path.dirname(__file__), "..", ".vendor", "ACE-Step-1.5")
+    ace = os.environ.get("REPOTAGE_ACESTEP") or os.path.join(os.path.dirname(__file__), "..", ".vendor", "ACE-Step-1.5")
     out = os.path.join(MUS, "out")
     shutil.rmtree(out, ignore_errors=True)
     toml = f'''task_type = "text2music"

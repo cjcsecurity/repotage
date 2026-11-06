@@ -8,12 +8,12 @@ ROOT="$(pwd)"
 
 link_skill() {
   mkdir -p "$HOME/.claude/skills"
-  ln -sfn "$ROOT/skills/demoforge" "$HOME/.claude/skills/demoforge"
-  echo "skill linked: ~/.claude/skills/demoforge -> $ROOT/skills/demoforge"
+  ln -sfn "$ROOT/skills/repotage" "$HOME/.claude/skills/repotage"
+  echo "skill linked: ~/.claude/skills/repotage -> $ROOT/skills/repotage"
 }
 if [[ "${1:-}" == "--skill" ]]; then link_skill; exit 0; fi
 
-[[ "$(uname -sm)" == "Darwin arm64" ]] || { echo "demoforge needs an Apple Silicon Mac (MLX)." >&2; exit 1; }
+[[ "$(uname -sm)" == "Darwin arm64" ]] || { echo "repotage needs an Apple Silicon Mac (MLX)." >&2; exit 1; }
 command -v brew >/dev/null || { echo "Install Homebrew first: https://brew.sh" >&2; exit 1; }
 
 echo "== system tools"
@@ -42,5 +42,5 @@ npx --yes hyperframes@0.9.19 skills update || echo "skipped: run 'npx hyperframe
 link_skill
 
 echo
-bin/demoforge doctor || true
-echo "ACE-Step downloads its models (about 8 GB) on the first 'demoforge music gen'."
+bin/repotage doctor || true
+echo "ACE-Step downloads its models (about 8 GB) on the first 'repotage music gen'."

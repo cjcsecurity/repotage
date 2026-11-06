@@ -6,7 +6,7 @@ Enter
 Sleep 500ms
 Show
 Sleep 400ms
-Type "demoforge doctor"
+Type "repotage doctor"
 Sleep 300ms
 Enter
 Sleep 7s

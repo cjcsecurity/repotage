@@ -1,8 +1,8 @@
-// Films the review page (demoforge report) of this very project. Run: demoforge capture run examples/self-demo capture/flow.mjs
+// Films the review page (repotage report) of this very project. Run: repotage capture run examples/self-demo capture/flow.mjs
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
-const { open } = await import(process.env.DEMOFORGE_HOME + "/capture/recorder.mjs");
+const { open } = await import(process.env.REPOTAGE_HOME + "/capture/recorder.mjs");
 
 // tiny static server for report.html and the audio it plays
 const root = process.cwd();

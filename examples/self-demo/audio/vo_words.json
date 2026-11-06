@@ -1,194 +1,194 @@
 {
  "s01": {
-  "take": "audio/vo/s01.wav",
+  "take": "audio/vo/s01_t1.wav",
   "file": "assets/audio/vo-s01.wav",
-  "duration": 8.082,
+  "duration": 7.56,
   "wer": 0.0,
   "words": [
    {
     "text": "This",
-    "start": 0.06,
-    "end": 0.261
+    "start": 0.112,
+    "end": 0.312
    },
    {
     "text": "voice",
-    "start": 0.341,
-    "end": 0.682
+    "start": 0.393,
+    "end": 0.693
    },
    {
     "text": "was",
-    "start": 0.762,
-    "end": 0.903
+    "start": 0.793,
+    "end": 0.934
    },
    {
     "text": "designed",
-    "start": 0.963,
-    "end": 1.424
+    "start": 0.994,
+    "end": 1.495
    },
    {
     "text": "from",
-    "start": 1.484,
-    "end": 1.645
+    "start": 1.555,
+    "end": 1.696
    },
    {
     "text": "one",
-    "start": 1.865,
-    "end": 2.026
+    "start": 1.896,
+    "end": 2.056
    },
    {
     "text": "sentence",
-    "start": 2.146,
-    "end": 2.587
+    "start": 2.137,
+    "end": 2.558
    },
    {
     "text": "of",
-    "start": 2.627,
-    "end": 2.687
+    "start": 2.578,
+    "end": 2.638
    },
    {
     "text": "text.",
-    "start": 2.748,
-    "end": 3.149
+    "start": 2.698,
+    "end": 3.079
    },
    {
     "text": "The",
-    "start": 3.63,
-    "end": 3.73
+    "start": 3.62,
+    "end": 3.74
    },
    {
     "text": "music,",
-    "start": 3.77,
-    "end": 4.192
+    "start": 3.8,
+    "end": 4.242
    },
    {
     "text": "the",
-    "start": 4.593,
-    "end": 4.693
+    "start": 4.462,
+    "end": 4.562
    },
    {
     "text": "captions,",
-    "start": 4.733,
-    "end": 5.315
+    "start": 4.602,
+    "end": 5.184
    },
    {
     "text": "and",
-    "start": 5.635,
-    "end": 5.736
+    "start": 5.344,
+    "end": 5.444
    },
    {
     "text": "every",
-    "start": 5.896,
-    "end": 6.137
+    "start": 5.645,
+    "end": 5.865
    },
    {
     "text": "cut",
-    "start": 6.197,
-    "end": 6.458
+    "start": 5.925,
+    "end": 6.186
    },
    {
     "text": "came",
-    "start": 6.819,
-    "end": 7.059
+    "start": 6.246,
+    "end": 6.447
    },
    {
     "text": "out",
-    "start": 7.22,
-    "end": 7.38
+    "start": 6.487,
+    "end": 6.607
    },
    {
     "text": "of",
-    "start": 7.561,
-    "end": 7.601
+    "start": 6.627,
+    "end": 6.687
    },
    {
     "text": "one",
-    "start": 7.621,
-    "end": 7.681
+    "start": 6.848,
+    "end": 6.948
    },
    {
     "text": "repo.",
-    "start": 7.761,
-    "end": 7.962
+    "start": 7.008,
+    "end": 7.369
    }
   ]
  },
  "s02": {
-  "take": "audio/vo/s02.wav",
+  "take": "audio/vo/s02_t0.wav",
   "file": "assets/audio/vo-s02.wav",
-  "duration": 5.933,
+  "duration": 5.91,
   "wer": 0.0,
   "words": [
    {
     "text": "It's",
-    "start": 0.06,
-    "end": 0.221
+    "start": 0.138,
+    "end": 0.299
    },
    {
     "text": "called",
-    "start": 0.322,
-    "end": 0.744
+    "start": 0.36,
+    "end": 0.702
    },
    {
-    "text": "DemoForge.",
-    "start": 1.046,
-    "end": 1.891
+    "text": "Repotage.",
+    "start": 1.005,
+    "end": 1.933
    },
    {
     "text": "Point",
-    "start": 2.575,
-    "end": 2.917
+    "start": 2.679,
+    "end": 3.002
    },
    {
     "text": "it",
-    "start": 3.017,
-    "end": 3.098
+    "start": 3.083,
+    "end": 3.163
    },
    {
     "text": "at",
-    "start": 3.279,
-    "end": 3.359
+    "start": 3.405,
+    "end": 3.486
    },
    {
     "text": "a",
-    "start": 3.4,
-    "end": 3.42
+    "start": 3.526,
+    "end": 3.547
    },
    {
     "text": "project",
-    "start": 3.48,
-    "end": 4.023
+    "start": 3.607,
+    "end": 4.152
    },
    {
     "text": "and",
-    "start": 4.566,
-    "end": 4.667
+    "start": 4.474,
+    "end": 4.575
    },
    {
     "text": "it",
-    "start": 4.727,
-    "end": 4.788
+    "start": 4.636,
+    "end": 4.717
    },
    {
     "text": "makes",
-    "start": 4.888,
-    "end": 5.19
+    "start": 4.777,
+    "end": 5.1
    },
    {
     "text": "the",
-    "start": 5.27,
-    "end": 5.391
+    "start": 5.241,
+    "end": 5.342
    },
    {
-    "text": "demo",
-    "start": 5.472,
-    "end": 5.813
+    "text": "demo.",
+    "start": 5.382,
+    "end": 5.725
    }
   ]
  },
  "s03": {
   "take": "audio/vo/s03.wav",
   "file": "assets/audio/vo-s03.wav",
-  "duration": 5.023,
+  "duration": 5.078,
   "wer": 0.0,
   "words": [
    {
@@ -259,375 +259,375 @@
   ]
  },
  "s04": {
-  "take": "audio/vo/s04_t1.wav",
+  "take": "audio/vo/s04_t2.wav",
   "file": "assets/audio/vo-s04.wav",
-  "duration": 5.033,
+  "duration": 4.938,
   "wer": 0.0,
   "words": [
    {
     "text": "Playwright",
     "start": 0.06,
-    "end": 0.561
+    "end": 0.523
    },
    {
     "text": "films",
-    "start": 0.601,
-    "end": 0.962
+    "start": 0.583,
+    "end": 0.885
    },
    {
     "text": "the",
-    "start": 1.023,
-    "end": 1.143
+    "start": 0.946,
+    "end": 1.046
    },
    {
     "text": "real",
-    "start": 1.223,
-    "end": 1.464
+    "start": 1.107,
+    "end": 1.328
    },
    {
     "text": "product",
-    "start": 1.544,
-    "end": 1.985
+    "start": 1.388,
+    "end": 1.791
    },
    {
     "text": "at",
-    "start": 2.065,
-    "end": 2.126
+    "start": 1.912,
+    "end": 1.992
    },
    {
     "text": "twice",
-    "start": 2.206,
-    "end": 2.547
+    "start": 2.093,
+    "end": 2.415
    },
    {
     "text": "the",
-    "start": 2.587,
-    "end": 2.687
+    "start": 2.455,
+    "end": 2.556
    },
    {
     "text": "resolution",
-    "start": 2.727,
-    "end": 3.349
+    "start": 2.596,
+    "end": 3.18
    },
    {
     "text": "and",
-    "start": 3.55,
-    "end": 3.65
+    "start": 3.563,
+    "end": 3.663
    },
    {
     "text": "logs",
-    "start": 3.73,
-    "end": 4.131
+    "start": 3.744,
+    "end": 4.086
    },
    {
     "text": "every",
-    "start": 4.312,
-    "end": 4.552
+    "start": 4.227,
+    "end": 4.448
    },
    {
     "text": "click.",
-    "start": 4.612,
-    "end": 4.913
+    "start": 4.509,
+    "end": 4.811
    }
   ]
  },
  "s05": {
-  "take": "audio/vo/s05_t0.wav",
+  "take": "audio/vo/s05_t3.wav",
   "file": "assets/audio/vo-s05.wav",
-  "duration": 7.195,
+  "duration": 6.25,
   "wer": 0.2,
   "words": [
    {
     "text": "Vox",
-    "start": 0.06,
-    "end": 0.482
+    "start": 0.112,
+    "end": 0.414
    },
    {
     "text": "CPM",
-    "start": 0.703,
-    "end": 1.327
+    "start": 0.434,
+    "end": 0.977
    },
    {
     "text": "designs",
-    "start": 1.528,
-    "end": 2.05
+    "start": 1.118,
+    "end": 1.6
    },
    {
     "text": "the",
-    "start": 2.111,
-    "end": 2.191
+    "start": 1.661,
+    "end": 1.741
    },
    {
     "text": "narrator.",
-    "start": 2.231,
-    "end": 2.714
+    "start": 1.781,
+    "end": 2.244
    },
    {
     "text": "WhisperX",
-    "start": 3.538,
-    "end": 4.241
+    "start": 2.747,
+    "end": 3.41
    },
    {
     "text": "checks",
-    "start": 4.422,
-    "end": 4.724
+    "start": 3.652,
+    "end": 3.933
    },
    {
     "text": "each",
-    "start": 4.925,
-    "end": 5.085
+    "start": 4.114,
+    "end": 4.275
    },
    {
     "text": "take",
-    "start": 5.166,
-    "end": 5.467
+    "start": 4.356,
+    "end": 4.657
    },
    {
     "text": "and",
-    "start": 5.749,
-    "end": 5.829
+    "start": 4.798,
+    "end": 4.899
    },
    {
     "text": "times",
-    "start": 5.91,
-    "end": 6.332
+    "start": 4.979,
+    "end": 5.361
    },
    {
     "text": "every",
-    "start": 6.533,
-    "end": 6.774
+    "start": 5.563,
+    "end": 5.784
    },
    {
     "text": "word.",
-    "start": 6.814,
-    "end": 7.075
+    "start": 5.824,
+    "end": 6.065
    }
   ]
  },
  "s06": {
-  "take": "audio/vo/s06_t3.wav",
+  "take": "audio/vo/s06_t2.wav",
   "file": "assets/audio/vo-s06.wav",
-  "duration": 3.71,
-  "wer": 0.182,
+  "duration": 3.87,
+  "wer": 0.091,
   "words": [
    {
-    "text": "ASTEP",
-    "start": 0.06,
-    "end": 0.542
+    "text": "A-step",
+    "start": 0.172,
+    "end": 0.694
    },
    {
     "text": "writes",
-    "start": 0.662,
-    "end": 0.963
+    "start": 0.834,
+    "end": 1.136
    },
    {
     "text": "the",
-    "start": 1.023,
-    "end": 1.123
+    "start": 1.196,
+    "end": 1.296
    },
    {
     "text": "score",
-    "start": 1.184,
-    "end": 1.565
+    "start": 1.336,
+    "end": 1.678
    },
    {
     "text": "and",
-    "start": 1.865,
-    "end": 1.986
+    "start": 2.119,
+    "end": 2.24
    },
    {
     "text": "ducks",
-    "start": 2.106,
-    "end": 2.407
+    "start": 2.34,
+    "end": 2.621
    },
    {
     "text": "it",
-    "start": 2.487,
-    "end": 2.588
+    "start": 2.681,
+    "end": 2.742
    },
    {
     "text": "under",
-    "start": 2.888,
-    "end": 3.089
+    "start": 2.902,
+    "end": 3.103
    },
    {
     "text": "the",
-    "start": 3.129,
-    "end": 3.209
+    "start": 3.143,
+    "end": 3.224
    },
    {
     "text": "voice.",
-    "start": 3.249,
-    "end": 3.59
+    "start": 3.284,
+    "end": 3.585
    }
   ]
  },
  "s07": {
   "take": "audio/vo/s07.wav",
   "file": "assets/audio/vo-s07.wav",
-  "duration": 4.92,
+  "duration": 5.0,
   "wer": 0.167,
   "words": [
    {
     "text": "HyperFrames",
-    "start": 0.06,
-    "end": 0.903
+    "start": 0.072,
+    "end": 0.915
    },
    {
     "text": "and",
-    "start": 1.024,
-    "end": 1.124
+    "start": 1.036,
+    "end": 1.136
    },
    {
     "text": "GSAP",
-    "start": 1.205,
-    "end": 1.747
+    "start": 1.217,
+    "end": 1.759
    },
    {
     "text": "cut",
-    "start": 1.908,
-    "end": 2.068
+    "start": 1.92,
+    "end": 2.08
    },
    {
     "text": "it",
-    "start": 2.109,
-    "end": 2.169
+    "start": 2.121,
+    "end": 2.181
    },
    {
     "text": "together",
-    "start": 2.209,
-    "end": 2.631
+    "start": 2.221,
+    "end": 2.643
    },
    {
     "text": "in",
-    "start": 2.731,
-    "end": 2.812
+    "start": 2.743,
+    "end": 2.824
    },
    {
     "text": "HTML,",
-    "start": 3.053,
-    "end": 3.675
+    "start": 3.065,
+    "end": 3.687
    },
    {
     "text": "frame",
-    "start": 3.937,
-    "end": 4.218
+    "start": 3.949,
+    "end": 4.23
    },
    {
     "text": "by",
-    "start": 4.258,
-    "end": 4.378
+    "start": 4.27,
+    "end": 4.39
    },
    {
     "text": "frame.",
-    "start": 4.479,
-    "end": 4.8
+    "start": 4.491,
+    "end": 4.812
    }
   ]
  },
  "s08": {
   "take": "audio/vo/s08_t0.wav",
   "file": "assets/audio/vo-s08.wav",
-  "duration": 3.621,
+  "duration": 3.81,
   "wer": 0.0,
   "words": [
    {
     "text": "It",
-    "start": 0.06,
-    "end": 0.141
+    "start": 0.071,
+    "end": 0.152
    },
    {
     "text": "all",
-    "start": 0.322,
-    "end": 0.463
+    "start": 0.333,
+    "end": 0.474
    },
    {
     "text": "renders",
-    "start": 0.563,
-    "end": 1.046
+    "start": 0.574,
+    "end": 1.057
    },
    {
     "text": "on",
-    "start": 1.187,
-    "end": 1.267
+    "start": 1.198,
+    "end": 1.278
    },
    {
     "text": "one",
-    "start": 1.529,
-    "end": 1.67
+    "start": 1.54,
+    "end": 1.681
    },
    {
     "text": "Mac",
-    "start": 1.771,
-    "end": 2.133
+    "start": 1.782,
+    "end": 2.144
    },
    {
     "text": "with",
-    "start": 2.354,
-    "end": 2.535
+    "start": 2.365,
+    "end": 2.546
    },
    {
     "text": "Open",
-    "start": 2.716,
-    "end": 2.998
+    "start": 2.727,
+    "end": 3.009
    },
    {
     "text": "Models.",
-    "start": 3.078,
-    "end": 3.501
+    "start": 3.089,
+    "end": 3.512
    }
   ]
  },
  "s09": {
-  "take": "audio/vo/s09.wav",
+  "take": "audio/vo/s09_t2.wav",
   "file": "assets/audio/vo-s09.wav",
-  "duration": 3.69,
+  "duration": 3.74,
   "wer": 0.0,
   "words": [
    {
-    "text": "DemoForge.",
-    "start": 0.031,
-    "end": 0.815
+    "text": "Repotage.",
+    "start": 0.135,
+    "end": 1.04
    },
    {
     "text": "Point",
-    "start": 1.117,
-    "end": 1.438
+    "start": 1.321,
+    "end": 1.622
    },
    {
     "text": "it",
-    "start": 1.519,
-    "end": 1.619
+    "start": 1.683,
+    "end": 1.783
    },
    {
     "text": "at",
-    "start": 1.78,
-    "end": 1.881
+    "start": 1.924,
+    "end": 2.004
    },
    {
     "text": "a",
-    "start": 1.921,
-    "end": 1.941
+    "start": 2.024,
+    "end": 2.044
    },
    {
     "text": "repo.",
-    "start": 2.001,
-    "end": 2.484
+    "start": 2.105,
+    "end": 2.527
    },
    {
     "text": "Get",
-    "start": 2.987,
-    "end": 3.147
+    "start": 2.969,
+    "end": 3.15
    },
    {
     "text": "a",
-    "start": 3.188,
-    "end": 3.228
+    "start": 3.19,
+    "end": 3.25
    },
    {
     "text": "film.",
-    "start": 3.288,
-    "end": 3.57
+    "start": 3.29,
+    "end": 3.572
    }
   ]
  }

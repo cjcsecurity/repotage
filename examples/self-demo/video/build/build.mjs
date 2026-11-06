@@ -1,9 +1,9 @@
-// demoforge's own demo film, built with demoforge's compose kit.
-// Run: demoforge build examples/self-demo
+// repotage's own demo film, built with repotage's compose kit.
+// Run: repotage build examples/self-demo
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-const { kit, r2, peaks, waveSvg } = await import(process.env.DEMOFORGE_HOME + "/compose/kit.mjs");
+const { kit, r2, peaks, waveSvg } = await import(process.env.REPOTAGE_HOME + "/compose/kit.mjs");
 
 const PROJECT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const REPO = path.resolve(PROJECT, "../..");
@@ -13,7 +13,7 @@ const K = kit({
   theme: {
     bg: "#121110", s1: "#1a1917", s2: "#22201d", line: "#2d2a26", line2: "#3a3631",
     text: "#f3efe6", muted: "#a39d92", faint: "#6f6a62", accent: "#ff6a1a", onAccent: "#1a0d00", ok: "#5fc98f",
-    fontSans: '"Inter", sans-serif', fontMono: '"JetBrains Mono", monospace', windowTitle: "demoforge · review",
+    fontSans: '"Inter", sans-serif', fontMono: '"JetBrains Mono", monospace', windowTitle: "repotage · review",
   },
 });
 const S = JSON.parse(fs.readFileSync(path.join(PROJECT, "script.json"), "utf8"));
@@ -33,12 +33,12 @@ for (const [id, line, lead, tail] of ORDER) {
   t = r2(t + d);
 }
 K.plan({ scenes, voAt, total: t });
-const groups = K.captions({ fix: { DemoForge: "demoforge", Demoforge: "demoforge", ASTEP: "ACE-Step", "A-step": "ACE-Step", Open: "open", Models: "models" }, merge: [["vox", "cpm", "VoxCPM"], ["a", "step", "ACE-Step"], ["a-step", "", "ACE-Step"]] });
+const groups = K.captions({ fix: { Repotage: "repotage", Repotage: "repotage", ASTEP: "ACE-Step", "A-step": "ACE-Step", Open: "open", Models: "models" }, merge: [["vox", "cpm", "VoxCPM"], ["a", "step", "ACE-Step"], ["a-step", "", "ACE-Step"]] });
 const at = (line, word, scene) => K.at(line, word, scene);
 
 // shared look
 const DOTS = `.dots-bg{position:absolute;inset:0;background-image:radial-gradient(circle,#24221f 1.5px,transparent 1.7px);background-size:40px 40px;background-position:20px 20px}`;
-const WORDMARK = (id, size) => `<div id="${id}" class="wm" style="font:900 ${size}px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">demo<span style="color:var(--accent)">forge</span></div>`;
+const WORDMARK = (id, size) => `<div id="${id}" class="wm" style="font:900 ${size}px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">repo<span style="color:var(--accent)">tage</span></div>`;
 
 // ======================= HOOK: this film's own timeline =======================
 {
@@ -69,7 +69,7 @@ const WORDMARK = (id, size) => `<div id="${id}" class="wm" style="font:900 ${siz
   const muLane = muPk ? `<div class="wvl" style="left:${X0 - 140}px;width:${LW}px;color:#8a5230">${waveSvg(muPk.map((v) => Math.sqrt(v)), { w: 1000, h: 100 })}</div>` : "";
   const html = `<div class="dots-bg"></div>
 <div class="lbl" id="hk-lbl" data-layout-ignore><i></i>voice prompt · the only input to this narrator</div>
-<div class="prompt" id="hk-prompt"><b>“</b>${S.voice}<b>”</b></div>
+<div class="prompt" id="hk-prompt" data-layout-ignore><b>“</b>${S.voice}<b>”</b></div>
 <div id="hk-lanes">
 ${lane("voice", 430, voLane)}
 ${lane("music", 540, muLane)}
@@ -98,7 +98,7 @@ tl.to("#hk-ph",{opacity:0,duration:0.1},${fold});
 // ======================= REVEAL: the name, and the one command =======================
 {
   const id = "reveal", [S0] = scenes.reveal;
-  const cmd = "demoforge new ./your-repo";
+  const cmd = "repotage new ./your-repo";
   const css = `#root{background:var(--bg)}${DOTS}
 #rv-line{position:absolute;left:140px;top:658px;width:1640px;height:8px;border-radius:4px;background:var(--accent);transform-origin:50% 50%}
 #rv-mask{position:absolute;left:0;right:0;top:330px;height:328px;overflow:hidden;display:flex;justify-content:center;align-items:flex-end}
@@ -109,7 +109,7 @@ tl.to("#hk-ph",{opacity:0,duration:0.1},${fold});
 `;
   const html = `<div class="dots-bg"></div><div id="rv-line"></div><div id="rv-mask">${WORDMARK("rv-wm", 250)}</div>
 <div id="rv-cmd"><span class="p c" id="rv-dollar">$ </span>${[...cmd].map((c, i) => `<span class="c" id="rv-c${i}">${c === " " ? "&nbsp;" : c}</span>`).join("")}<span class="caret" id="rv-caret"></span></div>`;
-  const tName = at("s02", "demoforge", id), tPoint = at("s02", "point", id);
+  const tName = at("s02", "repotage", id), tPoint = at("s02", "point", id);
   const js = `
 tl.fromTo("#rv-wm",{y:330},{y:0,duration:0.7,ease:"expo.out"},${r2(Math.max(0.15, tName - 0.35))});
 tl.to("#rv-line",{scaleX:0.62,duration:0.6,ease:"power3.inOut"},${r2(tName - 0.2)});
@@ -138,7 +138,7 @@ ${[0, 1, 2, 3, 4, 5].map((i) => `tl.set("#rv-caret",{opacity:${i % 2 ? 1 : 0}},$
 .code{padding:20px 24px;font:400 22px/1.6 var(--mono);color:var(--text);white-space:pre-wrap;word-break:break-word}.code .k{color:var(--accent)}.code div{opacity:0;margin-bottom:10px}
 `;
   const html = `<div class="dots-bg"></div>
-<div class="pane" id="sc-tree" style="left:90px;width:430px"><div class="hd" data-layout-ignore>demoforge/</div><div class="tree">${files.map((f, i) => `<div id="sc-f${i}">${f}</div>`).join("")}</div></div>
+<div class="pane" id="sc-tree" style="left:90px;width:430px"><div class="hd" data-layout-ignore>repotage/</div><div class="tree">${files.map((f, i) => `<div id="sc-f${i}">${f}</div>`).join("")}</div></div>
 <div class="pane" id="sc-sto" style="left:550px;width:520px"><div class="hd" data-layout-ignore>STORYLINES.md</div><div class="sto">${story.map((s, i) => `<div id="sc-s${i}"${i ? " data-layout-ignore" : ""}>${s}${i === 0 ? '<em id="sc-pick">picked</em>' : ""}</div>`).join("")}</div></div>
 <div class="pane" id="sc-code" style="left:1100px;width:730px"><div class="hd" data-layout-ignore>script.json · lines</div><div class="code" data-layout-ignore>${lines.map((l, i) => `<div id="sc-l${i}">${l.replace(/"(id|text)"/g, '<span class="k">"$1"</span>')}</div>`).join("")}</div></div>`;
   const tRead = at("s03", "reads", id), tPick = at("s03", "picks", id), tWrite = at("s03", "writes", id);
@@ -238,8 +238,8 @@ if (has("video/assets/footage/doctor.mp4")) {
 #en-cmd{position:absolute;left:0;right:0;top:690px;text-align:center;font:500 46px var(--mono);color:var(--text)}#en-cmd .p{color:var(--accent)}
 #en-url{position:absolute;left:0;right:0;top:790px;text-align:center;font:400 30px var(--mono);color:var(--muted)}`;
   const html = `<div class="dots-bg"></div><div id="en-wrap">${WORDMARK("en-wm", 200)}</div><div id="en-line"></div>
-<div id="en-cmd"><span class="p">$ </span>demoforge new ./your-repo</div><div id="en-url">github.com/cjcsecurity/demoforge</div>`;
-  const tName = at("s09", "demoforge", id), tRepo = at("s09", "repo", id), tFilm = at("s09", "film", id);
+<div id="en-cmd"><span class="p">$ </span>repotage new ./your-repo</div><div id="en-url">github.com/cjcsecurity/repotage</div>`;
+  const tName = at("s09", "repotage", id), tRepo = at("s09", "repo", id), tFilm = at("s09", "film", id);
   const js = `
 tl.fromTo("#en-wm",{opacity:0,y:40,filter:"blur(10px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.55,ease:"expo.out"},${r2(Math.max(0.1, tName - 0.25))});
 tl.fromTo("#en-line",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},${r2(tName + 0.1)});
@@ -250,4 +250,4 @@ tl.fromTo("#en-url",{opacity:0},{opacity:1,duration:0.45},${r2(tFilm)});
   K.addSfx("pop", S0 + tName, 0.3);
 }
 
-K.write({ title: "demoforge" });
+K.write({ title: "repotage" });

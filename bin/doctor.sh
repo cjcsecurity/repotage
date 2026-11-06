@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Checks every tool and model demoforge uses. Exit 1 if anything required is missing.
+# Checks every tool and model repotage uses. Exit 1 if anything required is missing.
 HOME_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-VOICE_PY="${DEMOFORGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
-ALIGN_PY="${DEMOFORGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
-ACE="${DEMOFORGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
+VOICE_PY="${REPOTAGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
+ALIGN_PY="${REPOTAGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
+ACE="${REPOTAGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
 fail=0
 if [[ -t 1 || -n "${FORCE_COLOR:-}" ]]; then G=$'\033[32m'; Dm=$'\033[90m'; R=$'\033[0m'; else G=; Dm=; R=; fi
 row() { local c="$Dm"; [[ "$1" == "ok" ]] && c="$G"; printf "  %s%-3s%s %-22s %s%s%s\n" "$c" "$1" "$R" "$2" "$Dm" "$3" "$R"; }
 ok() { row "ok" "$1" "$2"; }
 bad() { row "--" "$1" "$2"; fail=1; }
-echo "demoforge doctor"
+echo "repotage doctor"
 [[ "$(uname -sm)" == "Darwin arm64" ]] && ok "Apple Silicon" "$(sysctl -n machdep.cpu.brand_string 2>/dev/null)" || bad "Apple Silicon" "MLX voice and music need an M-series Mac"
 command -v ffmpeg >/dev/null && ok "ffmpeg" "$(ffmpeg -version | head -1 | awk '{print $3}')" || bad "ffmpeg" "brew install ffmpeg"
 command -v vhs >/dev/null && ok "VHS" "$(vhs --version 2>/dev/null | awk '{print $3}')" || bad "VHS" "brew install vhs"
@@ -22,5 +22,5 @@ ls ~/.cache/huggingface/hub/models--mlx-community--VoxCPM2-bf16/snapshots/*/conf
 [[ -f "$ACE/cli.py" ]] && ok "ACE-Step 1.5" "turbo DiT + 1.7B LM (MLX)" || bad "ACE-Step 1.5" "./setup.sh"
 npx --yes hyperframes@0.9.19 --version >/dev/null 2>&1 && ok "HyperFrames" "0.9.19 + GSAP 3.15" || bad "HyperFrames" "needs network for npx"
 [[ -d "$HOME/.claude/skills/hyperframes" ]] && ok "HyperFrames skills" "~/.claude/skills" || row "--" "HyperFrames skills" "optional: npx hyperframes skills update"
-[[ -e "$HOME/.claude/skills/demoforge" ]] && ok "demoforge skill" "~/.claude/skills/demoforge" || row "--" "demoforge skill" "optional: ./setup.sh --skill"
+[[ -e "$HOME/.claude/skills/repotage" ]] && ok "repotage skill" "~/.claude/skills/repotage" || row "--" "repotage skill" "optional: ./setup.sh --skill"
 exit $fail

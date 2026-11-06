@@ -1,6 +1,6 @@
-// Capture flow: drive the real app and record it. Run: demoforge capture run <project> capture/flow.mjs
+// Capture flow: drive the real app and record it. Run: repotage capture run <project> capture/flow.mjs
 // Stage anything slow, costly or external (AI calls, ticketing, email) with s.mock; block the rest with s.block.
-const { open } = await import(process.env.DEMOFORGE_HOME + "/capture/recorder.mjs");
+const { open } = await import(process.env.REPOTAGE_HOME + "/capture/recorder.mjs");
 const s = await open({ base: "http://127.0.0.1:3000", out: "capture/clips" });
 // await s.block(/\/api\/(jira|ai)\//);                                  // register first
 // await s.mock("**/api/ai/analyze", { json: { report: "..." } }, 2500); // later routes win

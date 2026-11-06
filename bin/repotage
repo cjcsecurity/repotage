@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# demoforge: turn a repo into a narrated, scored, captioned demo film.
+# repotage: turn a repo into a narrated, scored, captioned demo film.
 set -euo pipefail
 HOME_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || echo "${BASH_SOURCE[0]}")")/.." && pwd)"
-export DEMOFORGE_HOME="$HOME_DIR"
-HF="npx --yes hyperframes@${DEMOFORGE_HYPERFRAMES:-0.9.19}"
-VOICE_PY="${DEMOFORGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
-ALIGN_PY="${DEMOFORGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
-export DEMOFORGE_ACESTEP="${DEMOFORGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
+export REPOTAGE_HOME="$HOME_DIR"
+HF="npx --yes hyperframes@${REPOTAGE_HYPERFRAMES:-0.9.19}"
+VOICE_PY="${REPOTAGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
+ALIGN_PY="${REPOTAGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
+export REPOTAGE_ACESTEP="${REPOTAGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
 
 usage() {
   cat <<'EOF'
-demoforge <command>
+repotage <command>
 
   doctor                         check every tool and model the pipeline needs
   new <dir> [--target <path>]    scaffold a film project (demo.json, script.json, HyperFrames video/)
@@ -40,7 +40,7 @@ cmd="${1:-}"; shift || true
 case "$cmd" in
   doctor) exec "$HOME_DIR/bin/doctor.sh" ;;
   new)
-    dir="${1:?usage: demoforge new <dir> [--target <path>]}"; shift
+    dir="${1:?usage: repotage new <dir> [--target <path>]}"; shift
     target=""
     [[ "${1:-}" == "--target" ]] && target="$(cd "$2" && pwd)"
     mkdir -p "$dir"/{audio/vo,audio/align,audio/music,capture/clips,terminal}
@@ -54,10 +54,10 @@ case "$cmd" in
     mkdir -p "$dir/video/build" "$dir/video/assets/"{footage,audio,sfx,fonts,img}
     [[ -f "$dir/video/build/build.mjs" ]] || cp "$HOME_DIR/templates/build.mjs" "$dir/video/build/build.mjs"
     [[ -f "$dir/capture/flow.mjs" ]] || cp "$HOME_DIR/templates/flow.mjs" "$dir/capture/flow.mjs"
-    SFX_SRC="${DEMOFORGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
+    SFX_SRC="${REPOTAGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
     if [[ -d "$SFX_SRC" ]]; then cp -n "$SFX_SRC"/*.mp3 "$SFX_SRC"/CREDITS.md "$dir/video/assets/sfx/" 2>/dev/null || true; fi
     echo "project: $dir"
-    echo "next: write script.json (and STORYLINES.md / SPEC.md), then: demoforge voice audition $dir 4"
+    echo "next: write script.json (and STORYLINES.md / SPEC.md), then: repotage voice audition $dir 4"
     ;;
   voice)
     sub="${1:?voice <audition|use|lines|takes|score|finalize> <dir>}"; dir="${2:?project dir}"; need_dir "$dir"; shift 2
@@ -86,7 +86,7 @@ case "$cmd" in
     esac ;;
   sfx)
     dir="${1:?project dir}"; need_dir "$dir"
-    SFX_SRC="${DEMOFORGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
+    SFX_SRC="${REPOTAGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
     [[ -d "$SFX_SRC" ]] || { echo "no sound library at $SFX_SRC (run: npx hyperframes skills update)" >&2; exit 1; }
     mkdir -p "$dir/video/assets/sfx" && cp "$SFX_SRC"/*.mp3 "$SFX_SRC"/CREDITS.md "$dir/video/assets/sfx/" && echo "sound effects: $dir/video/assets/sfx" ;;
   report) dir="${1:?project dir}"; need_dir "$dir"; node "$HOME_DIR/report/report.mjs" "$dir" ;;

@@ -6,11 +6,11 @@ Enter
 Sleep 500ms
 Show
 Sleep 400ms
-Type "demoforge build examples/self-demo"
+Type "repotage build examples/self-demo"
 Sleep 300ms
 Enter
 Sleep 2s
-Type "demoforge check examples/self-demo"
+Type "repotage check examples/self-demo"
 Sleep 300ms
 Enter
 Sleep 24s

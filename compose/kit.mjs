@@ -1,7 +1,7 @@
-// demoforge compose kit: build a HyperFrames project (index.html + compositions/*.html)
+// repotage compose kit: build a HyperFrames project (index.html + compositions/*.html)
 // from capture metadata and narration word timings. A film's build.mjs looks like:
 //
-//   const { kit } = await import(process.env.DEMOFORGE_HOME + "/compose/kit.mjs");
+//   const { kit } = await import(process.env.REPOTAGE_HOME + "/compose/kit.mjs");
 //   const K = kit({ project: PROJECT_DIR, theme: { accent: "#ff6a1a" } });
 //   K.plan({ scenes: { hook: [0, 6], app: [6, 8] }, voAt: { s01: 0.4, s02: 6.3 }, total: 14 });
 //   K.scene("hook", css, html, js);                     // any hand-built scene

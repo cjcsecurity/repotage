@@ -1,8 +1,8 @@
 {
-  "name": "demoforge-self-demo",
+  "name": "repotage-self-demo",
   "target": "../..",
-  "audience": "engineers and security folks deciding whether to try demoforge on their own repo; shared in Slack and the README",
-  "one_thing": "Point demoforge at a repo and you get a real, narrated demo film, made locally.",
+  "audience": "engineers and security folks deciding whether to try repotage on their own repo; shared in Slack and the README",
+  "one_thing": "Point repotage at a repo and you get a real, narrated demo film, made locally.",
   "theme": {
     "accent": "#ff6a1a",
     "bg": "#121110",
@@ -16,10 +16,10 @@
     "takes": 2,
     "use": 1,
     "align": [
-      9.032,
+      8.51,
       11.2
     ],
-    "quiet_until": 8.88,
+    "quiet_until": 8.36,
     "gap_db": -9,
     "duck_db": 8,
     "quiet_db": -21
