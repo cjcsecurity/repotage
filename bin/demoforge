@@ -24,6 +24,7 @@ demoforge <command>
   music bed <dir>                place, duck under the narration and fade the music (needs a build)
   capture run <dir> <flow.mjs>   run a Playwright capture flow (see capture/recorder.mjs)
   capture encode <clipdir...>    resample recorded clips to 30 fps MP4
+  sfx <dir>                      copy the sound-effect library (from the HyperFrames skill install) into the film
   report <dir>                   write <dir>/report.html: script, takes, scores, timings, music
   build <dir>                    run <dir>/video/build/build.mjs (the film, written with compose/kit.mjs)
   check <dir>                    hyperframes check on the film
@@ -83,6 +84,11 @@ case "$cmd" in
       encode) python3 "$HOME_DIR/capture/encode.py" "$@" ;;
       *) usage; exit 1 ;;
     esac ;;
+  sfx)
+    dir="${1:?project dir}"; need_dir "$dir"
+    SFX_SRC="${DEMOFORGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
+    [[ -d "$SFX_SRC" ]] || { echo "no sound library at $SFX_SRC (run: npx hyperframes skills update)" >&2; exit 1; }
+    mkdir -p "$dir/video/assets/sfx" && cp "$SFX_SRC"/*.mp3 "$SFX_SRC"/CREDITS.md "$dir/video/assets/sfx/" && echo "sound effects: $dir/video/assets/sfx" ;;
   report) dir="${1:?project dir}"; need_dir "$dir"; node "$HOME_DIR/report/report.mjs" "$dir" ;;
   build) dir="${1:?project dir}"; need_dir "$dir"; node "$dir/video/build/build.mjs" ;;
   check) dir="${1:?project dir}"; need_dir "$dir"; (cd "$dir/video" && $HF check) ;;

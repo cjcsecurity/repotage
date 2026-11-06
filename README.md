@@ -6,6 +6,8 @@ Point it at a repo, get a film. demoforge makes a narrated, scored and captioned
 
 **The film above was made by demoforge, from this repo** ([`examples/self-demo`](examples/self-demo)). Its voice, music, captions and cuts all came out of the pipeline below, and it shows its own artifacts: the voice prompt, the takes and their scores, the review page, the build and the check.
 
+To re-render the example yourself: `demoforge sfx examples/self-demo && demoforge build examples/self-demo && demoforge render examples/self-demo`. The narration, music and footage are committed, so no models run.
+
 ## How it works
 
 | Stage | Tool | What it does |
