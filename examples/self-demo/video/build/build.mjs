@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-const { kit, r2, peaks, waveSvg } = await import(process.env.REPOTAGE_HOME + "/compose/kit.mjs");
+const { kit, r2, esc, peaks, waveSvg } = await import(process.env.REPOTAGE_HOME + "/compose/kit.mjs");
 
 const PROJECT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const REPO = path.resolve(PROJECT, "../..");
@@ -49,14 +49,14 @@ const WORDMARK = (id, size) => `<div id="${id}" class="wm" style="font:900 ${siz
   const voPk = peaks(path.join(PROJECT, "video/assets/audio/vo-s01.wav"), 240);
   const muPk = peaks(path.join(PROJECT, "video/assets/audio/music-bed.wav"), 300, 0, WIN);
   const voX = X0 + voAt.s01 * px, voW = K.vo.s01.duration * px;
-  const caps = groups.filter((g) => g[0].start < WIN).map((g, i) => `<div class="cap" style="left:${r2(X0 + g[0].start * px)}px;width:${r2((g[g.length - 1].end - g[0].start) * px)}px">${g.map((w) => w.text).join(" ")}</div>`).join("");
+  const caps = groups.filter((g) => g[0].start < WIN).map((g, i) => `<div class="cap" style="left:${r2(X0 + g[0].start * px)}px;width:${r2(Math.min((g[g.length - 1].end - g[0].start) * px, X0 + LW - (X0 + g[0].start * px) - 8))}px">${esc(g.map((w) => w.text).join(" "))}</div>`).join("");
   const cuts = Object.entries(scenes).filter(([, [s]]) => s < WIN).map(([sid, [s, d]]) => `<div class="cut" style="left:${r2(X0 + s * px)}px;width:${r2(Math.min(d, WIN - s) * px - 6)}px">${sid}</div>`).join("");
   const css = `#root{background:var(--bg)}${DOTS}
 .lbl{position:absolute;left:140px;top:116px;font:500 24px var(--mono);color:var(--muted);display:flex;align-items:center;gap:12px}.lbl i{width:10px;height:10px;border-radius:50%;background:var(--accent)}
 .prompt{position:absolute;left:140px;top:162px;width:1640px;font:400 44px/1.36 var(--sans);letter-spacing:-.012em;color:var(--text)}
 .prompt b{color:var(--accent);font-weight:400}
 #hk-lanes{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:50% 662px}
-.lane{position:absolute;left:140px;width:1640px;height:96px;border-radius:12px;background:#1a1917;border:1px solid #2d2a26;opacity:0}
+.lane{position:absolute;left:140px;width:1640px;height:96px;border-radius:12px;background:#1a1917;border:1px solid #2d2a26;opacity:0;overflow:hidden}
 .lane span{position:absolute;left:22px;top:30px;font:500 28px var(--mono);color:var(--muted)}
 .wvl{position:absolute;top:0;height:96px;color:#5a3a26}.wvl svg{width:100%;height:100%;display:block}
 .wvh{color:var(--accent)}

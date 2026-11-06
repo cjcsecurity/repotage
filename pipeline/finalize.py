@@ -49,6 +49,11 @@ def judged(v, ref_text):
 
 proj = sys.argv[1]
 S = json.load(open(os.path.join(proj, "script.json")))
+
+import re as _re
+for _ln in S["lines"]:
+    if not _re.fullmatch(r"[A-Za-z0-9_-]{1,32}", str(_ln.get("id", ""))):
+        sys.exit(f"script.json: line id {_ln.get('id')!r} must be letters, digits, _ or - (it becomes a file name)")
 scores = json.load(open(os.path.join(proj, "audio", "align", "scores.json")))
 out_dir = os.path.join(proj, "video", "assets", "audio")
 os.makedirs(out_dir, exist_ok=True)

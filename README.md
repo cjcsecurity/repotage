@@ -1,10 +1,12 @@
-# repotage
+# Repotage
 
-Point it at a repo, get a film. repotage makes a narrated, scored and captioned demo video of the real product: it films the actual app, designs a narrator from a sentence of text, checks every take, writes the music, cuts it together in HTML and masters it for Slack. All the media renders locally on an Apple Silicon Mac with open models.
+Point it at a repo, get a film. Repotage makes a narrated, scored and captioned demo video of the real product: it films the actual app, designs a narrator from a sentence of text, checks every take, writes the music, cuts it together in HTML and masters it for Slack. All the media renders locally on an Apple Silicon Mac with open models.
 
-[![repotage, made by repotage](docs/poster.jpg)](examples/self-demo/video/renders/repotage-self-demo.mp4)
+<!-- A playable embed needs a GitHub-hosted upload: edit this file on github.com, drag docs/repotage-demo.mp4 onto the next line, and keep the https://github.com/user-attachments/assets/... line GitHub inserts. -->
 
-**The film above was made by repotage, from this repo** ([`examples/self-demo`](examples/self-demo)). Its voice, music, captions and cuts all came out of the pipeline below, and it shows its own artifacts: the voice prompt, the takes and their scores, the review page, the build and the check.
+[![Repotage's own demo film: 13-second preview. Click for the full 57-second film with sound.](docs/preview.gif)](docs/repotage-demo.mp4)
+
+**▶ [Watch the full film with sound (57 s)](docs/repotage-demo.mp4).** It was made by Repotage, from this repo ([`examples/self-demo`](examples/self-demo)). Its voice, music, captions and cuts all came out of the pipeline below, and it shows its own artifacts: the voice prompt, the takes and their scores, the review page, the build and the check.
 
 To re-render the example yourself: `repotage sfx examples/self-demo && repotage build examples/self-demo && repotage render examples/self-demo`. The narration, music and footage are committed, so no models run.
 
@@ -33,11 +35,11 @@ To re-render the example yourself: `repotage sfx examples/self-demo && repotage 
 ```bash
 git clone https://github.com/cjcsecurity/repotage.git
 cd repotage
-./setup.sh              # ffmpeg, VHS, uv envs, VoxCPM2, WhisperX, ACE-Step, Playwright, Claude Code skill
+./setup.sh              # ffmpeg, VHS, pinned Python envs, VoxCPM2, WhisperX, ACE-Step, Playwright, HyperFrames, Claude Code skill
 bin/repotage doctor    # every row should say ok
 ```
 
-`setup.sh` links the skill into `~/.claude/skills/repotage`. Add `bin/` to your `PATH` if you like.
+`setup.sh` installs exact, tested versions (see the pins at the top of the script and `package-lock.json`) and links the skill into `~/.claude/skills/repotage`. Add `bin/` to your `PATH` if you like.
 
 ## Make a film
 
@@ -68,8 +70,10 @@ repotage render films/my-app                   # -> films/my-app/video/renders/m
 
 A demo capture drives a real app, so treat it like a test run against production code:
 
+- By default the recorder refuses state-changing requests (anything but GET, HEAD or OPTIONS) to other sites. Pass `external: "block"` to refuse all cross-origin traffic, or `external: "allow"` to turn the guard off.
 - Run an isolated instance (throwaway database, demo user, only the credentials the shot needs).
 - `s.block(/\/api\/(tickets|email|ai)\//)` first, then `s.mock(...)` the calls you want to stage. Later routes win.
+- Typed text is recorded in `meta.json`: use `s.type(clip, value, { secret: true })` for anything sensitive.
 - Say what is staged in the film's delivery note, and blur or trim internal hostnames, index names or customer data before sharing outside your team.
 
 ## Layout
@@ -86,6 +90,10 @@ examples/     self-demo: the film above, from script to render
 docs/         toolchain.md: the open-source landscape this was picked from
 ```
 
+## Security and privacy
+
+Everything renders locally. The network is used only to install pinned dependencies, download model weights at pinned versions, fetch fonts and GSAP during a render, and for HyperFrames' optional telemetry (`npx hyperframes telemetry disable`). See [SECURITY.md](SECURITY.md) for details and how to report a vulnerability.
+
 ## Licences
 
-repotage is MIT. It calls, and does not include: HyperFrames (Apache-2.0), GSAP (standard no-charge licence), Playwright (Apache-2.0), VHS (MIT), mlx-audio (MIT), VoxCPM2 (Apache-2.0), WhisperX (BSD-2-Clause), ACE-Step 1.5 (MIT), ffmpeg (LGPL/GPL). Sound effects come from the HyperFrames skill library (Pixabay licence) and are copied into each project, not redistributed here. Remotion is deliberately not used: it needs a paid company licence above three employees.
+Repotage is MIT. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the projects it installs and calls. It calls, and does not include: HyperFrames (Apache-2.0), GSAP (standard no-charge licence), Playwright (Apache-2.0), VHS (MIT), mlx-audio (MIT), VoxCPM2 (Apache-2.0), WhisperX (BSD-2-Clause), ACE-Step 1.5 (MIT), ffmpeg (LGPL/GPL). Sound effects come from the HyperFrames skill library (Pixabay licence) and are copied into each project, not redistributed here. Remotion is deliberately not used: it needs a paid company licence above three employees.

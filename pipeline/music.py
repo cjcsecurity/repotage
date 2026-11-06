@@ -20,22 +20,20 @@ if mode == "gen":
     ace = os.environ.get("REPOTAGE_ACESTEP") or os.path.join(os.path.dirname(__file__), "..", ".vendor", "ACE-Step-1.5")
     out = os.path.join(MUS, "out")
     shutil.rmtree(out, ignore_errors=True)
-    toml = f'''task_type = "text2music"
-config_path = "acestep-v15-turbo"
-lm_model_path = "acestep-5Hz-lm-1.7B"
-save_dir = "{out}"
-audio_format = "wav"
-caption = {json.dumps(M.get("caption", "Minimal cinematic electronic underscore, pulsing synth bass, no vocals."))}
-lyrics = "[Instrumental]"
-instrumental = true
-duration = {M.get("duration", 100)}
-bpm = {M.get("bpm", 100)}
-keyscale = "{M.get("key", "D minor")}"
-timesignature = "4"
-batch_size = {M.get("takes", 2)}
-thinking = true
-inference_steps = 8
-'''
+    import re
+    key = str(M.get("key", "D minor"))
+    if not re.fullmatch(r"[A-G][#b]? (major|minor)", key):
+        sys.exit(f"music.key must look like 'D minor' or 'F# major', got {key!r}")
+    duration = float(M.get("duration", 100)); bpm = int(M.get("bpm", 100)); takes = int(M.get("takes", 2))
+    if not (10 <= duration <= 600 and 40 <= bpm <= 240 and 1 <= takes <= 4):
+        sys.exit("music.duration must be 10-600 s, bpm 40-240, takes 1-4")
+    caption = str(M.get("caption", "Minimal cinematic electronic underscore, pulsing synth bass, no vocals."))[:512]
+    q = json.dumps  # a JSON string is a valid TOML basic string, so quotes and newlines cannot break out
+    toml = "\n".join([
+        'task_type = "text2music"', 'config_path = "acestep-v15-turbo"', 'lm_model_path = "acestep-5Hz-lm-1.7B"',
+        f"save_dir = {q(out)}", 'audio_format = "wav"', f"caption = {q(caption)}", 'lyrics = "[Instrumental]"',
+        "instrumental = true", f"duration = {duration:g}", f"bpm = {bpm}", f"keyscale = {q(key)}", 'timesignature = "4"',
+        f"batch_size = {takes}", "thinking = true", "inference_steps = 8", ""])
     open(os.path.join(MUS, "bed.toml"), "w").write(toml)
     env = dict(os.environ, ACESTEP_LM_BACKEND="mlx", TOKENIZERS_PARALLELISM="false")
     subprocess.run(["uv", "run", "python", "cli.py", "--config", os.path.join(MUS, "bed.toml")], cwd=ace, env=env, input=b"y\n", check=True)

@@ -8,8 +8,9 @@ const { open } = await import(process.env.REPOTAGE_HOME + "/capture/recorder.mjs
 const root = process.cwd();
 const types = { ".html": "text/html", ".wav": "audio/wav", ".json": "application/json" };
 const srv = http.createServer((q, r) => {
-  const f = path.join(root, decodeURIComponent(q.url.split("?")[0]));
-  if (!f.startsWith(root) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { r.writeHead(404); return r.end(); }
+  let f;
+  try { f = path.resolve(root, "." + decodeURIComponent(q.url.split("?")[0])); } catch { r.writeHead(400); return r.end(); }
+  if ((f !== root && !f.startsWith(root + path.sep)) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { r.writeHead(404); return r.end(); }
   r.writeHead(200, { "Content-Type": types[path.extname(f)] || "application/octet-stream" });
   fs.createReadStream(f).pipe(r);
 }).listen(8931, "127.0.0.1");

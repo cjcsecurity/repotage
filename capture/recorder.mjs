@@ -13,6 +13,12 @@
 //   await s.close();
 //
 // Then: repotage capture encode capture/clips/flow  ->  capture/clips/flow.mp4 (30 fps CFR)
+//
+// Safe by default: requests that could change something on another site (anything but GET/HEAD/OPTIONS
+// to an origin other than `base`) are refused unless you pass `external: "allow"`, or `external: "block"`
+// to refuse every cross-origin request. Same-origin traffic goes to your app as usual: stage its slow,
+// paid or outward-facing endpoints with s.mock() / s.block(). Typed text is logged to meta.json, so pass
+// { secret: true } to s.type() for anything sensitive.
 import { chromium } from "playwright";
 import fs from "node:fs";
 import path from "node:path";
@@ -21,14 +27,31 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const now = () => Date.now() / 1000;
 const easeIO = (p) => (p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
 
-export async function open({ base, out, width = 1280, height = 800, dsf = 2, colorScheme = "dark", storageState, headless = true } = {}) {
+export async function open({ base, out, width = 1280, height = 800, dsf = 2, colorScheme = "dark", storageState, headless = true, external = "block-writes", clipboard = false } = {}) {
   // A native 2x window. Emulated deviceScaleFactor does NOT raise screencast resolution.
   const browser = await chromium.launch({
     headless,
     args: ["--force-color-profile=srgb", "--hide-scrollbars", `--force-device-scale-factor=${dsf}`, `--window-size=${width},${height}`],
   });
   const context = await browser.newContext({ viewport: null, colorScheme, storageState });
-  if (base) await context.grantPermissions(["clipboard-read", "clipboard-write"], { origin: base }).catch(() => {});
+  if (base && clipboard) await context.grantPermissions(["clipboard-read", "clipboard-write"], { origin: base }).catch(() => {});
+  // Registered first, so routes added later with s.mock()/s.block() take precedence over it.
+  const baseOrigin = base ? new URL(base).origin : null;
+  const refused = [];
+  if (external !== "allow") {
+    await context.route("**/*", async (route) => {
+      const req = route.request();
+      let origin = null;
+      try { origin = new URL(req.url()).origin; } catch { /* data:, blob: */ }
+      const cross = origin && origin !== "null" && origin !== baseOrigin;
+      const write = !["GET", "HEAD", "OPTIONS"].includes(req.method());
+      if (cross && (external === "block" || write)) {
+        refused.push(`${req.method()} ${req.url()}`);
+        return route.abort("blockedbyclient");
+      }
+      return route.fallback();
+    });
+  }
   const page = await context.newPage();
   fs.mkdirSync(out, { recursive: true });
   let cur = { x: width * 0.82, y: height * 0.92 };
@@ -119,10 +142,13 @@ export async function open({ base, out, width = 1280, height = 800, dsf = 2, col
       await s.moveTo(clip, b.x + b.width / 2, b.y + b.height / 2, ms);
     },
 
-    async type(clip, text, delay = 75) {
-      clip.mark("typeStart", { text });
+    /** Type into the focused field. { secret: true } keeps the text out of meta.json. */
+    async type(clip, text, delayOrOpts = 75) {
+      const { delay = 75, secret = false } = typeof delayOrOpts === "number" ? { delay: delayOrOpts } : delayOrOpts;
+      const logged = secret ? "•".repeat(Math.min(8, text.length)) : text;
+      clip.mark("typeStart", { text: logged, secret });
       await page.keyboard.type(text, { delay });
-      clip.mark("typeEnd", { text });
+      clip.mark("typeEnd", { text: logged, secret });
     },
 
     /** Drag a file in from off-screen right and drop it on `target` (fires real drag events). */
@@ -163,7 +189,11 @@ export async function open({ base, out, width = 1280, height = 800, dsf = 2, col
     },
 
     sleep,
-    async close() { await browser.close(); },
+    refused,
+    async close() {
+      if (refused.length) console.log(`refused ${refused.length} cross-origin request(s) (external: "${external}"):\n  ` + [...new Set(refused)].slice(0, 20).join("\n  "));
+      await browser.close();
+    },
   };
   return s;
 }

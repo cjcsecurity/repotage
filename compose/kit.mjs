@@ -17,6 +17,9 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 export const r2 = (v) => Math.round(v * 1000) / 1000;
+/** Escape text for HTML (captions, titles, anything that came from a script or a captured page). */
+export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+const ID = /^[A-Za-z][A-Za-z0-9_-]{0,40}$/;
 const easeIO = (p) => (p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
 
 
@@ -85,7 +88,10 @@ export function kit({ project, width = 1920, height = 1080, theme = {}, window: 
   const box = (src, name, key) => find(src, (e) => e.type === "measure" && e.name === name, `measure "${name}"`).rects[key];
 
   // ---------- plan + narration ----------
-  function plan({ scenes, voAt, total }) { Object.assign(P, { scenes, voAt, total }); }
+  function plan({ scenes, voAt, total }) {
+    for (const id of [...Object.keys(scenes), ...Object.keys(voAt)]) if (!ID.test(id)) throw new Error(`id ${JSON.stringify(id)} must match ${ID}`);
+    Object.assign(P, { scenes, voAt, total });
+  }
   /** Scene-local time (s) of the i-th spoken word of a narration line. */
   function word(line, i, scene) {
     if (!vo[line]) throw new Error(`no narration ${line}`);
@@ -176,7 +182,7 @@ window.__timelines["${id}"] = tl;
 </template>
 `;
   }
-  function scene(id, css, html, js) { files[id] = sceneDoc(id, css, html, js); return id; }
+  function scene(id, css, html, js) { if (!ID.test(id)) throw new Error(`scene id ${JSON.stringify(id)} must match ${ID}`); files[id] = sceneDoc(id, css, html, js); return id; }
 
   const WINDOW_CSS = (id, ground) => `
 #root{background:${ground}}
@@ -205,7 +211,7 @@ window.__timelines["${id}"] = tl;
     const start = P.scenes[id][0];
     shots = shots.map((s) => ({ ...s, src: s.src || src }));
     const vids = shots.map((s, i) => `<video id="${id}-v${i}" class="clip" src="assets/footage/${s.src}.mp4" data-start="${r2(s.start)}" data-duration="${r2(s.dur)}" data-media-start="${r2(s.m0)}" data-playback-rate="${r2((s.m1 - s.m0) / s.dur)}" data-track-index="${i + 1}" muted playsinline></video>`).join("\n");
-    const html = `${before}<div id="${id}-cam"><div class="win"><div class="bar" data-layout-ignore><span class="dots"><i></i><i></i><i></i></span>${title}</div>
+    const html = `${before}<div id="${id}-cam"><div class="win"><div class="bar" data-layout-ignore><span class="dots"><i></i><i></i><i></i></span>${esc(title)}</div>
 <div class="screen">${vids}${overlays}<div class="cursor" id="${id}-cursor">${CURSOR_SVG}<div class="cursor-extra" id="${id}-cursor-extra"></div></div></div></div></div>${after}`;
     files[id] = sceneDoc(id, WINDOW_CSS(id, ground) + css, html, `${camJs(id, cams)}\n${cursorJs(id, shots, start)}\n${js}`);
     return id;
@@ -245,7 +251,7 @@ window.__timelines["${id}"] = tl;
     const css = `#root{pointer-events:none}
 .cg{position:absolute;left:0;right:0;bottom:${bottom}px;text-align:center;opacity:0;visibility:hidden}
 .cg .pill{display:inline-block;background:rgba(10,10,11,.84);border-radius:12px;padding:10px 24px 12px;font:${weight} ${size}px/1.25 ${font};color:rgba(240,240,240,.5);box-shadow:0 6px 20px rgba(0,0,0,.25)}`;
-    const html = groups.map((g, gi) => `<div class="cg" id="cap-${gi}" data-layout-allow-caption-zone><span class="pill">${g.map((w, wi) => `<span id="cap-${gi}-${wi}">${w.text}</span>`).join(" ")}</span></div>`).join("\n");
+    const html = groups.map((g, gi) => `<div class="cg" id="cap-${gi}" data-layout-allow-caption-zone><span class="pill">${g.map((w, wi) => `<span id="cap-${gi}-${wi}">${esc(w.text)}</span>`).join(" ")}</span></div>`).join("\n");
     const js = groups.map((g, gi) => {
       const s = r2(g[0].start - 0.08), e = r2(g[g.length - 1].end + 0.25);
       const next = groups[gi + 1];
@@ -290,8 +296,8 @@ window.__timelines["${id}"] = tl;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=${width}, height=${height}" />
-    <title>${title}</title>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <title>${esc(title)}</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" integrity="sha384-XmJ9SoHtVOHoQUcKvFAzVXwdkKo1Ie3bhmSoIAkcdsHGaIrVJIkmozyq0FJeb/Ly" crossorigin="anonymous"></script>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { margin: 0; width: ${width}px; height: ${height}px; overflow: hidden; background: ${T.bg}; }
@@ -322,7 +328,7 @@ ${sfxTags}
   }
 
   return {
-    T, K, W, SCR_TOP, HOME, vo, P, width, height, files, sfx,
+    esc, T, K, W, SCR_TOP, HOME, vo, P, width, height, files, sfx,
     meta, clickT, sceneT, evT, box, plan, word, wordIdx, at, frame, posAt, cursorJs,
     sceneDoc, scene, productScene, footageScene, hlRect, hlIn, captions, addSfx, write,
   };

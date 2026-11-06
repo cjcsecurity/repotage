@@ -4,6 +4,14 @@
   "private": true,
   "description": "Point it at a repo, get a narrated, scored, captioned demo film. Local models on Apple Silicon.",
   "type": "module",
-  "bin": { "repotage": "bin/repotage" },
-  "dependencies": { "playwright": "1.56.1" }
+  "bin": {
+    "repotage": "bin/repotage"
+  },
+  "dependencies": {
+    "hyperframes": "0.9.19",
+    "playwright": "1.56.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }

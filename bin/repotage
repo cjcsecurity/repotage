@@ -3,7 +3,8 @@
 set -euo pipefail
 HOME_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || echo "${BASH_SOURCE[0]}")")/.." && pwd)"
 export REPOTAGE_HOME="$HOME_DIR"
-HF="npx --yes hyperframes@${REPOTAGE_HYPERFRAMES:-0.9.19}"
+# the locked copy from package-lock.json (integrity-checked by npm ci); npx only as a fallback
+if [[ -x "$HOME_DIR/node_modules/.bin/hyperframes" ]]; then HF="$HOME_DIR/node_modules/.bin/hyperframes"; else HF="npx --yes hyperframes@0.9.19"; fi
 VOICE_PY="${REPOTAGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
 ALIGN_PY="${REPOTAGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
 export REPOTAGE_ACESTEP="${REPOTAGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
@@ -42,11 +43,15 @@ case "$cmd" in
   new)
     dir="${1:?usage: repotage new <dir> [--target <path>]}"; shift
     target=""
-    [[ "${1:-}" == "--target" ]] && target="$(cd "$2" && pwd)"
+    if [[ "${1:-}" == "--target" ]]; then
+      [[ -d "${2:-}" ]] || { echo "--target needs an existing directory" >&2; exit 1; }
+      target="$(cd "$2" && pwd)"
+    fi
     mkdir -p "$dir"/{audio/vo,audio/align,audio/music,capture/clips,terminal}
     dir="$(cd "$dir" && pwd)"
     name="$(basename "$dir")"
-    [[ -f "$dir/demo.json" ]] || sed -e "s#__NAME__#$name#" -e "s#__TARGET__#$target#" "$HOME_DIR/templates/demo.json" > "$dir/demo.json"
+    [[ -f "$dir/demo.json" ]] || python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); d["name"]=sys.argv[2]; d["target"]=sys.argv[3]; json.dump(d, open(sys.argv[4], "w"), indent=2)' \
+      "$HOME_DIR/templates/demo.json" "$name" "$target" "$dir/demo.json"
     [[ -f "$dir/script.json" ]] || cp "$HOME_DIR/templates/script.json" "$dir/script.json"
     if [[ ! -d "$dir/video" ]]; then
       (cd "$dir" && $HF init video --example blank --resolution 1080p --non-interactive --skip-skills --skill hyperframes >/dev/null)
@@ -96,7 +101,7 @@ case "$cmd" in
   render)
     dir="${1:?project dir}"; need_dir "$dir"
     name="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["name"])' "$dir/demo.json")"
-    (cd "$dir/video" && $HF check && mkdir -p renders && $HF render -o "renders/$name-raw.mp4" -q delivery --video-frame-format png --skill hyperframes)
+    (cd "$dir/video" && $HF check && mkdir -p renders && $HF render -o "renders/$name-raw.mp4" -q delivery --video-frame-format png)
     "$HOME_DIR/pipeline/master.sh" "$dir/video/renders/$name-raw.mp4" "$dir/video/renders/$name.mp4"
     echo "film: $dir/video/renders/$name.mp4" ;;
   master) "$HOME_DIR/pipeline/master.sh" "${1:?in}" "${2:?out}" ;;

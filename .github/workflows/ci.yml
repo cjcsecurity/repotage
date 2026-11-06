@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Shell
+        run: |
+          bash -n bin/repotage bin/doctor.sh setup.sh pipeline/master.sh
+          shellcheck -S warning bin/repotage bin/doctor.sh setup.sh pipeline/master.sh
+      - name: Python
+        run: python -m py_compile pipeline/*.py capture/encode.py
+      - name: JavaScript
+        run: for f in capture/*.mjs compose/*.mjs report/*.mjs templates/*.mjs examples/self-demo/capture/*.mjs examples/self-demo/video/build/*.mjs; do node --check "$f"; done
+      - name: No absolute home paths in tracked files
+        run: |
+          if git grep -nIE '/(Users|home)/[a-z0-9._-]+/' -- . ':!.github/workflows/ci.yml'; then echo "absolute home path committed"; exit 1; fi
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7 # v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

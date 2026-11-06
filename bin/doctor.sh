@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Checks every tool and model repotage uses. Exit 1 if anything required is missing.
+# shellcheck disable=SC2088  # "~/.claude/..." below is display text, not a path to expand
 HOME_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 VOICE_PY="${REPOTAGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
 ALIGN_PY="${REPOTAGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
@@ -20,7 +21,7 @@ command -v uv >/dev/null && ok "uv" "$(uv --version | awk '{print $2}')" || bad 
 ls ~/.cache/huggingface/hub/models--mlx-community--VoxCPM2-bf16/snapshots/*/config.json >/dev/null 2>&1 && ok "VoxCPM2 bf16" "voice design + cloning, 48 kHz" || bad "VoxCPM2 bf16" "./setup.sh (5 GB)"
 "$ALIGN_PY" -c "import whisperx" 2>/dev/null && ok "WhisperX" "$("$ALIGN_PY" -c 'import importlib.metadata as m;print(m.version("whisperx"))') · large-v3" || bad "WhisperX" "./setup.sh"
 [[ -f "$ACE/cli.py" ]] && ok "ACE-Step 1.5" "turbo DiT + 1.7B LM (MLX)" || bad "ACE-Step 1.5" "./setup.sh"
-npx --yes hyperframes@0.9.19 --version >/dev/null 2>&1 && ok "HyperFrames" "0.9.19 + GSAP 3.15" || bad "HyperFrames" "needs network for npx"
+"$HOME_DIR/node_modules/.bin/hyperframes" --version >/dev/null 2>&1 && ok "HyperFrames" "$("$HOME_DIR/node_modules/.bin/hyperframes" --version 2>/dev/null | tail -1) + GSAP 3.15" || bad "HyperFrames" "./setup.sh"
 [[ -d "$HOME/.claude/skills/hyperframes" ]] && ok "HyperFrames skills" "~/.claude/skills" || row "--" "HyperFrames skills" "optional: npx hyperframes skills update"
 [[ -e "$HOME/.claude/skills/repotage" ]] && ok "repotage skill" "~/.claude/skills/repotage" || row "--" "repotage skill" "optional: ./setup.sh --skill"
 exit $fail

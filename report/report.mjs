@@ -52,12 +52,12 @@ const lineRows = S.lines.map((ln) => {
   const takes = takesOf(ln.id);
   const chosen = fin?.take;
   const dur = fin?.duration || 1;
-  const words = (fin?.words || []).map((w, i) => `<span class="w${i % 2 ? " up" : ""}" data-s="${w.start}" data-e="${w.end}" style="left:${((w.start / dur) * 100).toFixed(2)}%;width:${(((w.end - w.start) / dur) * 100).toFixed(2)}%"><i>${esc(w.text)}</i></span>`).join("");
+  const words = (fin?.words || []).map((w, i) => `<span class="w${i % 2 ? " up" : ""}" data-s="${Number(w.start) || 0}" data-e="${Number(w.end) || 0}" style="left:${((w.start / dur) * 100).toFixed(2)}%;width:${(((w.end - w.start) / dur) * 100).toFixed(2)}%"><i>${esc(w.text)}</i></span>`).join("");
   const takeRows = takes.map(([k, v]) => `<li class="take${k === chosen ? " on" : ""}"><button class="play sm" data-src="${esc(k)}" aria-label="Play ${esc(k)}"></button><span class="mono">${esc(path.basename(k, ".wav"))}</span><span class="wer ${(v.cer ?? v.wer) > 0.08 ? "bad" : (v.cer ?? v.wer) > 0.03 ? "mid" : "good"}">CER ${fmt(v.cer ?? v.wer)}</span><span class="mono dim">${fmt(v.wps)} w/s · ${fmt(v.dur)} s</span>${k === chosen ? '<span class="pick">picked</span>' : ""}</li>`).join("");
-  return `<section class="line" id="line-${ln.id}">
-  <div class="lh"><span class="lid mono">${ln.id}</span><p class="ltext">${esc(ln.text)}</p>
-    ${fin ? `<button class="play" data-src="video/${esc(fin.file)}" data-line="${ln.id}" data-dur="${fin.duration}" aria-label="Play ${ln.id}"></button>` : ""}</div>
-  ${fin ? `<div class="strip" data-line="${ln.id}">${wave(peaks("video/" + fin.file, 200), 56)}<div class="words">${words}</div><div class="ph"></div></div>` : '<div class="strip empty">not finalized yet</div>'}
+  return `<section class="line" id="line-${esc(ln.id)}">
+  <div class="lh"><span class="lid mono">${esc(ln.id)}</span><p class="ltext">${esc(ln.text)}</p>
+    ${fin ? `<button class="play" data-src="video/${esc(fin.file)}" data-line="${esc(ln.id)}" data-dur="${Number(fin.duration) || 0}" aria-label="Play ${esc(ln.id)}"></button>` : ""}</div>
+  ${fin ? `<div class="strip" data-line="${esc(ln.id)}">${wave(peaks("video/" + fin.file, 200), 56)}<div class="words">${words}</div><div class="ph"></div></div>` : '<div class="strip empty">not finalized yet</div>'}
   <ul class="takes">${takeRows}</ul>
 </section>`;
 }).join("\n");
@@ -76,8 +76,7 @@ if (plan) {
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(D.name || path.basename(proj))} · repotage report</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; media-src 'self' file: blob:; img-src 'self' data: file:">
 <style>
 :root{--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--acc:#ff6a1a;--good:#5fc98f;--mid:#e3b341;--bad:#f0686a}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,sans-serif}
@@ -133,7 +132,7 @@ h2{font:600 13px "JetBrains Mono";text-transform:uppercase;letter-spacing:.08em;
 ${lineRows}
 <h2>Music · ACE-Step</h2>
 <div class="mus">${musicTakes.map((f) => `<div class="mt"><div class="hd"><button class="play sm" data-src="audio/music/${f}" aria-label="Play ${f}"></button>${f.replace(".wav", "")}<span class="dim">asked ${esc(D.music?.bpm || "")} BPM · ${esc(D.music?.key || "")}</span></div><div class="wvb">${wave(peaks("audio/music/" + f, 260), 54, "wv acc")}</div></div>`).join("") || '<div class="card dim">No music yet: repotage music gen</div>'}</div>
-${timeline ? `<h2>Film timeline · ${plan.TOTAL} s</h2>${timeline}` : ""}
+${timeline ? `<h2>Film timeline · ${Number(plan.TOTAL) || 0} s</h2>${timeline}` : ""}
 </main>
 <script>
 let cur = null, raf = 0;

@@ -14,12 +14,19 @@ import numpy as np, soundfile as sf
 
 proj, mode = sys.argv[1], sys.argv[2]
 S = json.load(open(os.path.join(proj, "script.json")))
+
+import re as _re
+for _ln in S["lines"]:
+    if not _re.fullmatch(r"[A-Za-z0-9_-]{1,32}", str(_ln.get("id", ""))):
+        sys.exit(f"script.json: line id {_ln.get('id')!r} must be letters, digits, _ or - (it becomes a file name)")
 VO = os.path.join(proj, "audio", "vo")
 os.makedirs(VO, exist_ok=True)
 MODEL = S.get("model", "mlx-community/VoxCPM2-bf16")
+REVISION = S.get("model_revision", "a7fb80d9056983135a54ca3f71fcc5a637ccddf5" if MODEL == "mlx-community/VoxCPM2-bf16" else None)
 
+from huggingface_hub import snapshot_download
 from mlx_audio.tts.utils import load
-model = load(MODEL)
+model = load(snapshot_download(MODEL, revision=REVISION))  # a pinned revision, not whatever is newest
 
 def synth(text, **kw):
     t = time.time()
