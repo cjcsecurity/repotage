@@ -20,8 +20,8 @@ To re-render the example yourself: `repotage sfx examples/self-demo && repotage 
 | Story | Claude Code + the `repotage` skill | Reads the target, picks one task and one piece of data to follow, writes `STORYLINES.md`, `SPEC.md` and the narration script |
 | Capture | [Playwright](https://github.com/microsoft/playwright) via `capture/recorder.mjs` | Films the real web app at native 2x (2560×1600, ~60 fps); logs every cursor move, click, drag and DOM box; stages slow or outward-facing calls with route mocks |
 | Terminal | [VHS](https://github.com/charmbracelet/vhs) | Scripted, real terminal recordings |
-| Voice | [VoxCPM2](https://github.com/OpenBMB/VoxCPM) on [mlx-audio](https://github.com/Neywa-Labs/mlx-audio) | Designs a narrator from a text prompt, then reads every line as a continuation of that recording, so delivery stays consistent. A line can carry a spoken spelling (`"say": "Repo-tahzh"`) separate from its text |
-| Checking + timing | [WhisperX](https://github.com/m-bain/whisperX) + pitch analysis | Scores every take: words (character error), a cut-off ending, pitch against the reference voice, pace, and intonation (statements that end rising, pitch glitches, flat or erratic range, hesitations where the script has no punctuation). Picks the best take per line, trims to where speech really ends, and times every word |
+| Voice | [VoxCPM2](https://github.com/OpenBMB/VoxCPM) on [mlx-audio](https://github.com/Neywa-Labs/mlx-audio) | Designs a narrator from a text prompt, then reads every line as a continuation of the line before it, so the narration flows like one read. Lines get a light broadcast polish (rumble cut, de-essing, gentle compression). A line can carry a spoken spelling (`"say": "Repo-tahzh"`) separate from its text |
+| Checking + timing | [WhisperX](https://github.com/m-bain/whisperX) + pitch analysis | Scores every take: words (character error), a cut-off ending, pitch against the reference voice, pace, and intonation (statements that end rising, pitch glitches, flat or erratic range, hesitations where the script has no punctuation). Picks the best take per line, steering toward the voice's typical pitch so it stays one person, trims to where speech really ends, and times every word |
 | Music | [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5) | Generates the score; repotage places it so the lift lands on the reveal and ducks it under every line |
 | Edit | [HyperFrames](https://github.com/heygen-com/hyperframes) + [GSAP](https://github.com/greensock/GSAP) via `compose/kit.mjs` | Product-window scenes with camera moves framed on real DOM boxes, a replay of the real cursor, highlights, captions from word timings, sound on every click |
 | Review | `repotage report`, `hyperframes check` and snapshots | A listen-through page for takes and timing, a lint of the film, and stills of every scene and cut |
@@ -60,6 +60,7 @@ repotage voice use films/my-app 2              # keep audition 2 as the voice
 repotage voice lines films/my-app              # read every line in that voice
 repotage voice score films/my-app              # WhisperX checks every take
 repotage voice takes films/my-app 2 s03        # re-roll anything that came out wrong
+repotage voice chain films/my-app 3             # optional polish pass: 3 takes per line, each continuing the line before
 repotage voice finalize films/my-app           # best take per line + word timings
 repotage music gen films/my-app                # ACE-Step takes
 repotage capture run films/my-app capture/flow.mjs && repotage capture encode films/my-app/capture/clips/flow

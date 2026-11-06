@@ -19,6 +19,7 @@ repotage <command>
   voice use <dir> <k>            keep audition k as the reference voice
   voice lines <dir> [ids...]     read every line (or the named ones) in the reference voice
   voice takes <dir> <n> <ids..>  n more takes of the named lines
+  voice chain <dir> <n> [ids..]  n takes per line, each continuing from the line before (smoother flow)
   voice score <dir>              WhisperX: transcript, word error rate, pitch and pace for every take
   voice finalize <dir>           pick the best take per line, trim, normalize, write word timings
   music gen <dir>                ACE-Step: generate music takes from demo.json "music"
@@ -71,6 +72,7 @@ case "$cmd" in
       use) cp "$dir/audio/vo/audition_${1:?audition index}.wav" "$dir/audio/vo/ref_voice.wav" && echo "reference voice: audition_$1" ;;
       lines) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" lines "$@" ;;
       takes) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" takes "$@" ;;
+      chain) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" chain "$@" ;;
       score) "$ALIGN_PY" "$HOME_DIR/pipeline/score_project.py" "$dir" ;;
       finalize) "$ALIGN_PY" "$HOME_DIR/pipeline/finalize.py" "$dir" ;;
       *) usage; exit 1 ;;
