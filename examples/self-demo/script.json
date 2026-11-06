@@ -1,0 +1,17 @@
+{
+  "voice": "A warm, confident narrator in her thirties with a clear, slightly low voice and a neutral American accent. Relaxed and precise, like a filmmaker who also writes code. Close microphone, studio quality, no background noise.",
+  "style": "calm, measured pace, slightly slower, warm and assured",
+  "audition": "Point demoforge at a repo, and Playwright, Vox C P M and Ace Step turn it into a film.",
+  "lines": [
+    { "id": "s01", "text": "This voice was designed from one sentence of text. The music, the captions and every cut came out of one repo." },
+    { "id": "s02", "text": "It's called demoforge. Point it at a project, and it makes the demo." },
+    { "id": "s03", "text": "Claude reads the code, picks one story worth telling, and writes the script." },
+    { "id": "s04", "text": "Playwright films the real product at twice the resolution, and logs every click." },
+    { "id": "s05", "text": "Vox C P M designs the narrator. WhisperX checks each take and times every word." },
+    { "id": "s06", "text": "Ace Step writes the score, and ducks it under the voice." },
+    { "id": "s07", "text": "HyperFrames and Gee Sap cut it together in HTML, frame by frame." },
+    { "id": "s08", "text": "It all renders on one Mac, with open models." },
+    { "id": "s09", "text": "demoforge. Point it at a repo. Get a film." }
+  ],
+  "pick": {}
+}

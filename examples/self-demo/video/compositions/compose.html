@@ -1,0 +1,21 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+#root{background:#121110}#compose-cam{position:absolute;inset:0}#compose-cam video{position:absolute;left:0;top:0;width:1920px;height:1080px}
+</style>
+<div id="root" data-composition-id="compose" data-width="1920" data-height="1080">
+<div id="compose-cam"><video id="compose-v0" class="clip" src="assets/footage/build.mp4" data-start="0" data-duration="1.9" data-media-start="0.3" data-playback-rate="1.579" data-track-index="1" muted playsinline></video>
+<video id="compose-v1" class="clip" src="assets/footage/build.mp4" data-start="1.9" data-duration="3.92" data-media-start="14.6" data-playback-rate="3.75" data-track-index="2" muted playsinline></video></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+tl.set("#compose-cam",{transformOrigin:"0 0",x:0,y:0,scale:1.3},0);
+tl.to("#compose-cam",{x:0,y:-170,scale:1.16,duration:0.01,ease:"power2.inOut"},1.9);
+tl.to("#compose-cam",{x:0,y:-128,scale:1.12,duration:1.3,ease:"power1.inOut"},4.42);
+
+window.__timelines["compose"] = tl;
+})();
+</script>
+</template>

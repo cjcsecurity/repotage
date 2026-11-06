@@ -1,0 +1,20 @@
+node_modules/
+.venvs/
+.vendor/
+.DS_Store
+__pycache__/
+# regenerable or heavy project outputs (capture meta.json and finished assets ARE committed)
+**/capture/clips/*/*.jpg
+**/capture/clips/*/cfr/
+**/capture/clips/*.mp4
+**/audio/music/out/
+**/audio/music/take*.wav
+**/audio/music/bed.toml
+**/video/renders/*-raw.mp4
+**/video/build/snap*/
+**/video/build/review/
+**/video/.hyperframes/
+**/video/node_modules/
+# sound effects come from the HyperFrames skill install (Pixabay licence), copied by `demoforge new`
+**/video/assets/sfx/*.mp3
+**/video/assets/sfx/CREDITS.md

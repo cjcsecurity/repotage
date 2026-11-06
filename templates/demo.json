@@ -1,0 +1,12 @@
+{
+  "name": "__NAME__",
+  "target": "__TARGET__",
+  "audience": "who will watch this, and where (Slack, a launch page, an all-hands)",
+  "one_thing": "what the viewer must remember, in their words",
+  "theme": { "accent": "#f5a524", "bg": "#0e0f11" },
+  "music": {
+    "caption": "Minimal cinematic electronic underscore. Pulsing synth bass, soft ticking hats, muted plucks, warm pads. Opens sparse and tense, lifts into a confident groove, then resolves. No vocals.",
+    "bpm": 100, "key": "D minor", "duration": 100, "takes": 2,
+    "use": 0, "align": [12.0, 11.7], "quiet_until": 11.4, "gap_db": -9, "duck_db": 8, "quiet_db": -21
+  }
+}

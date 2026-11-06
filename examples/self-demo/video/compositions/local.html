@@ -1,0 +1,19 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+#root{background:#121110}#local-cam{position:absolute;inset:0}#local-cam video{position:absolute;left:0;top:0;width:1920px;height:1080px}.rail{position:absolute;left:40px;width:6px;border-radius:3px;background:var(--accent);opacity:0}
+</style>
+<div id="root" data-composition-id="local" data-width="1920" data-height="1080">
+<div id="local-cam"><video id="local-v0" class="clip" src="assets/footage/doctor.mp4" data-start="0" data-duration="4.621" data-media-start="0.5" data-playback-rate="0.974" data-track-index="1" muted playsinline></video><div class="rail" id="lc-r1" style="top:174px;height:52px"></div><div class="rail" id="lc-r2" style="top:538px;height:156px"></div></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+tl.set("#local-cam",{transformOrigin:"0 0",x:0,y:-60,scale:1.25},0);
+tl.to("#local-cam",{x:0,y:-380,scale:1.25,duration:0.6,ease:"power2.inOut"},2.516);
+tl.fromTo("#lc-r1",{opacity:0},{opacity:1,duration:0.2},1.971);tl.to("#lc-r1",{opacity:0,duration:0.2},2.816);tl.fromTo("#lc-r2",{opacity:0},{opacity:1,duration:0.2},3.016);
+window.__timelines["local"] = tl;
+})();
+</script>
+</template>

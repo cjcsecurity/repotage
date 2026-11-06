@@ -1,0 +1,99 @@
+#!/usr/bin/env bash
+# demoforge: turn a repo into a narrated, scored, captioned demo film.
+set -euo pipefail
+HOME_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || echo "${BASH_SOURCE[0]}")")/.." && pwd)"
+export DEMOFORGE_HOME="$HOME_DIR"
+HF="npx --yes hyperframes@${DEMOFORGE_HYPERFRAMES:-0.9.19}"
+VOICE_PY="${DEMOFORGE_VOICE_PY:-$HOME_DIR/.venvs/voice/bin/python}"
+ALIGN_PY="${DEMOFORGE_ALIGN_PY:-$HOME_DIR/.venvs/align/bin/python}"
+export DEMOFORGE_ACESTEP="${DEMOFORGE_ACESTEP:-$HOME_DIR/.vendor/ACE-Step-1.5}"
+
+usage() {
+  cat <<'EOF'
+demoforge <command>
+
+  doctor                         check every tool and model the pipeline needs
+  new <dir> [--target <path>]    scaffold a film project (demo.json, script.json, HyperFrames video/)
+  voice audition <dir> [n]       design the narrator: n takes of script.audition from script.voice
+  voice use <dir> <k>            keep audition k as the reference voice
+  voice lines <dir> [ids...]     read every line (or the named ones) in the reference voice
+  voice takes <dir> <n> <ids..>  n more takes of the named lines
+  voice score <dir>              WhisperX: transcript, word error rate, pitch and pace for every take
+  voice finalize <dir>           pick the best take per line, trim, normalize, write word timings
+  music gen <dir>                ACE-Step: generate music takes from demo.json "music"
+  music bed <dir>                place, duck under the narration and fade the music (needs a build)
+  capture run <dir> <flow.mjs>   run a Playwright capture flow (see capture/recorder.mjs)
+  capture encode <clipdir...>    resample recorded clips to 30 fps MP4
+  report <dir>                   write <dir>/report.html: script, takes, scores, timings, music
+  build <dir>                    run <dir>/video/build/build.mjs (the film, written with compose/kit.mjs)
+  check <dir>                    hyperframes check on the film
+  snapshot <dir> <t,t,...>       stills at those seconds into <dir>/video/build/snap
+  render <dir>                   check, render (delivery quality) and master to -14 LUFS
+  master <in.mp4> <out.mp4>      loudness-master an existing render
+EOF
+}
+
+need_dir() { [[ -d "${1:-}" ]] || { echo "no such project dir: ${1:-}" >&2; exit 1; }; }
+
+cmd="${1:-}"; shift || true
+case "$cmd" in
+  doctor) exec "$HOME_DIR/bin/doctor.sh" ;;
+  new)
+    dir="${1:?usage: demoforge new <dir> [--target <path>]}"; shift
+    target=""
+    [[ "${1:-}" == "--target" ]] && target="$(cd "$2" && pwd)"
+    mkdir -p "$dir"/{audio/vo,audio/align,audio/music,capture/clips,terminal}
+    dir="$(cd "$dir" && pwd)"
+    name="$(basename "$dir")"
+    [[ -f "$dir/demo.json" ]] || sed -e "s#__NAME__#$name#" -e "s#__TARGET__#$target#" "$HOME_DIR/templates/demo.json" > "$dir/demo.json"
+    [[ -f "$dir/script.json" ]] || cp "$HOME_DIR/templates/script.json" "$dir/script.json"
+    if [[ ! -d "$dir/video" ]]; then
+      (cd "$dir" && $HF init video --example blank --resolution 1080p --non-interactive --skip-skills --skill hyperframes >/dev/null)
+    fi
+    mkdir -p "$dir/video/build" "$dir/video/assets/"{footage,audio,sfx,fonts,img}
+    [[ -f "$dir/video/build/build.mjs" ]] || cp "$HOME_DIR/templates/build.mjs" "$dir/video/build/build.mjs"
+    [[ -f "$dir/capture/flow.mjs" ]] || cp "$HOME_DIR/templates/flow.mjs" "$dir/capture/flow.mjs"
+    SFX_SRC="${DEMOFORGE_SFX:-$HOME/.claude/skills/media-use/audio/assets/sfx}"
+    if [[ -d "$SFX_SRC" ]]; then cp -n "$SFX_SRC"/*.mp3 "$SFX_SRC"/CREDITS.md "$dir/video/assets/sfx/" 2>/dev/null || true; fi
+    echo "project: $dir"
+    echo "next: write script.json (and STORYLINES.md / SPEC.md), then: demoforge voice audition $dir 4"
+    ;;
+  voice)
+    sub="${1:?voice <audition|use|lines|takes|score|finalize> <dir>}"; dir="${2:?project dir}"; need_dir "$dir"; shift 2
+    case "$sub" in
+      audition) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" audition "${1:-4}" && "$ALIGN_PY" "$HOME_DIR/pipeline/score_project.py" "$dir" ;;
+      use) cp "$dir/audio/vo/audition_${1:?audition index}.wav" "$dir/audio/vo/ref_voice.wav" && echo "reference voice: audition_$1" ;;
+      lines) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" lines "$@" ;;
+      takes) "$VOICE_PY" "$HOME_DIR/pipeline/voice.py" "$dir" takes "$@" ;;
+      score) "$ALIGN_PY" "$HOME_DIR/pipeline/score_project.py" "$dir" ;;
+      finalize) "$ALIGN_PY" "$HOME_DIR/pipeline/finalize.py" "$dir" ;;
+      *) usage; exit 1 ;;
+    esac ;;
+  music)
+    sub="${1:?music <gen|bed> <dir>}"; dir="${2:?project dir}"; need_dir "$dir"
+    case "$sub" in
+      gen) python3 "$HOME_DIR/pipeline/music.py" gen "$dir" ;;
+      bed) "$ALIGN_PY" "$HOME_DIR/pipeline/music.py" bed "$dir" ;;
+      *) usage; exit 1 ;;
+    esac ;;
+  capture)
+    sub="${1:?capture <run|encode>}"; shift
+    case "$sub" in
+      run) dir="${1:?project dir}"; need_dir "$dir"; (cd "$dir" && node "${2:?flow.mjs}") ;;
+      encode) python3 "$HOME_DIR/capture/encode.py" "$@" ;;
+      *) usage; exit 1 ;;
+    esac ;;
+  report) dir="${1:?project dir}"; need_dir "$dir"; node "$HOME_DIR/report/report.mjs" "$dir" ;;
+  build) dir="${1:?project dir}"; need_dir "$dir"; node "$dir/video/build/build.mjs" ;;
+  check) dir="${1:?project dir}"; need_dir "$dir"; (cd "$dir/video" && $HF check) ;;
+  snapshot) dir="${1:?project dir}"; need_dir "$dir"; (cd "$dir/video" && $HF snapshot --at "${2:?times}" --no-end -o build/snap) ;;
+  render)
+    dir="${1:?project dir}"; need_dir "$dir"
+    name="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["name"])' "$dir/demo.json")"
+    (cd "$dir/video" && $HF check && mkdir -p renders && $HF render -o "renders/$name-raw.mp4" -q delivery --video-frame-format png --skill hyperframes)
+    "$HOME_DIR/pipeline/master.sh" "$dir/video/renders/$name-raw.mp4" "$dir/video/renders/$name.mp4"
+    echo "film: $dir/video/renders/$name.mp4" ;;
+  master) "$HOME_DIR/pipeline/master.sh" "${1:?in}" "${2:?out}" ;;
+  ""|-h|--help|help) usage ;;
+  *) echo "unknown command: $cmd" >&2; usage; exit 1 ;;
+esac

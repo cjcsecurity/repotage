@@ -1,0 +1,10 @@
+{
+  "voice": "A confident, warm narrator in their late thirties with a clear, low voice and a neutral accent. Calm and measured, like an engineer walking a colleague through something they built. Close microphone, studio quality, no background noise.",
+  "style": "calm, measured pace, slightly slower, confident and warm",
+  "audition": "One sentence in the film's own vocabulary, so the auditions test the hard words.",
+  "lines": [
+    { "id": "s01", "text": "The hook: the moment that creates the need. About nineteen words a scene." },
+    { "id": "s02", "text": "Spell acronyms the way they are spoken, like O T X or Mac O S." }
+  ],
+  "pick": {}
+}

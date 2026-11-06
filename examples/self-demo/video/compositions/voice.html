@@ -1,0 +1,38 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+
+#root{background:#ff6a1a}
+#voice-cam{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.win{position:absolute;left:240px;top:40px;width:1440px;height:932px;border-radius:14px;overflow:hidden;background:var(--bg);box-shadow:0 28px 70px rgba(0,0,0,.38),0 0 0 1px rgba(0,0,0,.35)}
+.bar{position:absolute;left:0;top:0;right:0;height:32px;background:var(--s1);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--faint)}
+.dots{position:absolute;left:14px;top:10.5px;display:flex;gap:8px}.dots i{width:11px;height:11px;border-radius:50%;background:var(--line2);display:block}
+.screen{position:absolute;left:0;top:32px;width:1440px;height:900px;overflow:hidden;background:var(--bg)}
+.screen video,.screen img.still{position:absolute;left:0;top:0;width:1440px;height:900px;object-fit:cover}
+.cursor{position:absolute;left:0;top:0;width:31px;height:44px;opacity:0;z-index:20}
+.cursor .arrow{display:block;transform-origin:4px 4px;filter:drop-shadow(0 3px 5px rgba(0,0,0,.45))}
+.hl{position:absolute;border:3px solid var(--accent);border-radius:8px;background:color-mix(in srgb,var(--accent) 10%,transparent);opacity:0;z-index:10}
+
+</style>
+<div id="root" data-composition-id="voice" data-width="1920" data-height="1080">
+<div id="voice-cam"><div class="win"><div class="bar" data-layout-ignore><span class="dots"><i></i><i></i><i></i></span>demoforge · review</div>
+<div class="screen"><video id="voice-v0" class="clip" src="assets/footage/report.mp4" data-start="0" data-duration="8.095" data-media-start="5.873" data-playback-rate="1.46" data-track-index="1" muted playsinline></video><div class="hl" id="vc-hl" style="left:159.375px;top:312.15px;width:1173px;height:39px"></div><div class="cursor" id="voice-cursor"><svg class="arrow" viewBox="0 0 28 40" width="31" height="44" aria-hidden="true"><path d="M2 2 L2 31 L9.2 24.6 L14 36.4 L19.4 34.1 L14.7 22.6 L24.4 22.6 Z" fill="#fff" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg><div class="cursor-extra" id="voice-cursor-extra"></div></div></div></div></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+tl.set("#voice-cam",{transformOrigin:"0 0",x:-420.014,y:-103.501,scale:1.438},0);
+tl.to("#voice-cam",{x:-420.014,y:-103.501,scale:1.438,duration:0.55,ease:"power2.inOut"},1.422);
+tl.to("#voice-cam",{x:-647.098,y:-305.438,scale:2.1,duration:0.55,ease:"power2.inOut"},5.91);
+tl.set("#voice-cursor",{x:753.75,y:354.753,opacity:1},0);
+tl.set("#voice-cursor",{x:753.75,y:354.753},1.053);
+tl.to("#voice-cursor",{x:1307.25,y:204.565,duration:0.551,ease:"power2.inOut"},1.053);
+tl.to("#voice-cursor .arrow",{scale:0.82,duration:0.07,ease:"power2.in"},1.755);tl.to("#voice-cursor .arrow",{scale:1,duration:0.16,ease:"power2.out"},1.825);
+tl.set("#voice-cursor",{x:1307.25,y:204.565},6.575);
+tl.to("#voice-cursor",{x:692.881,y:331.69,duration:0.56,ease:"power2.inOut"},6.575);
+tl.fromTo("#vc-hl",{opacity:0,clipPath:"inset(0 100% 0 0 round 8px)"},{opacity:1,clipPath:"inset(0 0% 0 0 round 8px)",duration:0.38,ease:"expo.out"},4.722);tl.to("#vc-hl",{opacity:0,duration:0.2},5.86);
+window.__timelines["voice"] = tl;
+})();
+</script>
+</template>

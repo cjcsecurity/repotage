@@ -1,0 +1,2051 @@
+{
+ "audio/vo/audition_0.wav": {
+  "text": "DemoForge at a repo, and Playwright, VoxCPM, and ASTEP turn it into a film.",
+  "wer": 0.368,
+  "cer": 0.108,
+  "f0_med": 197.20567550058965,
+  "f0_iqr": 41.08534132154611,
+  "dur": 5.28,
+  "wps": 3.6,
+  "lufs": -24.2,
+  "lead": 0.23,
+  "tail": 0.27,
+  "words": [
+   {
+    "word": "DemoForge",
+    "start": 0.232,
+    "end": 0.795,
+    "score": 0.889
+   },
+   {
+    "word": "at",
+    "start": 0.875,
+    "end": 0.935,
+    "score": 0.974
+   },
+   {
+    "word": "a",
+    "start": 0.955,
+    "end": 0.975,
+    "score": 0.987
+   },
+   {
+    "word": "repo,",
+    "start": 1.036,
+    "end": 1.377,
+    "score": 0.887
+   },
+   {
+    "word": "and",
+    "start": 1.699,
+    "end": 1.799,
+    "score": 0.838
+   },
+   {
+    "word": "Playwright,",
+    "start": 1.819,
+    "end": 2.241,
+    "score": 0.861
+   },
+   {
+    "word": "VoxCPM,",
+    "start": 2.422,
+    "end": 3.166,
+    "score": 0.838
+   },
+   {
+    "word": "and",
+    "start": 3.246,
+    "end": 3.327,
+    "score": 0.812
+   },
+   {
+    "word": "ASTEP",
+    "start": 3.407,
+    "end": 3.809,
+    "score": 0.851
+   },
+   {
+    "word": "turn",
+    "start": 4.151,
+    "end": 4.331,
+    "score": 0.809
+   },
+   {
+    "word": "it",
+    "start": 4.372,
+    "end": 4.432,
+    "score": 0.75
+   },
+   {
+    "word": "into",
+    "start": 4.472,
+    "end": 4.653,
+    "score": 0.914
+   },
+   {
+    "word": "a",
+    "start": 4.693,
+    "end": 4.713,
+    "score": 0.994
+   },
+   {
+    "word": "film.",
+    "start": 4.753,
+    "end": 5.015,
+    "score": 0.931
+   }
+  ],
+  "mtime": 1793995449.943999
+ },
+ "audio/vo/audition_1.wav": {
+  "text": "Point DemoForge at a repo and playwright VoxCPM and ASTEP turn it into a film.",
+  "wer": 0.316,
+  "cer": 0.031,
+  "f0_med": 158.79957918668774,
+  "f0_iqr": 35.23291150612175,
+  "dur": 5.28,
+  "wps": 3.6,
+  "lufs": -22.5,
+  "lead": 0.31,
+  "tail": 0.33,
+  "words": [
+   {
+    "word": "Point",
+    "start": 0.312,
+    "end": 0.533,
+    "score": 0.973
+   },
+   {
+    "word": "DemoForge",
+    "start": 0.574,
+    "end": 1.197,
+    "score": 0.788
+   },
+   {
+    "word": "at",
+    "start": 1.257,
+    "end": 1.337,
+    "score": 0.828
+   },
+   {
+    "word": "a",
+    "start": 1.357,
+    "end": 1.377,
+    "score": 0.986
+   },
+   {
+    "word": "repo",
+    "start": 1.438,
+    "end": 1.779,
+    "score": 0.906
+   },
+   {
+    "word": "and",
+    "start": 1.86,
+    "end": 1.96,
+    "score": 0.768
+   },
+   {
+    "word": "playwright",
+    "start": 2.0,
+    "end": 2.402,
+    "score": 0.898
+   },
+   {
+    "word": "VoxCPM",
+    "start": 2.523,
+    "end": 3.286,
+    "score": 0.729
+   },
+   {
+    "word": "and",
+    "start": 3.387,
+    "end": 3.467,
+    "score": 0.846
+   },
+   {
+    "word": "ASTEP",
+    "start": 3.528,
+    "end": 3.95,
+    "score": 0.829
+   },
+   {
+    "word": "turn",
+    "start": 4.07,
+    "end": 4.251,
+    "score": 0.888
+   },
+   {
+    "word": "it",
+    "start": 4.291,
+    "end": 4.352,
+    "score": 0.75
+   },
+   {
+    "word": "into",
+    "start": 4.392,
+    "end": 4.593,
+    "score": 0.922
+   },
+   {
+    "word": "a",
+    "start": 4.653,
+    "end": 4.673,
+    "score": 0.993
+   },
+   {
+    "word": "film.",
+    "start": 4.713,
+    "end": 4.954,
+    "score": 0.941
+   }
+  ],
+  "mtime": 1793995465.4371905
+ },
+ "audio/vo/audition_2.wav": {
+  "text": "Point DemoForge at a repo, and Playwright, VoxCPM, and ASTEP turn it into a film.",
+  "wer": 0.316,
+  "cer": 0.031,
+  "f0_med": 185.06529904895288,
+  "f0_iqr": 94.28217005023234,
+  "dur": 6.88,
+  "wps": 2.76,
+  "lufs": -29.7,
+  "lead": 0.03,
+  "tail": 0.38,
+  "words": [
+   {
+    "word": "Point",
+    "start": 0.031,
+    "end": 0.352,
+    "score": 0.847
+   },
+   {
+    "word": "DemoForge",
+    "start": 0.433,
+    "end": 1.136,
+    "score": 0.915
+   },
+   {
+    "word": "at",
+    "start": 1.216,
+    "end": 1.316,
+    "score": 0.762
+   },
+   {
+    "word": "a",
+    "start": 1.336,
+    "end": 1.376,
+    "score": 0.498
+   },
+   {
+    "word": "repo,",
+    "start": 1.437,
+    "end": 1.858,
+    "score": 0.913
+   },
+   {
+    "word": "and",
+    "start": 2.24,
+    "end": 2.34,
+    "score": 0.88
+   },
+   {
+    "word": "Playwright,",
+    "start": 2.441,
+    "end": 3.023,
+    "score": 0.808
+   },
+   {
+    "word": "VoxCPM,",
+    "start": 3.304,
+    "end": 4.268,
+    "score": 0.859
+   },
+   {
+    "word": "and",
+    "start": 4.389,
+    "end": 4.469,
+    "score": 0.86
+   },
+   {
+    "word": "ASTEP",
+    "start": 4.59,
+    "end": 5.072,
+    "score": 0.966
+   },
+   {
+    "word": "turn",
+    "start": 5.413,
+    "end": 5.654,
+    "score": 0.843
+   },
+   {
+    "word": "it",
+    "start": 5.694,
+    "end": 5.754,
+    "score": 0.75
+   },
+   {
+    "word": "into",
+    "start": 5.855,
+    "end": 6.096,
+    "score": 0.888
+   },
+   {
+    "word": "a",
+    "start": 6.156,
+    "end": 6.196,
+    "score": 0.498
+   },
+   {
+    "word": "film.",
+    "start": 6.256,
+    "end": 6.497,
+    "score": 0.916
+   }
+  ],
+  "mtime": 1793995493.3331993
+ },
+ "audio/vo/audition_3.wav": {
+  "text": "Point DemoForge at a repo, and playwright VoxCPM and ASTEP turn it into a film.",
+  "wer": 0.316,
+  "cer": 0.031,
+  "f0_med": 159.25820908062818,
+  "f0_iqr": 25.489431477358664,
+  "dur": 5.6,
+  "wps": 3.39,
+  "lufs": -27.8,
+  "lead": 0.51,
+  "tail": 0.35,
+  "words": [
+   {
+    "word": "Point",
+    "start": 0.513,
+    "end": 0.734,
+    "score": 0.865
+   },
+   {
+    "word": "DemoForge",
+    "start": 0.795,
+    "end": 1.377,
+    "score": 0.853
+   },
+   {
+    "word": "at",
+    "start": 1.417,
+    "end": 1.478,
+    "score": 0.965
+   },
+   {
+    "word": "a",
+    "start": 1.518,
+    "end": 1.538,
+    "score": 0.995
+   },
+   {
+    "word": "repo,",
+    "start": 1.578,
+    "end": 1.96,
+    "score": 0.852
+   },
+   {
+    "word": "and",
+    "start": 2.302,
+    "end": 2.402,
+    "score": 0.675
+   },
+   {
+    "word": "playwright",
+    "start": 2.462,
+    "end": 2.924,
+    "score": 0.822
+   },
+   {
+    "word": "VoxCPM",
+    "start": 3.005,
+    "end": 3.728,
+    "score": 0.79
+   },
+   {
+    "word": "and",
+    "start": 3.748,
+    "end": 3.809,
+    "score": 0.878
+   },
+   {
+    "word": "ASTEP",
+    "start": 3.889,
+    "end": 4.311,
+    "score": 0.928
+   },
+   {
+    "word": "turn",
+    "start": 4.371,
+    "end": 4.552,
+    "score": 0.888
+   },
+   {
+    "word": "it",
+    "start": 4.592,
+    "end": 4.653,
+    "score": 0.75
+   },
+   {
+    "word": "into",
+    "start": 4.693,
+    "end": 4.894,
+    "score": 0.896
+   },
+   {
+    "word": "a",
+    "start": 4.934,
+    "end": 4.954,
+    "score": 0.995
+   },
+   {
+    "word": "film.",
+    "start": 5.014,
+    "end": 5.255,
+    "score": 0.956
+   }
+  ],
+  "mtime": 1793995515.3491158
+ },
+ "audio/vo/s01.wav": {
+  "text": "This voice was designed from one sentence of text. The music, the captions, and every cut came out of one repo.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 156.5222483718677,
+  "f0_iqr": 50.45638089557596,
+  "dur": 8.96,
+  "wps": 2.34,
+  "lufs": -28.6,
+  "lead": 0.19,
+  "tail": 0.87,
+  "words": [
+   {
+    "word": "This",
+    "start": 0.191,
+    "end": 0.392,
+    "score": 0.788
+   },
+   {
+    "word": "voice",
+    "start": 0.472,
+    "end": 0.813,
+    "score": 0.813
+   },
+   {
+    "word": "was",
+    "start": 0.893,
+    "end": 1.034,
+    "score": 0.774
+   },
+   {
+    "word": "designed",
+    "start": 1.094,
+    "end": 1.555,
+    "score": 0.787
+   },
+   {
+    "word": "from",
+    "start": 1.615,
+    "end": 1.776,
+    "score": 0.864
+   },
+   {
+    "word": "one",
+    "start": 1.996,
+    "end": 2.157,
+    "score": 0.658
+   },
+   {
+    "word": "sentence",
+    "start": 2.277,
+    "end": 2.718,
+    "score": 0.865
+   },
+   {
+    "word": "of",
+    "start": 2.758,
+    "end": 2.818,
+    "score": 0.75
+   },
+   {
+    "word": "text.",
+    "start": 2.879,
+    "end": 3.28,
+    "score": 0.951
+   },
+   {
+    "word": "The",
+    "start": 3.761,
+    "end": 3.861,
+    "score": 0.736
+   },
+   {
+    "word": "music,",
+    "start": 3.901,
+    "end": 4.323,
+    "score": 0.98
+   },
+   {
+    "word": "the",
+    "start": 4.724,
+    "end": 4.824,
+    "score": 0.791
+   },
+   {
+    "word": "captions,",
+    "start": 4.864,
+    "end": 5.446,
+    "score": 0.915
+   },
+   {
+    "word": "and",
+    "start": 5.766,
+    "end": 5.867,
+    "score": 0.97
+   },
+   {
+    "word": "every",
+    "start": 6.027,
+    "end": 6.268,
+    "score": 0.812
+   },
+   {
+    "word": "cut",
+    "start": 6.328,
+    "end": 6.589,
+    "score": 0.831
+   },
+   {
+    "word": "came",
+    "start": 6.95,
+    "end": 7.19,
+    "score": 0.782
+   },
+   {
+    "word": "out",
+    "start": 7.351,
+    "end": 7.511,
+    "score": 0.978
+   },
+   {
+    "word": "of",
+    "start": 7.692,
+    "end": 7.732,
+    "score": 1.0
+   },
+   {
+    "word": "one",
+    "start": 7.752,
+    "end": 7.812,
+    "score": 0.0
+   },
+   {
+    "word": "repo.",
+    "start": 7.892,
+    "end": 8.093,
+    "score": 0.515
+   }
+  ],
+  "mtime": 1793995715.1145813
+ },
+ "audio/vo/s02.wav": {
+  "text": "It's called DemoForge. Point it at a project and it makes the demo",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 176.70804697206307,
+  "f0_iqr": 81.28032222500238,
+  "dur": 6.08,
+  "wps": 2.14,
+  "lufs": -28.0,
+  "lead": 0.09,
+  "tail": 0.24,
+  "words": [
+   {
+    "word": "It's",
+    "start": 0.091,
+    "end": 0.252,
+    "score": 0.877
+   },
+   {
+    "word": "called",
+    "start": 0.353,
+    "end": 0.775,
+    "score": 0.87
+   },
+   {
+    "word": "DemoForge.",
+    "start": 1.077,
+    "end": 1.922,
+    "score": 0.936
+   },
+   {
+    "word": "Point",
+    "start": 2.606,
+    "end": 2.948,
+    "score": 0.867
+   },
+   {
+    "word": "it",
+    "start": 3.048,
+    "end": 3.129,
+    "score": 0.832
+   },
+   {
+    "word": "at",
+    "start": 3.31,
+    "end": 3.39,
+    "score": 0.833
+   },
+   {
+    "word": "a",
+    "start": 3.431,
+    "end": 3.451,
+    "score": 0.998
+   },
+   {
+    "word": "project",
+    "start": 3.511,
+    "end": 4.054,
+    "score": 0.817
+   },
+   {
+    "word": "and",
+    "start": 4.597,
+    "end": 4.698,
+    "score": 0.83
+   },
+   {
+    "word": "it",
+    "start": 4.758,
+    "end": 4.819,
+    "score": 0.976
+   },
+   {
+    "word": "makes",
+    "start": 4.919,
+    "end": 5.221,
+    "score": 0.747
+   },
+   {
+    "word": "the",
+    "start": 5.301,
+    "end": 5.422,
+    "score": 0.882
+   },
+   {
+    "word": "demo",
+    "start": 5.503,
+    "end": 5.844,
+    "score": 0.978
+   }
+  ],
+  "mtime": 1793995756.302861
+ },
+ "audio/vo/s03.wav": {
+  "text": "Claude reads the code, picks one story worth telling and writes the script.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 200.65276998924227,
+  "f0_iqr": 43.089516191884684,
+  "dur": 5.28,
+  "wps": 2.46,
+  "lufs": -26.5,
+  "lead": 0.15,
+  "tail": 0.29,
+  "words": [
+   {
+    "word": "Claude",
+    "start": 0.152,
+    "end": 0.513,
+    "score": 0.799
+   },
+   {
+    "word": "reads",
+    "start": 0.574,
+    "end": 0.815,
+    "score": 0.789
+   },
+   {
+    "word": "the",
+    "start": 0.855,
+    "end": 0.955,
+    "score": 0.715
+   },
+   {
+    "word": "code,",
+    "start": 0.996,
+    "end": 1.337,
+    "score": 0.842
+   },
+   {
+    "word": "picks",
+    "start": 1.739,
+    "end": 2.0,
+    "score": 0.927
+   },
+   {
+    "word": "one",
+    "start": 2.201,
+    "end": 2.362,
+    "score": 0.784
+   },
+   {
+    "word": "story",
+    "start": 2.422,
+    "end": 2.804,
+    "score": 0.853
+   },
+   {
+    "word": "worth",
+    "start": 2.844,
+    "end": 3.106,
+    "score": 0.833
+   },
+   {
+    "word": "telling",
+    "start": 3.166,
+    "end": 3.528,
+    "score": 0.852
+   },
+   {
+    "word": "and",
+    "start": 3.95,
+    "end": 4.05,
+    "score": 0.828
+   },
+   {
+    "word": "writes",
+    "start": 4.11,
+    "end": 4.392,
+    "score": 0.736
+   },
+   {
+    "word": "the",
+    "start": 4.452,
+    "end": 4.552,
+    "score": 0.938
+   },
+   {
+    "word": "script.",
+    "start": 4.613,
+    "end": 4.995,
+    "score": 0.929
+   }
+  ],
+  "mtime": 1793995778.7218876
+ },
+ "audio/vo/s04.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 147.31187739897427,
+  "f0_iqr": 39.642780475963775,
+  "dur": 6.4,
+  "wps": 2.03,
+  "lufs": -24.5,
+  "lead": 0.54,
+  "tail": 0.57,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.54,
+    "end": 1.041,
+    "score": 0.765
+   },
+   {
+    "word": "films",
+    "start": 1.121,
+    "end": 1.502,
+    "score": 0.81
+   },
+   {
+    "word": "the",
+    "start": 1.563,
+    "end": 1.683,
+    "score": 0.723
+   },
+   {
+    "word": "real",
+    "start": 1.763,
+    "end": 2.024,
+    "score": 0.916
+   },
+   {
+    "word": "product",
+    "start": 2.104,
+    "end": 2.505,
+    "score": 0.881
+   },
+   {
+    "word": "at",
+    "start": 2.685,
+    "end": 2.765,
+    "score": 0.538
+   },
+   {
+    "word": "twice",
+    "start": 2.846,
+    "end": 3.207,
+    "score": 0.828
+   },
+   {
+    "word": "the",
+    "start": 3.247,
+    "end": 3.347,
+    "score": 0.829
+   },
+   {
+    "word": "resolution",
+    "start": 3.387,
+    "end": 4.009,
+    "score": 0.865
+   },
+   {
+    "word": "and",
+    "start": 4.49,
+    "end": 4.61,
+    "score": 0.763
+   },
+   {
+    "word": "logs",
+    "start": 4.67,
+    "end": 5.071,
+    "score": 0.88
+   },
+   {
+    "word": "every",
+    "start": 5.252,
+    "end": 5.492,
+    "score": 0.701
+   },
+   {
+    "word": "click.",
+    "start": 5.552,
+    "end": 5.833,
+    "score": 0.935
+   }
+  ],
+  "mtime": 1793995812.6728175
+ },
+ "audio/vo/s05.wav": {
+  "text": "Vox CPM designs the narrator. WhisperX checks each take and times every word.",
+  "wer": 0.2,
+  "cer": 0.0,
+  "f0_med": 130.8609279198309,
+  "f0_iqr": 23.01874499549065,
+  "dur": 6.56,
+  "wps": 2.29,
+  "lufs": -27.3,
+  "lead": 0.09,
+  "tail": 0.12,
+  "words": [
+   {
+    "word": "Vox",
+    "start": 0.091,
+    "end": 0.613,
+    "score": 0.856
+   },
+   {
+    "word": "CPM",
+    "start": 0.654,
+    "end": 1.015,
+    "score": 0.51
+   },
+   {
+    "word": "designs",
+    "start": 1.095,
+    "end": 1.577,
+    "score": 0.753
+   },
+   {
+    "word": "the",
+    "start": 1.638,
+    "end": 1.718,
+    "score": 0.938
+   },
+   {
+    "word": "narrator.",
+    "start": 1.758,
+    "end": 2.24,
+    "score": 0.934
+   },
+   {
+    "word": "WhisperX",
+    "start": 2.843,
+    "end": 3.545,
+    "score": 0.892
+   },
+   {
+    "word": "checks",
+    "start": 3.847,
+    "end": 4.168,
+    "score": 0.826
+   },
+   {
+    "word": "each",
+    "start": 4.329,
+    "end": 4.489,
+    "score": 0.876
+   },
+   {
+    "word": "take",
+    "start": 4.57,
+    "end": 4.851,
+    "score": 0.858
+   },
+   {
+    "word": "and",
+    "start": 4.991,
+    "end": 5.112,
+    "score": 0.87
+   },
+   {
+    "word": "times",
+    "start": 5.192,
+    "end": 5.614,
+    "score": 0.756
+   },
+   {
+    "word": "every",
+    "start": 5.835,
+    "end": 6.076,
+    "score": 0.858
+   },
+   {
+    "word": "word.",
+    "start": 6.116,
+    "end": 6.437,
+    "score": 0.937
+   }
+  ],
+  "mtime": 1793995852.263816
+ },
+ "audio/vo/s06.wav": {
+  "text": "A step writes the score and ducks it under the voice.",
+  "wer": 0.091,
+  "cer": 0.045,
+  "f0_med": 136.65520610289894,
+  "f0_iqr": 17.564865167697178,
+  "dur": 4.32,
+  "wps": 2.55,
+  "lufs": -24.9,
+  "lead": 0.25,
+  "tail": 0.31,
+  "words": [
+   {
+    "word": "A",
+    "start": 0.252,
+    "end": 0.373,
+    "score": 0.855
+   },
+   {
+    "word": "step",
+    "start": 0.514,
+    "end": 0.855,
+    "score": 0.906
+   },
+   {
+    "word": "writes",
+    "start": 1.056,
+    "end": 1.338,
+    "score": 0.86
+   },
+   {
+    "word": "the",
+    "start": 1.398,
+    "end": 1.499,
+    "score": 0.725
+   },
+   {
+    "word": "score",
+    "start": 1.559,
+    "end": 1.941,
+    "score": 0.895
+   },
+   {
+    "word": "and",
+    "start": 2.504,
+    "end": 2.605,
+    "score": 0.706
+   },
+   {
+    "word": "ducks",
+    "start": 2.705,
+    "end": 3.007,
+    "score": 0.819
+   },
+   {
+    "word": "it",
+    "start": 3.067,
+    "end": 3.168,
+    "score": 0.829
+   },
+   {
+    "word": "under",
+    "start": 3.329,
+    "end": 3.53,
+    "score": 0.902
+   },
+   {
+    "word": "the",
+    "start": 3.55,
+    "end": 3.63,
+    "score": 0.91
+   },
+   {
+    "word": "voice.",
+    "start": 3.67,
+    "end": 4.012,
+    "score": 0.975
+   }
+  ],
+  "mtime": 1793995914.481884
+ },
+ "audio/vo/s07.wav": {
+  "text": "HyperFrames and GSAP cut it together in HTML, frame by frame.",
+  "wer": 0.167,
+  "cer": 0.039,
+  "f0_med": 152.06636379444745,
+  "f0_iqr": 55.01239765944817,
+  "dur": 5.12,
+  "wps": 2.34,
+  "lufs": -25.2,
+  "lead": 0.19,
+  "tail": 0.19,
+  "words": [
+   {
+    "word": "HyperFrames",
+    "start": 0.192,
+    "end": 1.035,
+    "score": 0.799
+   },
+   {
+    "word": "and",
+    "start": 1.156,
+    "end": 1.256,
+    "score": 0.806
+   },
+   {
+    "word": "GSAP",
+    "start": 1.337,
+    "end": 1.879,
+    "score": 0.949
+   },
+   {
+    "word": "cut",
+    "start": 2.04,
+    "end": 2.2,
+    "score": 0.751
+   },
+   {
+    "word": "it",
+    "start": 2.241,
+    "end": 2.301,
+    "score": 0.753
+   },
+   {
+    "word": "together",
+    "start": 2.341,
+    "end": 2.763,
+    "score": 0.87
+   },
+   {
+    "word": "in",
+    "start": 2.863,
+    "end": 2.944,
+    "score": 0.832
+   },
+   {
+    "word": "HTML,",
+    "start": 3.185,
+    "end": 3.807,
+    "score": 0.833
+   },
+   {
+    "word": "frame",
+    "start": 4.069,
+    "end": 4.35,
+    "score": 0.799
+   },
+   {
+    "word": "by",
+    "start": 4.39,
+    "end": 4.51,
+    "score": 0.758
+   },
+   {
+    "word": "frame.",
+    "start": 4.611,
+    "end": 4.932,
+    "score": 0.94
+   }
+  ],
+  "mtime": 1793995946.7079782
+ },
+ "audio/vo/s08.wav": {
+  "text": "It all renders on one Mac with open models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 213.8156923536814,
+  "f0_iqr": 88.00797800052266,
+  "dur": 4.0,
+  "wps": 2.25,
+  "lufs": -29.8,
+  "lead": 0.07,
+  "tail": 0.2,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.071,
+    "end": 0.131,
+    "score": 0.997
+   },
+   {
+    "word": "all",
+    "start": 0.452,
+    "end": 0.612,
+    "score": 0.841
+   },
+   {
+    "word": "renders",
+    "start": 0.753,
+    "end": 1.254,
+    "score": 0.762
+   },
+   {
+    "word": "on",
+    "start": 1.354,
+    "end": 1.454,
+    "score": 0.67
+   },
+   {
+    "word": "one",
+    "start": 1.695,
+    "end": 1.815,
+    "score": 0.697
+   },
+   {
+    "word": "Mac",
+    "start": 1.875,
+    "end": 2.176,
+    "score": 0.701
+   },
+   {
+    "word": "with",
+    "start": 2.597,
+    "end": 2.777,
+    "score": 0.733
+   },
+   {
+    "word": "open",
+    "start": 3.018,
+    "end": 3.298,
+    "score": 0.885
+   },
+   {
+    "word": "models.",
+    "start": 3.379,
+    "end": 3.8,
+    "score": 0.954
+   }
+  ],
+  "mtime": 1793995957.7906578
+ },
+ "audio/vo/s09.wav": {
+  "text": "DemoForge. Point it at a repo. Get a film.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 208.35130791345006,
+  "f0_iqr": 121.94328920608115,
+  "dur": 3.84,
+  "wps": 2.34,
+  "lufs": -26.9,
+  "lead": 0.03,
+  "tail": 0.27,
+  "words": [
+   {
+    "word": "DemoForge.",
+    "start": 0.031,
+    "end": 0.815,
+    "score": 0.938
+   },
+   {
+    "word": "Point",
+    "start": 1.117,
+    "end": 1.438,
+    "score": 0.895
+   },
+   {
+    "word": "it",
+    "start": 1.519,
+    "end": 1.619,
+    "score": 0.83
+   },
+   {
+    "word": "at",
+    "start": 1.78,
+    "end": 1.881,
+    "score": 0.832
+   },
+   {
+    "word": "a",
+    "start": 1.921,
+    "end": 1.941,
+    "score": 0.989
+   },
+   {
+    "word": "repo.",
+    "start": 2.001,
+    "end": 2.484,
+    "score": 0.847
+   },
+   {
+    "word": "Get",
+    "start": 2.987,
+    "end": 3.147,
+    "score": 0.858
+   },
+   {
+    "word": "a",
+    "start": 3.188,
+    "end": 3.228,
+    "score": 0.497
+   },
+   {
+    "word": "film.",
+    "start": 3.288,
+    "end": 3.57,
+    "score": 0.891
+   }
+  ],
+  "mtime": 1793995969.350693
+ },
+ "audio/vo/s04_t0.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 177.7317062743877,
+  "f0_iqr": 82.85981589353017,
+  "dur": 5.44,
+  "wps": 2.39,
+  "lufs": -22.8,
+  "lead": 0.13,
+  "tail": 0.36,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.132,
+    "end": 0.595,
+    "score": 0.789
+   },
+   {
+    "word": "films",
+    "start": 0.655,
+    "end": 0.977,
+    "score": 0.866
+   },
+   {
+    "word": "the",
+    "start": 1.017,
+    "end": 1.138,
+    "score": 0.725
+   },
+   {
+    "word": "real",
+    "start": 1.198,
+    "end": 1.42,
+    "score": 0.795
+   },
+   {
+    "word": "product",
+    "start": 1.5,
+    "end": 1.923,
+    "score": 0.783
+   },
+   {
+    "word": "at",
+    "start": 2.023,
+    "end": 2.104,
+    "score": 0.812
+   },
+   {
+    "word": "twice",
+    "start": 2.184,
+    "end": 2.527,
+    "score": 0.895
+   },
+   {
+    "word": "the",
+    "start": 2.567,
+    "end": 2.667,
+    "score": 0.678
+   },
+   {
+    "word": "resolution",
+    "start": 2.708,
+    "end": 3.312,
+    "score": 0.864
+   },
+   {
+    "word": "and",
+    "start": 3.654,
+    "end": 3.754,
+    "score": 0.79
+   },
+   {
+    "word": "logs",
+    "start": 3.835,
+    "end": 4.237,
+    "score": 0.798
+   },
+   {
+    "word": "every",
+    "start": 4.499,
+    "end": 4.72,
+    "score": 0.777
+   },
+   {
+    "word": "click.",
+    "start": 4.781,
+    "end": 5.083,
+    "score": 0.94
+   }
+  ],
+  "mtime": 1793996133.385501
+ },
+ "audio/vo/s04_t1.wav": {
+  "text": "Playwright films the real product at twice the resolution and logs every click.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 188.30018349522015,
+  "f0_iqr": 64.25389886133203,
+  "dur": 5.92,
+  "wps": 2.2,
+  "lufs": -18.9,
+  "lead": 0.5,
+  "tail": 0.56,
+  "words": [
+   {
+    "word": "Playwright",
+    "start": 0.503,
+    "end": 1.004,
+    "score": 0.748
+   },
+   {
+    "word": "films",
+    "start": 1.044,
+    "end": 1.405,
+    "score": 0.794
+   },
+   {
+    "word": "the",
+    "start": 1.466,
+    "end": 1.586,
+    "score": 0.801
+   },
+   {
+    "word": "real",
+    "start": 1.666,
+    "end": 1.907,
+    "score": 0.912
+   },
+   {
+    "word": "product",
+    "start": 1.987,
+    "end": 2.428,
+    "score": 0.78
+   },
+   {
+    "word": "at",
+    "start": 2.508,
+    "end": 2.569,
+    "score": 0.998
+   },
+   {
+    "word": "twice",
+    "start": 2.649,
+    "end": 2.99,
+    "score": 0.785
+   },
+   {
+    "word": "the",
+    "start": 3.03,
+    "end": 3.13,
+    "score": 0.832
+   },
+   {
+    "word": "resolution",
+    "start": 3.17,
+    "end": 3.792,
+    "score": 0.846
+   },
+   {
+    "word": "and",
+    "start": 3.993,
+    "end": 4.093,
+    "score": 0.73
+   },
+   {
+    "word": "logs",
+    "start": 4.173,
+    "end": 4.574,
+    "score": 0.812
+   },
+   {
+    "word": "every",
+    "start": 4.755,
+    "end": 4.995,
+    "score": 0.759
+   },
+   {
+    "word": "click.",
+    "start": 5.055,
+    "end": 5.356,
+    "score": 0.962
+   }
+  ],
+  "mtime": 1793996148.4776785
+ },
+ "audio/vo/s05_t0.wav": {
+  "text": "Vox CPM designs the narrator. WhisperX checks each take and times every word.",
+  "wer": 0.2,
+  "cer": 0.0,
+  "f0_med": 155.17259178543532,
+  "f0_iqr": 42.53394899178929,
+  "dur": 7.36,
+  "wps": 2.04,
+  "lufs": -27.7,
+  "lead": 0.07,
+  "tail": 0.27,
+  "words": [
+   {
+    "word": "Vox",
+    "start": 0.071,
+    "end": 0.493,
+    "score": 0.872
+   },
+   {
+    "word": "CPM",
+    "start": 0.714,
+    "end": 1.338,
+    "score": 0.767
+   },
+   {
+    "word": "designs",
+    "start": 1.539,
+    "end": 2.061,
+    "score": 0.864
+   },
+   {
+    "word": "the",
+    "start": 2.122,
+    "end": 2.202,
+    "score": 0.894
+   },
+   {
+    "word": "narrator.",
+    "start": 2.242,
+    "end": 2.725,
+    "score": 0.903
+   },
+   {
+    "word": "WhisperX",
+    "start": 3.549,
+    "end": 4.252,
+    "score": 0.849
+   },
+   {
+    "word": "checks",
+    "start": 4.433,
+    "end": 4.735,
+    "score": 0.847
+   },
+   {
+    "word": "each",
+    "start": 4.936,
+    "end": 5.096,
+    "score": 0.889
+   },
+   {
+    "word": "take",
+    "start": 5.177,
+    "end": 5.478,
+    "score": 0.905
+   },
+   {
+    "word": "and",
+    "start": 5.76,
+    "end": 5.84,
+    "score": 0.842
+   },
+   {
+    "word": "times",
+    "start": 5.921,
+    "end": 6.343,
+    "score": 0.903
+   },
+   {
+    "word": "every",
+    "start": 6.544,
+    "end": 6.785,
+    "score": 0.844
+   },
+   {
+    "word": "word.",
+    "start": 6.825,
+    "end": 7.086,
+    "score": 0.948
+   }
+  ],
+  "mtime": 1793996169.349766
+ },
+ "audio/vo/s05_t1.wav": {
+  "text": "Vox CPM designs the narrator. Whisper X checks each take and times every word.",
+  "wer": 0.333,
+  "cer": 0.0,
+  "f0_med": 147.73732960138994,
+  "f0_iqr": 68.1425052935349,
+  "dur": 7.68,
+  "wps": 1.95,
+  "lufs": -27.8,
+  "lead": 0.13,
+  "tail": 0.29,
+  "words": [
+   {
+    "word": "Vox",
+    "start": 0.131,
+    "end": 0.533,
+    "score": 0.889
+   },
+   {
+    "word": "CPM",
+    "start": 0.614,
+    "end": 1.438,
+    "score": 0.777
+   },
+   {
+    "word": "designs",
+    "start": 1.719,
+    "end": 2.322,
+    "score": 0.812
+   },
+   {
+    "word": "the",
+    "start": 2.403,
+    "end": 2.503,
+    "score": 0.789
+   },
+   {
+    "word": "narrator.",
+    "start": 2.543,
+    "end": 3.126,
+    "score": 0.83
+   },
+   {
+    "word": "Whisper",
+    "start": 3.729,
+    "end": 4.151,
+    "score": 0.872
+   },
+   {
+    "word": "X",
+    "start": 4.332,
+    "end": 4.493,
+    "score": 0.977
+   },
+   {
+    "word": "checks",
+    "start": 4.674,
+    "end": 4.996,
+    "score": 0.765
+   },
+   {
+    "word": "each",
+    "start": 5.237,
+    "end": 5.438,
+    "score": 0.811
+   },
+   {
+    "word": "take",
+    "start": 5.498,
+    "end": 5.82,
+    "score": 0.993
+   },
+   {
+    "word": "and",
+    "start": 6.041,
+    "end": 6.141,
+    "score": 0.782
+   },
+   {
+    "word": "times",
+    "start": 6.222,
+    "end": 6.684,
+    "score": 0.807
+   },
+   {
+    "word": "every",
+    "start": 6.845,
+    "end": 7.066,
+    "score": 0.866
+   },
+   {
+    "word": "word.",
+    "start": 7.126,
+    "end": 7.387,
+    "score": 0.901
+   }
+  ],
+  "mtime": 1793996191.0117977
+ },
+ "audio/vo/s06_t0.wav": {
+  "text": "A-step writes the score and ducks it under the voice.",
+  "wer": 0.091,
+  "cer": 0.045,
+  "f0_med": 157.42897253249384,
+  "f0_iqr": 36.60769884073548,
+  "dur": 4.64,
+  "wps": 2.37,
+  "lufs": -28.7,
+  "lead": 0.23,
+  "tail": 0.37,
+  "words": [
+   {
+    "word": "A-step",
+    "start": 0.232,
+    "end": 0.815,
+    "score": 0.89
+   },
+   {
+    "word": "writes",
+    "start": 0.936,
+    "end": 1.277,
+    "score": 0.806
+   },
+   {
+    "word": "the",
+    "start": 1.358,
+    "end": 1.458,
+    "score": 0.984
+   },
+   {
+    "word": "score",
+    "start": 1.519,
+    "end": 1.901,
+    "score": 0.822
+   },
+   {
+    "word": "and",
+    "start": 1.921,
+    "end": 2.685,
+    "score": 0.509
+   },
+   {
+    "word": "ducks",
+    "start": 2.745,
+    "end": 3.067,
+    "score": 0.809
+   },
+   {
+    "word": "it",
+    "start": 3.167,
+    "end": 3.248,
+    "score": 0.641
+   },
+   {
+    "word": "under",
+    "start": 3.529,
+    "end": 3.77,
+    "score": 0.796
+   },
+   {
+    "word": "the",
+    "start": 3.811,
+    "end": 3.911,
+    "score": 0.831
+   },
+   {
+    "word": "voice.",
+    "start": 3.951,
+    "end": 4.273,
+    "score": 0.88
+   }
+  ],
+  "mtime": 1793996205.7279603
+ },
+ "audio/vo/s06_t1.wav": {
+  "text": "Ace Step writes the score and ducks it under the voice.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 267.06799376376813,
+  "f0_iqr": 206.27035545058962,
+  "dur": 6.4,
+  "wps": 1.72,
+  "lufs": -25.6,
+  "lead": 0.31,
+  "tail": 0.36,
+  "words": [
+   {
+    "word": "Ace",
+    "start": 0.313,
+    "end": 0.574,
+    "score": 0.759
+   },
+   {
+    "word": "Step",
+    "start": 1.258,
+    "end": 1.66,
+    "score": 0.901
+   },
+   {
+    "word": "writes",
+    "start": 2.203,
+    "end": 2.505,
+    "score": 0.813
+   },
+   {
+    "word": "the",
+    "start": 2.585,
+    "end": 2.686,
+    "score": 0.827
+   },
+   {
+    "word": "score",
+    "start": 2.726,
+    "end": 3.149,
+    "score": 0.831
+   },
+   {
+    "word": "and",
+    "start": 3.893,
+    "end": 3.993,
+    "score": 0.933
+   },
+   {
+    "word": "ducks",
+    "start": 4.134,
+    "end": 4.496,
+    "score": 0.822
+   },
+   {
+    "word": "it",
+    "start": 4.597,
+    "end": 4.697,
+    "score": 0.573
+   },
+   {
+    "word": "under",
+    "start": 5.281,
+    "end": 5.542,
+    "score": 0.748
+   },
+   {
+    "word": "the",
+    "start": 5.582,
+    "end": 5.663,
+    "score": 0.855
+   },
+   {
+    "word": "voice.",
+    "start": 5.703,
+    "end": 6.045,
+    "score": 0.94
+   }
+  ],
+  "mtime": 1793996221.7328198
+ },
+ "audio/vo/s08_t0.wav": {
+  "text": "It all renders on one Mac with Open Models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 195.50521475721422,
+  "f0_iqr": 80.55807223539233,
+  "dur": 3.84,
+  "wps": 2.34,
+  "lufs": -26.0,
+  "lead": 0.07,
+  "tail": 0.33,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.071,
+    "end": 0.152,
+    "score": 0.684
+   },
+   {
+    "word": "all",
+    "start": 0.333,
+    "end": 0.474,
+    "score": 0.996
+   },
+   {
+    "word": "renders",
+    "start": 0.574,
+    "end": 1.057,
+    "score": 0.775
+   },
+   {
+    "word": "on",
+    "start": 1.198,
+    "end": 1.278,
+    "score": 0.802
+   },
+   {
+    "word": "one",
+    "start": 1.54,
+    "end": 1.681,
+    "score": 0.693
+   },
+   {
+    "word": "Mac",
+    "start": 1.782,
+    "end": 2.144,
+    "score": 0.867
+   },
+   {
+    "word": "with",
+    "start": 2.365,
+    "end": 2.546,
+    "score": 0.694
+   },
+   {
+    "word": "Open",
+    "start": 2.727,
+    "end": 3.009,
+    "score": 0.874
+   },
+   {
+    "word": "Models.",
+    "start": 3.089,
+    "end": 3.512,
+    "score": 0.966
+   }
+  ],
+  "mtime": 1793996231.522916
+ },
+ "audio/vo/s08_t1.wav": {
+  "text": "It all renders on one Mac with open models.",
+  "wer": 0.0,
+  "cer": 0.0,
+  "f0_med": 162.0419935401828,
+  "f0_iqr": 49.83354932307486,
+  "dur": 3.52,
+  "wps": 2.56,
+  "lufs": -27.2,
+  "lead": 0.05,
+  "tail": 0.31,
+  "words": [
+   {
+    "word": "It",
+    "start": 0.051,
+    "end": 0.112,
+    "score": 0.766
+   },
+   {
+    "word": "all",
+    "start": 0.212,
+    "end": 0.333,
+    "score": 0.851
+   },
+   {
+    "word": "renders",
+    "start": 0.394,
+    "end": 0.797,
+    "score": 0.871
+   },
+   {
+    "word": "on",
+    "start": 0.978,
+    "end": 1.058,
+    "score": 0.834
+   },
+   {
+    "word": "one",
+    "start": 1.26,
+    "end": 1.381,
+    "score": 0.719
+   },
+   {
+    "word": "Mac",
+    "start": 1.441,
+    "end": 1.703,
+    "score": 0.851
+   },
+   {
+    "word": "with",
+    "start": 2.267,
+    "end": 2.428,
+    "score": 0.752
+   },
+   {
+    "word": "open",
+    "start": 2.569,
+    "end": 2.811,
+    "score": 0.862
+   },
+   {
+    "word": "models.",
+    "start": 2.851,
+    "end": 3.214,
+    "score": 0.86
+   }
+  ],
+  "mtime": 1793996241.4312348
+ },
+ "audio/vo/s06_t2.wav": {
+  "text": "A-step writes the score and ducks it under the voice.",
+  "wer": 0.091,
+  "cer": 0.045,
+  "f0_med": 171.677511892231,
+  "f0_iqr": 39.91732768768574,
+  "dur": 4.0,
+  "wps": 2.75,
+  "lufs": -22.6,
+  "lead": 0.25,
+  "tail": 0.34,
+  "words": [
+   {
+    "word": "A-step",
+    "start": 0.252,
+    "end": 0.774,
+    "score": 0.866
+   },
+   {
+    "word": "writes",
+    "start": 0.914,
+    "end": 1.216,
+    "score": 0.798
+   },
+   {
+    "word": "the",
+    "start": 1.276,
+    "end": 1.376,
+    "score": 0.943
+   },
+   {
+    "word": "score",
+    "start": 1.416,
+    "end": 1.758,
+    "score": 0.874
+   },
+   {
+    "word": "and",
+    "start": 2.199,
+    "end": 2.32,
+    "score": 0.87
+   },
+   {
+    "word": "ducks",
+    "start": 2.42,
+    "end": 2.701,
+    "score": 0.812
+   },
+   {
+    "word": "it",
+    "start": 2.761,
+    "end": 2.822,
+    "score": 0.859
+   },
+   {
+    "word": "under",
+    "start": 2.982,
+    "end": 3.183,
+    "score": 0.882
+   },
+   {
+    "word": "the",
+    "start": 3.223,
+    "end": 3.304,
+    "score": 0.997
+   },
+   {
+    "word": "voice.",
+    "start": 3.364,
+    "end": 3.665,
+    "score": 0.936
+   }
+  ],
+  "mtime": 1793996362.291436
+ },
+ "audio/vo/s06_t3.wav": {
+  "text": "ASTEP writes the score and ducks it under the voice.",
+  "wer": 0.182,
+  "cer": 0.045,
+  "f0_med": 172.6720296012984,
+  "f0_iqr": 68.25953241415468,
+  "dur": 4.16,
+  "wps": 2.64,
+  "lufs": -26.0,
+  "lead": 0.23,
+  "tail": 0.4,
+  "words": [
+   {
+    "word": "ASTEP",
+    "start": 0.232,
+    "end": 0.714,
+    "score": 0.892
+   },
+   {
+    "word": "writes",
+    "start": 0.834,
+    "end": 1.135,
+    "score": 0.8
+   },
+   {
+    "word": "the",
+    "start": 1.195,
+    "end": 1.295,
+    "score": 0.952
+   },
+   {
+    "word": "score",
+    "start": 1.356,
+    "end": 1.737,
+    "score": 0.854
+   },
+   {
+    "word": "and",
+    "start": 2.037,
+    "end": 2.158,
+    "score": 0.871
+   },
+   {
+    "word": "ducks",
+    "start": 2.278,
+    "end": 2.579,
+    "score": 0.89
+   },
+   {
+    "word": "it",
+    "start": 2.659,
+    "end": 2.76,
+    "score": 0.817
+   },
+   {
+    "word": "under",
+    "start": 3.06,
+    "end": 3.261,
+    "score": 0.828
+   },
+   {
+    "word": "the",
+    "start": 3.301,
+    "end": 3.381,
+    "score": 0.992
+   },
+   {
+    "word": "voice.",
+    "start": 3.421,
+    "end": 3.762,
+    "score": 0.924
+   }
+  ],
+  "mtime": 1793996373.441181
+ }
+}

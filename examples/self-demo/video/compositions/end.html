@@ -1,0 +1,27 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+#root{background:var(--bg)}.dots-bg{position:absolute;inset:0;background-image:radial-gradient(circle,#24221f 1.5px,transparent 1.7px);background-size:40px 40px;background-position:20px 20px}
+#en-wrap{position:absolute;left:0;right:0;top:360px;display:flex;justify-content:center}
+#en-line{position:absolute;left:640px;width:640px;top:628px;height:8px;border-radius:4px;background:var(--accent);transform-origin:50% 50%}
+#en-cmd{position:absolute;left:0;right:0;top:690px;text-align:center;font:500 46px var(--mono);color:var(--text)}#en-cmd .p{color:var(--accent)}
+#en-url{position:absolute;left:0;right:0;top:790px;text-align:center;font:400 30px var(--mono);color:var(--muted)}
+</style>
+<div id="root" data-composition-id="end" data-width="1920" data-height="1080">
+<div class="dots-bg"></div><div id="en-wrap"><div id="en-wm" class="wm" style="font:900 200px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">demo<span style="color:var(--accent)">forge</span></div></div><div id="en-line"></div>
+<div id="en-cmd"><span class="p">$ </span>demoforge new ./your-repo</div><div id="en-url">github.com/cjcsecurity/demoforge</div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+
+tl.fromTo("#en-wm",{opacity:0,y:40,filter:"blur(10px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.55,ease:"expo.out"},0.281);
+tl.fromTo("#en-line",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},0.631);
+tl.fromTo("#en-cmd",{opacity:0,y:14},{opacity:1,y:0,duration:0.4,ease:"expo.out"},2.301);
+tl.fromTo("#en-url",{opacity:0},{opacity:1,duration:0.45},3.788);
+
+window.__timelines["end"] = tl;
+})();
+</script>
+</template>

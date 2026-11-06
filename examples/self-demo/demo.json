@@ -1,0 +1,27 @@
+{
+  "name": "demoforge-self-demo",
+  "target": "../..",
+  "audience": "engineers and security folks deciding whether to try demoforge on their own repo; shared in Slack and the README",
+  "one_thing": "Point demoforge at a repo and you get a real, narrated demo film, made locally.",
+  "theme": {
+    "accent": "#ff6a1a",
+    "bg": "#121110",
+    "text": "#f3efe6"
+  },
+  "music": {
+    "caption": "Bright, driving electronic underscore with a warm analog synth arpeggio, punchy kick, crisp claps and a rising bass line. Confident and curious, builds quickly, then resolves. Modern, clean mix, no vocals.",
+    "bpm": 112,
+    "key": "E minor",
+    "duration": 80,
+    "takes": 2,
+    "use": 1,
+    "align": [
+      9.032,
+      11.2
+    ],
+    "quiet_until": 8.88,
+    "gap_db": -9,
+    "duck_db": 8,
+    "quiet_db": -21
+  }
+}

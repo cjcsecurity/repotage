@@ -1,0 +1,31 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+#root{background:var(--bg)}.dots-bg{position:absolute;inset:0;background-image:radial-gradient(circle,#24221f 1.5px,transparent 1.7px);background-size:40px 40px;background-position:20px 20px}
+#rv-line{position:absolute;left:140px;top:658px;width:1640px;height:8px;border-radius:4px;background:var(--accent);transform-origin:50% 50%}
+#rv-mask{position:absolute;left:0;right:0;top:330px;height:328px;overflow:hidden;display:flex;justify-content:center;align-items:flex-end}
+#rv-wm{padding-bottom:22px}
+#rv-cmd{position:absolute;left:0;right:0;top:736px;text-align:center;font:500 52px var(--mono);color:var(--text)}
+#rv-cmd .p{color:var(--accent)}#rv-cmd .c{opacity:0}
+.caret{display:inline-block;width:4px;height:54px;background:var(--accent);vertical-align:-10px;margin-left:4px;opacity:0}
+
+</style>
+<div id="root" data-composition-id="reveal" data-width="1920" data-height="1080">
+<div class="dots-bg"></div><div id="rv-line"></div><div id="rv-mask"><div id="rv-wm" class="wm" style="font:900 250px/1 var(--sans);letter-spacing:-.045em;white-space:nowrap">demo<span style="color:var(--accent)">forge</span></div></div>
+<div id="rv-cmd"><span class="p c" id="rv-dollar">$ </span><span class="c" id="rv-c0">d</span><span class="c" id="rv-c1">e</span><span class="c" id="rv-c2">m</span><span class="c" id="rv-c3">o</span><span class="c" id="rv-c4">f</span><span class="c" id="rv-c5">o</span><span class="c" id="rv-c6">r</span><span class="c" id="rv-c7">g</span><span class="c" id="rv-c8">e</span><span class="c" id="rv-c9">&nbsp;</span><span class="c" id="rv-c10">n</span><span class="c" id="rv-c11">e</span><span class="c" id="rv-c12">w</span><span class="c" id="rv-c13">&nbsp;</span><span class="c" id="rv-c14">.</span><span class="c" id="rv-c15">/</span><span class="c" id="rv-c16">y</span><span class="c" id="rv-c17">o</span><span class="c" id="rv-c18">u</span><span class="c" id="rv-c19">r</span><span class="c" id="rv-c20">-</span><span class="c" id="rv-c21">r</span><span class="c" id="rv-c22">e</span><span class="c" id="rv-c23">p</span><span class="c" id="rv-c24">o</span><span class="caret" id="rv-caret"></span></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+
+tl.fromTo("#rv-wm",{y:330},{y:0,duration:0.7,ease:"expo.out"},1.146);
+tl.to("#rv-line",{scaleX:0.62,duration:0.6,ease:"power3.inOut"},1.296);
+tl.set("#rv-caret",{opacity:1},2.875);tl.set("#rv-dollar",{opacity:1},2.875);
+tl.set("#rv-c0",{opacity:1},3.025);tl.set("#rv-c1",{opacity:1},3.065);tl.set("#rv-c2",{opacity:1},3.105);tl.set("#rv-c3",{opacity:1},3.145);tl.set("#rv-c4",{opacity:1},3.185);tl.set("#rv-c5",{opacity:1},3.225);tl.set("#rv-c6",{opacity:1},3.265);tl.set("#rv-c7",{opacity:1},3.305);tl.set("#rv-c8",{opacity:1},3.345);tl.set("#rv-c9",{opacity:1},3.385);tl.set("#rv-c10",{opacity:1},3.425);tl.set("#rv-c11",{opacity:1},3.465);tl.set("#rv-c12",{opacity:1},3.505);tl.set("#rv-c13",{opacity:1},3.545);tl.set("#rv-c14",{opacity:1},3.585);tl.set("#rv-c15",{opacity:1},3.625);tl.set("#rv-c16",{opacity:1},3.665);tl.set("#rv-c17",{opacity:1},3.705);tl.set("#rv-c18",{opacity:1},3.745);tl.set("#rv-c19",{opacity:1},3.785);tl.set("#rv-c20",{opacity:1},3.825);tl.set("#rv-c21",{opacity:1},3.865);tl.set("#rv-c22",{opacity:1},3.905);tl.set("#rv-c23",{opacity:1},3.945);tl.set("#rv-c24",{opacity:1},3.985);
+tl.set("#rv-caret",{opacity:0},4.425);tl.set("#rv-caret",{opacity:1},4.875);tl.set("#rv-caret",{opacity:0},5.325);tl.set("#rv-caret",{opacity:1},5.775);tl.set("#rv-caret",{opacity:0},6.225);tl.set("#rv-caret",{opacity:1},6.675);
+
+window.__timelines["reveal"] = tl;
+})();
+</script>
+</template>

@@ -1,0 +1,634 @@
+{
+ "s01": {
+  "take": "audio/vo/s01.wav",
+  "file": "assets/audio/vo-s01.wav",
+  "duration": 8.082,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "This",
+    "start": 0.06,
+    "end": 0.261
+   },
+   {
+    "text": "voice",
+    "start": 0.341,
+    "end": 0.682
+   },
+   {
+    "text": "was",
+    "start": 0.762,
+    "end": 0.903
+   },
+   {
+    "text": "designed",
+    "start": 0.963,
+    "end": 1.424
+   },
+   {
+    "text": "from",
+    "start": 1.484,
+    "end": 1.645
+   },
+   {
+    "text": "one",
+    "start": 1.865,
+    "end": 2.026
+   },
+   {
+    "text": "sentence",
+    "start": 2.146,
+    "end": 2.587
+   },
+   {
+    "text": "of",
+    "start": 2.627,
+    "end": 2.687
+   },
+   {
+    "text": "text.",
+    "start": 2.748,
+    "end": 3.149
+   },
+   {
+    "text": "The",
+    "start": 3.63,
+    "end": 3.73
+   },
+   {
+    "text": "music,",
+    "start": 3.77,
+    "end": 4.192
+   },
+   {
+    "text": "the",
+    "start": 4.593,
+    "end": 4.693
+   },
+   {
+    "text": "captions,",
+    "start": 4.733,
+    "end": 5.315
+   },
+   {
+    "text": "and",
+    "start": 5.635,
+    "end": 5.736
+   },
+   {
+    "text": "every",
+    "start": 5.896,
+    "end": 6.137
+   },
+   {
+    "text": "cut",
+    "start": 6.197,
+    "end": 6.458
+   },
+   {
+    "text": "came",
+    "start": 6.819,
+    "end": 7.059
+   },
+   {
+    "text": "out",
+    "start": 7.22,
+    "end": 7.38
+   },
+   {
+    "text": "of",
+    "start": 7.561,
+    "end": 7.601
+   },
+   {
+    "text": "one",
+    "start": 7.621,
+    "end": 7.681
+   },
+   {
+    "text": "repo.",
+    "start": 7.761,
+    "end": 7.962
+   }
+  ]
+ },
+ "s02": {
+  "take": "audio/vo/s02.wav",
+  "file": "assets/audio/vo-s02.wav",
+  "duration": 5.933,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "It's",
+    "start": 0.06,
+    "end": 0.221
+   },
+   {
+    "text": "called",
+    "start": 0.322,
+    "end": 0.744
+   },
+   {
+    "text": "DemoForge.",
+    "start": 1.046,
+    "end": 1.891
+   },
+   {
+    "text": "Point",
+    "start": 2.575,
+    "end": 2.917
+   },
+   {
+    "text": "it",
+    "start": 3.017,
+    "end": 3.098
+   },
+   {
+    "text": "at",
+    "start": 3.279,
+    "end": 3.359
+   },
+   {
+    "text": "a",
+    "start": 3.4,
+    "end": 3.42
+   },
+   {
+    "text": "project",
+    "start": 3.48,
+    "end": 4.023
+   },
+   {
+    "text": "and",
+    "start": 4.566,
+    "end": 4.667
+   },
+   {
+    "text": "it",
+    "start": 4.727,
+    "end": 4.788
+   },
+   {
+    "text": "makes",
+    "start": 4.888,
+    "end": 5.19
+   },
+   {
+    "text": "the",
+    "start": 5.27,
+    "end": 5.391
+   },
+   {
+    "text": "demo",
+    "start": 5.472,
+    "end": 5.813
+   }
+  ]
+ },
+ "s03": {
+  "take": "audio/vo/s03.wav",
+  "file": "assets/audio/vo-s03.wav",
+  "duration": 5.023,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "Claude",
+    "start": 0.06,
+    "end": 0.421
+   },
+   {
+    "text": "reads",
+    "start": 0.482,
+    "end": 0.723
+   },
+   {
+    "text": "the",
+    "start": 0.763,
+    "end": 0.863
+   },
+   {
+    "text": "code,",
+    "start": 0.904,
+    "end": 1.245
+   },
+   {
+    "text": "picks",
+    "start": 1.647,
+    "end": 1.908
+   },
+   {
+    "text": "one",
+    "start": 2.109,
+    "end": 2.27
+   },
+   {
+    "text": "story",
+    "start": 2.33,
+    "end": 2.712
+   },
+   {
+    "text": "worth",
+    "start": 2.752,
+    "end": 3.014
+   },
+   {
+    "text": "telling",
+    "start": 3.074,
+    "end": 3.436
+   },
+   {
+    "text": "and",
+    "start": 3.858,
+    "end": 3.958
+   },
+   {
+    "text": "writes",
+    "start": 4.018,
+    "end": 4.3
+   },
+   {
+    "text": "the",
+    "start": 4.36,
+    "end": 4.46
+   },
+   {
+    "text": "script.",
+    "start": 4.521,
+    "end": 4.903
+   }
+  ]
+ },
+ "s04": {
+  "take": "audio/vo/s04_t1.wav",
+  "file": "assets/audio/vo-s04.wav",
+  "duration": 5.033,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "Playwright",
+    "start": 0.06,
+    "end": 0.561
+   },
+   {
+    "text": "films",
+    "start": 0.601,
+    "end": 0.962
+   },
+   {
+    "text": "the",
+    "start": 1.023,
+    "end": 1.143
+   },
+   {
+    "text": "real",
+    "start": 1.223,
+    "end": 1.464
+   },
+   {
+    "text": "product",
+    "start": 1.544,
+    "end": 1.985
+   },
+   {
+    "text": "at",
+    "start": 2.065,
+    "end": 2.126
+   },
+   {
+    "text": "twice",
+    "start": 2.206,
+    "end": 2.547
+   },
+   {
+    "text": "the",
+    "start": 2.587,
+    "end": 2.687
+   },
+   {
+    "text": "resolution",
+    "start": 2.727,
+    "end": 3.349
+   },
+   {
+    "text": "and",
+    "start": 3.55,
+    "end": 3.65
+   },
+   {
+    "text": "logs",
+    "start": 3.73,
+    "end": 4.131
+   },
+   {
+    "text": "every",
+    "start": 4.312,
+    "end": 4.552
+   },
+   {
+    "text": "click.",
+    "start": 4.612,
+    "end": 4.913
+   }
+  ]
+ },
+ "s05": {
+  "take": "audio/vo/s05_t0.wav",
+  "file": "assets/audio/vo-s05.wav",
+  "duration": 7.195,
+  "wer": 0.2,
+  "words": [
+   {
+    "text": "Vox",
+    "start": 0.06,
+    "end": 0.482
+   },
+   {
+    "text": "CPM",
+    "start": 0.703,
+    "end": 1.327
+   },
+   {
+    "text": "designs",
+    "start": 1.528,
+    "end": 2.05
+   },
+   {
+    "text": "the",
+    "start": 2.111,
+    "end": 2.191
+   },
+   {
+    "text": "narrator.",
+    "start": 2.231,
+    "end": 2.714
+   },
+   {
+    "text": "WhisperX",
+    "start": 3.538,
+    "end": 4.241
+   },
+   {
+    "text": "checks",
+    "start": 4.422,
+    "end": 4.724
+   },
+   {
+    "text": "each",
+    "start": 4.925,
+    "end": 5.085
+   },
+   {
+    "text": "take",
+    "start": 5.166,
+    "end": 5.467
+   },
+   {
+    "text": "and",
+    "start": 5.749,
+    "end": 5.829
+   },
+   {
+    "text": "times",
+    "start": 5.91,
+    "end": 6.332
+   },
+   {
+    "text": "every",
+    "start": 6.533,
+    "end": 6.774
+   },
+   {
+    "text": "word.",
+    "start": 6.814,
+    "end": 7.075
+   }
+  ]
+ },
+ "s06": {
+  "take": "audio/vo/s06_t3.wav",
+  "file": "assets/audio/vo-s06.wav",
+  "duration": 3.71,
+  "wer": 0.182,
+  "words": [
+   {
+    "text": "ASTEP",
+    "start": 0.06,
+    "end": 0.542
+   },
+   {
+    "text": "writes",
+    "start": 0.662,
+    "end": 0.963
+   },
+   {
+    "text": "the",
+    "start": 1.023,
+    "end": 1.123
+   },
+   {
+    "text": "score",
+    "start": 1.184,
+    "end": 1.565
+   },
+   {
+    "text": "and",
+    "start": 1.865,
+    "end": 1.986
+   },
+   {
+    "text": "ducks",
+    "start": 2.106,
+    "end": 2.407
+   },
+   {
+    "text": "it",
+    "start": 2.487,
+    "end": 2.588
+   },
+   {
+    "text": "under",
+    "start": 2.888,
+    "end": 3.089
+   },
+   {
+    "text": "the",
+    "start": 3.129,
+    "end": 3.209
+   },
+   {
+    "text": "voice.",
+    "start": 3.249,
+    "end": 3.59
+   }
+  ]
+ },
+ "s07": {
+  "take": "audio/vo/s07.wav",
+  "file": "assets/audio/vo-s07.wav",
+  "duration": 4.92,
+  "wer": 0.167,
+  "words": [
+   {
+    "text": "HyperFrames",
+    "start": 0.06,
+    "end": 0.903
+   },
+   {
+    "text": "and",
+    "start": 1.024,
+    "end": 1.124
+   },
+   {
+    "text": "GSAP",
+    "start": 1.205,
+    "end": 1.747
+   },
+   {
+    "text": "cut",
+    "start": 1.908,
+    "end": 2.068
+   },
+   {
+    "text": "it",
+    "start": 2.109,
+    "end": 2.169
+   },
+   {
+    "text": "together",
+    "start": 2.209,
+    "end": 2.631
+   },
+   {
+    "text": "in",
+    "start": 2.731,
+    "end": 2.812
+   },
+   {
+    "text": "HTML,",
+    "start": 3.053,
+    "end": 3.675
+   },
+   {
+    "text": "frame",
+    "start": 3.937,
+    "end": 4.218
+   },
+   {
+    "text": "by",
+    "start": 4.258,
+    "end": 4.378
+   },
+   {
+    "text": "frame.",
+    "start": 4.479,
+    "end": 4.8
+   }
+  ]
+ },
+ "s08": {
+  "take": "audio/vo/s08_t0.wav",
+  "file": "assets/audio/vo-s08.wav",
+  "duration": 3.621,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "It",
+    "start": 0.06,
+    "end": 0.141
+   },
+   {
+    "text": "all",
+    "start": 0.322,
+    "end": 0.463
+   },
+   {
+    "text": "renders",
+    "start": 0.563,
+    "end": 1.046
+   },
+   {
+    "text": "on",
+    "start": 1.187,
+    "end": 1.267
+   },
+   {
+    "text": "one",
+    "start": 1.529,
+    "end": 1.67
+   },
+   {
+    "text": "Mac",
+    "start": 1.771,
+    "end": 2.133
+   },
+   {
+    "text": "with",
+    "start": 2.354,
+    "end": 2.535
+   },
+   {
+    "text": "Open",
+    "start": 2.716,
+    "end": 2.998
+   },
+   {
+    "text": "Models.",
+    "start": 3.078,
+    "end": 3.501
+   }
+  ]
+ },
+ "s09": {
+  "take": "audio/vo/s09.wav",
+  "file": "assets/audio/vo-s09.wav",
+  "duration": 3.69,
+  "wer": 0.0,
+  "words": [
+   {
+    "text": "DemoForge.",
+    "start": 0.031,
+    "end": 0.815
+   },
+   {
+    "text": "Point",
+    "start": 1.117,
+    "end": 1.438
+   },
+   {
+    "text": "it",
+    "start": 1.519,
+    "end": 1.619
+   },
+   {
+    "text": "at",
+    "start": 1.78,
+    "end": 1.881
+   },
+   {
+    "text": "a",
+    "start": 1.921,
+    "end": 1.941
+   },
+   {
+    "text": "repo.",
+    "start": 2.001,
+    "end": 2.484
+   },
+   {
+    "text": "Get",
+    "start": 2.987,
+    "end": 3.147
+   },
+   {
+    "text": "a",
+    "start": 3.188,
+    "end": 3.228
+   },
+   {
+    "text": "film.",
+    "start": 3.288,
+    "end": 3.57
+   }
+  ]
+ }
+}

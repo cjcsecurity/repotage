@@ -1,0 +1,42 @@
+<template>
+<style>
+
+#root{position:absolute;inset:0;overflow:hidden;--bg:#121110;--s1:#1a1917;--s2:#22201d;--line:#2d2a26;--line2:#3a3631;--text:#f3efe6;--muted:#a39d92;--faint:#6f6a62;--accent:#ff6a1a;--on-accent:#1a0d00;--ok:#5fc98f;--ground:#ff6a1a;--sans:"Inter", sans-serif;--mono:"JetBrains Mono", monospace;font-family:var(--sans);color:var(--text)}
+
+#root{background:#ff6a1a}
+#capture-cam{position:absolute;left:0;top:0;width:1920px;height:1080px}
+.win{position:absolute;left:240px;top:40px;width:1440px;height:932px;border-radius:14px;overflow:hidden;background:var(--bg);box-shadow:0 28px 70px rgba(0,0,0,.38),0 0 0 1px rgba(0,0,0,.35)}
+.bar{position:absolute;left:0;top:0;right:0;height:32px;background:var(--s1);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--faint)}
+.dots{position:absolute;left:14px;top:10.5px;display:flex;gap:8px}.dots i{width:11px;height:11px;border-radius:50%;background:var(--line2);display:block}
+.screen{position:absolute;left:0;top:32px;width:1440px;height:900px;overflow:hidden;background:var(--bg)}
+.screen video,.screen img.still{position:absolute;left:0;top:0;width:1440px;height:900px;object-fit:cover}
+.cursor{position:absolute;left:0;top:0;width:31px;height:44px;opacity:0;z-index:20}
+.cursor .arrow{display:block;transform-origin:4px 4px;filter:drop-shadow(0 3px 5px rgba(0,0,0,.45))}
+.hl{position:absolute;border:3px solid var(--accent);border-radius:8px;background:color-mix(in srgb,var(--accent) 10%,transparent);opacity:0;z-index:10}
+.chip{position:absolute;left:260px;top:88px;background:var(--bg);border:1px solid var(--accent);color:var(--text);font:500 30px var(--mono);padding:10px 18px;border-radius:9px;opacity:0;z-index:30}
+#cp-log{position:absolute;right:60px;bottom:110px;width:820px;background:rgba(18,17,16,.96);border:1px solid #3a3631;border-radius:12px;padding:0 0 12px;font:400 28px/1.6 var(--mono);color:var(--muted);opacity:0;z-index:30;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+#cp-log .hd{font:500 18px var(--mono);color:var(--faint);padding:12px 18px;border-bottom:1px solid #2d2a26;margin-bottom:6px}#cp-log div{padding:0 18px;white-space:nowrap}#cp-log b{color:var(--accent);font-weight:500}
+</style>
+<div id="root" data-composition-id="capture" data-width="1920" data-height="1080">
+<div id="capture-cam"><div class="win"><div class="bar" data-layout-ignore><span class="dots"><i></i><i></i><i></i></span>demoforge · review</div>
+<div class="screen"><video id="capture-v0" class="clip" src="assets/footage/report.mp4" data-start="0" data-duration="6.083" data-media-start="0.2" data-playback-rate="0.949" data-track-index="1" muted playsinline></video><div class="cursor" id="capture-cursor"><svg class="arrow" viewBox="0 0 28 40" width="31" height="44" aria-hidden="true"><path d="M2 2 L2 31 L9.2 24.6 L14 36.4 L19.4 34.1 L14.7 22.6 L24.4 22.6 Z" fill="#fff" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg><div class="cursor-extra" id="capture-cursor-extra"></div></div></div></div></div><div id="cp-res" class="chip">2560 × 1600 · 60 fps</div><div id="cp-log"><div class="hd" data-layout-ignore>capture/clips/report/meta.json</div><div id="cp-e0">move  1050,736 → 670,315</div><div id="cp-e1"><b>click</b> 670,315  "Play voice"</div><div id="cp-e2"><b>click</b> 670,315  "Stop voice"</div></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+tl.set("#capture-cam",{transformOrigin:"0 0",x:0,y:0,scale:1},0);
+tl.to("#capture-cam",{x:-420.014,y:-103.501,scale:1.438,duration:0.6,ease:"power2.inOut"},0.5);
+tl.set("#capture-cursor",{x:1180.8,y:828,opacity:1},0);
+tl.set("#capture-cursor",{x:1180.8,y:828},1.137);
+tl.to("#capture-cursor",{x:753.75,y:354.753,duration:0.814,ease:"power2.inOut"},1.137);
+tl.to("#capture-cursor .arrow",{scale:0.82,duration:0.07,ease:"power2.in"},2.185);tl.to("#capture-cursor .arrow",{scale:1,duration:0.16,ease:"power2.out"},2.255);
+tl.set("#capture-cursor",{x:753.75,y:354.753},4.666);
+tl.to("#capture-cursor",{x:753.75,y:354.753,duration:0.658,ease:"power2.inOut"},4.666);
+tl.to("#capture-cursor .arrow",{scale:0.82,duration:0.07,ease:"power2.in"},5.556);tl.to("#capture-cursor .arrow",{scale:1,duration:0.16,ease:"power2.out"},5.626);
+tl.fromTo("#cp-res",{opacity:0,y:10},{opacity:1,y:0,duration:0.35,ease:"expo.out"},2.406);tl.to("#cp-res",{opacity:0,duration:0.2},3.73);
+tl.fromTo("#cp-log",{opacity:0,y:20},{opacity:1,y:0,duration:0.4,ease:"expo.out"},3.83);
+tl.fromTo("#cp-e0",{opacity:0},{opacity:1,duration:0.12},3.98);tl.fromTo("#cp-e1",{opacity:0},{opacity:1,duration:0.12},4.1);tl.fromTo("#cp-e2",{opacity:0},{opacity:1,duration:0.12},4.22);
+window.__timelines["capture"] = tl;
+})();
+</script>
+</template>
