@@ -1,6 +1,6 @@
 # Repotage
 
-Point it at a repo, get a film. Repotage makes a narrated, scored and captioned demo video of the real product: it films the actual app, designs a narrator from a sentence of text, checks every take, writes the music, cuts it together in HTML and masters it for Slack. All the media renders locally on an Apple Silicon Mac with open models.
+Point it at a repo, get a film. Repotage makes a narrated, scored and captioned demo video of the real product: it films the actual app, designs a narrator from a sentence of text, checks every take, writes the music, cuts it together in HTML and masters it. All the media renders locally on an Apple Silicon Mac with open models.
 
 <!-- A playable embed needs a GitHub-hosted upload: edit this file on github.com, drag docs/repotage-demo.mp4 onto the next line, and keep the https://github.com/user-attachments/assets/... line GitHub inserts. -->
 
