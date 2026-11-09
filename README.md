@@ -5,7 +5,7 @@ Point it at a repo, get a film. Repotage makes a narrated, scored and captioned 
 <!-- A playable embed needs a GitHub-hosted upload: edit this file on github.com, drag docs/repotage-demo.mp4 onto the next line, and keep the https://github.com/user-attachments/assets/... line GitHub inserts. -->
 
 
-https://github.com/user-attachments/assets/37650284-b70b-41a4-8d04-e064e90d8326
+https://github.com/user-attachments/assets/1208ace2-822b-44cf-93be-36c7cea59762
 
 
 
