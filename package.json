@@ -8,7 +8,7 @@
     "repotage": "bin/repotage"
   },
   "dependencies": {
-    "hyperframes": "0.9.19",
+    "hyperframes": "0.9.28",
     "playwright": "1.64.1"
   },
   "engines": {
